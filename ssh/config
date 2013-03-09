@@ -1,0 +1,51 @@
+Host cleopatra
+    HostName cleopatra.medphys.ucl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # IPYTHON NOTEBOOK
+    LocalForward localhost:8080 cleopatra:8080
+
+    # Samba
+    LocalForward localhost:9139 cleopatra:139
+
+    # AFP
+    LocalForward localhost:5480 cleopatra:548
+
+
+Host *.cch.kcl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+
+
+Host bach_tunnel
+    HostName bach.medphys.ucl.ac.uk
+    User rmapagi
+    Protocol 2,1
+    Compression no
+
+    # IPYTHON NOTEBOOK
+    LocalForward localhost:8080 cleopatra:8080
+
+    # SSH
+    LocalForward localhost:2220 cleopatra:22
+
+    # Samba
+    LocalForward localhost:9139 cleopatra:139
+
+    # AFP
+    LocalForward localhost:5480 cleopatra:548
+
+    # TUNNELING
+    DynamicForward localhost:8888
+
+
