@@ -43,12 +43,6 @@ export LD_LIBRARY_PATH=/opt/lib:/opt/lib64:/usr/local/lib:$LD_LIBRARY_PATH
 # PATH
 export PATH=$CUDAPATH:$TEXLIVE_PATH:$PATH
 
-# virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-
 # tmux powerline
 . /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 

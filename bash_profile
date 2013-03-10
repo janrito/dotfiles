@@ -1,3 +1,5 @@
+# inspired by https://github.com/cowboy/dotfiles/blob/master/link/.bashrc
+
 # Add binaries into the path
 PATH=~/.bin:$PATH
 export PATH

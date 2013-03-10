@@ -37,11 +37,7 @@ export TEXPATH=/usr/texbin
 # Export local path
 export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
 
-#virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/share/python/virtualenvwrapper_lazy.sh
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
+
 
 #tmux powerline
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
@@ -56,16 +52,8 @@ export EDITOR='subl -w'
 CLICOLOR=True
 export CLICOLOR
 
-# aliases
-alias t=todo.sh
-alias comatlab='matlab -nodisplay -nojvm'
-alias pipu="pip freeze | cut -d = -f 1 | xargs -n 1 pip search | grep -B2 'LATEST:'"
 
 # functions
 function byw() { open -a /Applications/Byword.app "$@" ;}
 
-# Homebrew bash completion
-source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
-# generic colourizer
-source "`brew --prefix grc`/etc/grc.bashrc"
