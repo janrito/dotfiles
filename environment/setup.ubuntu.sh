@@ -34,6 +34,7 @@ export TEXLIVE_PATH=/usr/local/texlive/2012/bin/x86_64-linux
 
 # PYTHONPATH
 export PYTHONPATH=/usr/local/lib/python2.7/dist-packages
+export PYTHON_PACKAGES=/usr/local/lib/python2.7/dist-packages
 
 # CUDA
 export CUDAPATH=/opt/bin

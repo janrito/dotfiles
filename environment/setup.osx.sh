@@ -11,6 +11,8 @@ export HOMEPATH=~/bin:$MATLABPATH
 export PYTHONPATH=/usr/local/lib/python
 export PYTHONBIN=/usr/local/share/python
 
+export PYTHON_PACKAGES=/usr/local/lib/python2.7/site-packages
+
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
 
