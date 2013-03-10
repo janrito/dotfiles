@@ -17,3 +17,5 @@ function src() {
 }
 
 src
+
+dotfiles -c
