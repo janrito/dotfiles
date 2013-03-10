@@ -1,2 +1,9 @@
 [dotfiles]
 repository = ~/.dotfiles
+
+packages = ['ssh']
+
+ignore = [
+    '.git',
+    '.gitignore',
+    '*.swp']
