@@ -13,4 +13,4 @@
 [core]
 	editor = subl -n -w
 [push]
-	default = simple
+	default = matching
