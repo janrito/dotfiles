@@ -1,7 +1,7 @@
 [dotfiles]
 repository = ~/.dotfiles
 
-packages = ['ssh']
+packages = ['ssh', 'bin']
 
 ignore = [
     '.git',
