@@ -38,21 +38,6 @@ export TEXPATH=/usr/texbin
 export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
 
 
-
-#tmux powerline
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-
-#rbenv
-eval "$(rbenv init -)"
-
-# Editor
-export EDITOR='subl -w'
-
-# Colors
-CLICOLOR=True
-export CLICOLOR
-
-
 # functions
 function byw() { open -a /Applications/Byword.app "$@" ;}
 

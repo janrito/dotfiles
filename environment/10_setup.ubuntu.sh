@@ -22,12 +22,6 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-export EDITOR=vim
 
 # TEXLIVE_PATH
 export TEXLIVE_PATH=/usr/local/texlive/2012/bin/x86_64-linux
@@ -42,9 +36,6 @@ export LD_LIBRARY_PATH=/opt/lib:/opt/lib64:/usr/local/lib:$LD_LIBRARY_PATH
 
 # PATH
 export PATH=$CUDAPATH:$TEXLIVE_PATH:$PATH
-
-# tmux powerline
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 
 
 # sudo tab completion
