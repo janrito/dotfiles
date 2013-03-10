@@ -4,6 +4,7 @@ repository = ~/.dotfiles
 packages = ['ssh', 'bin']
 
 ignore = [
+    'environment',
     '.git',
     '.gitignore',
     '*.swp']

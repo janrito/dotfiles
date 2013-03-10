@@ -4,17 +4,16 @@
 PATH=~/.bin:$PATH
 export PATH
 
-# Source all files in ~/.dotfiles/source/
+# Source all files in ~/.dotfiles/environment/
 function src() {
   local file
   if [[ "$1" ]]; then
-    source "$HOME/.environment/$1.sh"
+    source "$HOME/.dotfiles/environment//$1.sh"
   else
-    for file in ~/.environment/*; do
+    for file in ~/.dotfiles/environment/*; do
       source "$file"
     done
   fi
 }
-
 
 src
