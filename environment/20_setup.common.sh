@@ -1,9 +1,15 @@
 #rbenv
 eval "$(rbenv init -)"
 
-# Editor
-export EDITOR='subl -w'
 
-# Colors
+if [[ "$(type -P subl)" ]]; then
+  # Set Editor Editor to sublime if it exists
+  export EDITOR='subl -w'
+else
+  # Set Editor Editor to vim
+  export EDITOR='vim'
+fi
+
+# Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR

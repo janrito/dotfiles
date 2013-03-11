@@ -21,5 +21,5 @@ then
     $SHELL
   fi
 else
-  $SHELL
+  $SHELL -l
 fi

@@ -8,7 +8,7 @@ export PATH
 function src() {
   local file
   if [[ "$1" ]]; then
-    source "$HOME/.dotfiles/environment//$1.sh"
+    source "$HOME/.dotfiles/environment/$1.sh"
   else
     for file in ~/.dotfiles/environment/*; do
       source "$file"
