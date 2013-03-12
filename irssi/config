@@ -2,13 +2,13 @@ servers = (
   { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { 
+  {
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
   },
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  { 
+  {
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
     port = "6667";
@@ -29,7 +29,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "irc.funet.fi";
@@ -44,14 +44,14 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
-    address = "cleopatra";
+    address = "irc.freenode.net";
     chatnet = "Freenode";
-    port = "6030";
-    use_ssl = "no";
-    ssl_verify = "no";
+    port = "6667";
+    use_ssl = "yes";
+    ssl_verify = "yes";
     autoconnect = "yes";
   }
 );
@@ -64,7 +64,7 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  EFNet = { 
+  EFNet = {
     type = "IRC";
     max_kicks = "4";
     max_msgs = "3";
@@ -107,7 +107,7 @@ chatnets = {
     max_msgs = "3";
     max_whois = "30";
   };
-  Rizon = { 
+  Rizon = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -123,12 +123,12 @@ chatnets = {
 };
 
 channels = (
-  { name = "#irssi"; chatnet = "IRCnet"; autojoin = "yes"; },
+  { name = "#irssi"; chatnet = "IRCnet"; autojoin = "no"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   {
     name = "#irssi";
     chatnet = "efnet";
-    autojoin = "yes";
+    autojoin = "no";
     botmasks = "*!*bot@host.org";
     autosendcmd = "/^msg $0 op pass";
   }
@@ -298,8 +298,8 @@ statusbar = {
 settings = {
   core = {
     real_name = "Alejandro Giacometti";
-    user_name = "alejandro";
-    nick = "alejandro";
+    user_name = "giacometti";
+    nick = "giacometti";
   };
   "fe-text" = {
     actlist_sort = "refnum";
