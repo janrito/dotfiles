@@ -5,6 +5,7 @@ packages = ['ssh', 'bin', 'irssi']
 
 ignore = [
     'environment',
+    'preferences',
     '.git',
     '.gitignore',
     '*.swp']
