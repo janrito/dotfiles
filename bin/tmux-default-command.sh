@@ -12,7 +12,6 @@ if [ "$system_name" == "Darwin" ]
 then
   if  command_exists reattach-to-user-namespace
   then
-    reattach-to-user-namespace -l $SHELL ~/.tmux/tmux_clipboard.sh &
     reattach-to-user-namespace -l "$SHELL"
   else
     echo "reattach-to-user-namespace not found \
