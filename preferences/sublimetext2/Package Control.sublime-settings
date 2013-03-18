@@ -1,0 +1,30 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"AutoPEP8",
+		"BracketHighlighter",
+		"CoffeeScript",
+		"Dotfiles Syntax Highlighting",
+		"Indent XML",
+		"Jinja2",
+		"LESS",
+		"MarkdownEditing",
+		"Package Control",
+		"Paste as Column",
+		"Pretty JSON",
+		"rsub",
+		"SideBarEnhancements",
+		"SmartMarkdown",
+		"SublimeCodeIntel",
+		"sublimelint",
+		"SublimeLinter",
+		"Table Editor",
+		"Tag",
+		"Theme - Soda",
+		"Tomorrow Color Schemes",
+		"WordCount",
+		"XSLT Snippets"
+	]
+}

@@ -1,0 +1,86 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+
+			//Photoshop
+			{
+				"caption": "Photoshop",
+				"id": "side-bar-files-open-with-photoshop",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Adobe Photoshop CS5.app", // OSX
+									"extensions":"psd|png|jpg|jpeg"  //any file with these extensions
+								}
+			},
+			//Preview
+			{
+				"caption": "Preview",
+				"id": "side-bar-files-open-with-preview",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Preview.app",
+									"extensions":"pdf|jpg|tif|tiff|png|psd" //any file with extension
+								}
+			},
+			{"caption":"-"},
+
+			//Word
+			{
+				"caption": "Word",
+				"id": "side-bar-files-open-with-word",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Microsoft Word.app", // WINNT
+									"extensions":"doc|docx" //open all even folders
+								}
+			},
+			{"caption":"-"},
+			//Chrome
+			{
+				"caption": "Chrome",
+				"id": "side-bar-files-open-with-chrome",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Google Chrome.app",
+									"extensions":".*" //any file with extension
+								}
+			},
+
+			{"caption":"-"},
+			//Chrome
+			{
+				"caption": "Multimarkdown Composer",
+				"id": "side-bar-files-open-with-multimarkdown-composer",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Multimarkdown Composer 2.app",
+									"extensions":"mmd|md|txt" //any file with extension
+								}
+			},
+			{
+				"caption": "Mou",
+				"id": "side-bar-files-open-with-mou",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Mou.app",
+									"extensions":"mmd|md|txt" //any file with extension
+								}
+			},
+
+			{"caption":"-"}
+		]
+	}
+]
