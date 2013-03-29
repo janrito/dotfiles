@@ -1,7 +1,11 @@
 [dotfiles]
 repository = ~/.dotfiles
 
-packages = ['ssh', 'bin', 'irssi']
+packages = [
+    'ssh',
+    'bin',
+    'irssi',
+    'config']
 
 ignore = [
     'environment',
