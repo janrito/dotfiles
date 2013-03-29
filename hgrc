@@ -1,2 +1,5 @@
 [ui]
+# Name data to appear in commits
+editor = subl -n -w
 username = Alejandro Giacometti <alejandro.giacometti@gmail.com>
+ssh = ssh -C
