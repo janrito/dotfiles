@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"All Autocomplete",
 		"AutoPEP8",
 		"BracketHighlighter",
 		"CoffeeScript",
