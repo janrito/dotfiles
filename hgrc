@@ -6,3 +6,4 @@ ssh = ssh -C
 
 [extensions]
 mercurial_keyring =
+purge =
