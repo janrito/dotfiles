@@ -4,6 +4,7 @@
 	[
 		"Alignment",
 		"All Autocomplete",
+		"AutoFileName",
 		"AutoPEP8",
 		"BracketHighlighter",
 		"CoffeeScript",
