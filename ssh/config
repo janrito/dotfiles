@@ -17,7 +17,7 @@ Host cleopatra
     LocalForward localhost:5480 cleopatra:548
 
     #IRC
-    LocalForward 6030 irc.example.com:6667
+    LocalForward 6030 irc.freenode.com:6667
 
     # TUNNELING
     DynamicForward localhost:65000
