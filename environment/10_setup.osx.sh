@@ -4,7 +4,7 @@
 
 # Paths in home directory
 export MATLABPATH=/Applications/MATLAB_R2012b.app/bin
-export HOMEPATH=~/bin:$MATLABPATH
+export HOMEPATH=~/.bin:$MATLABPATH
 
 
 # Python
