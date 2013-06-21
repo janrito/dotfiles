@@ -56,4 +56,25 @@ Host bach_tunnel
     #IRC
     LocalForward 6030 irc.example.com:6667
 
+Host cch
+    Hostname ssh.cch.kcl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # SSH
+    LocalForward localhost:2220 cleopatra:22
+
+    # Samba
+    LocalForward localhost:9139 cleopatra:139
+
+    # AFP
+    LocalForward localhost:5480 cleopatra:548
+
+    # TUNNELING
+    DynamicForward localhost:8888
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
 
