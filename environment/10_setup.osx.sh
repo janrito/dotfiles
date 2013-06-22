@@ -30,6 +30,9 @@ export MMDS_PATH=/usr/local/Cellar/multimarkdown/3.6/Support
 # Homebrew
 export BREWPATH=$NODE_BINS:$HASKELLPATH:$RUBYPATH:$PYTHONBIN:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
 
+# Homebrew Cask
+export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+
 # MacTex
 export TEXPATH=/usr/texbin
 
