@@ -41,7 +41,3 @@ export TEXPATH=/usr/texbin
 export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
 
 
-# functions
-function byw() { open -a /Applications/Byword.app "$@" ;}
-
-
