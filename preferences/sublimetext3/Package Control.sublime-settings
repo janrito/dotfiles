@@ -1,0 +1,37 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
+		"AutoPEP8",
+		"BracketHighlighter",
+		"CoffeeScript",
+		"Dotfiles Syntax Highlighting",
+		"EncodingHelper",
+		"Figlet Big ASCII Text",
+		"Indent XML",
+		"Jinja2",
+		"LESS",
+		"MarkdownEditing",
+		"Package Control",
+		"Paste as Column",
+		"Pretty JSON",
+		"rsub",
+		"SaneSnippets",
+		"SideBarEnhancements",
+		"SmartMarkdown",
+		"SublimeCodeIntel",
+		"sublimelint",
+		"SublimeLinter",
+		"Sublimerge",
+		"Table Editor",
+		"Tag",
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Tomorrow Color Schemes",
+		"WordCount",
+		"XSLT Snippets"
+	]
+}
