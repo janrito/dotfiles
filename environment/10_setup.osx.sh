@@ -9,7 +9,6 @@ export HOMEPATH=~/.bin:$MATLABPATH
 
 # Python
 export PYTHONPATH=/usr/local/lib/python
-export PYTHONBIN=/usr/local/share/python
 
 export PYTHON_PACKAGES=/usr/local/lib/python2.7/site-packages
 
@@ -28,7 +27,7 @@ export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
 export MMDS_PATH=/usr/local/Cellar/multimarkdown/3.6/Support
 
 # Homebrew
-export BREWPATH=$NODE_BINS:$HASKELLPATH:$RUBYPATH:$PYTHONBIN:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
+export BREWPATH=$NODE_BINS:$HASKELLPATH:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
 
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
