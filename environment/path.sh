@@ -13,4 +13,8 @@ function repath() {
     glu ":" $_E
 }
 
+function path() {
+    echo "${PATH//:/$'\n'}"
+}
+
 export PATH=$(repath $PATH)
