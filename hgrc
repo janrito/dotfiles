@@ -6,5 +6,7 @@ ssh = ssh -C
 
 [extensions]
 mercurial_keyring =
+hgext.bookmarks =
 purge =
 hgshelve=
+hggit=
