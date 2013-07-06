@@ -9,4 +9,5 @@ mercurial_keyring =
 hgext.bookmarks =
 purge =
 hgshelve=
+progress=
 hggit=
