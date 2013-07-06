@@ -1,0 +1,7 @@
+---
+description: Markdowon Heading 1
+tabTrigger:  mmd_hd1
+scope:       text.html.markdown meta.paragraph.markdown
+---
+${1:$SELECTION} [${2:${SELECTION/\W/_/g}}]
+${1/./=/g}==${1/./=/g}=
