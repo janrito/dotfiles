@@ -77,4 +77,17 @@ Host cch
     # RMATE
     RemoteForward 52698 localhost:52698
 
+Host giacometti.me
+    Hostname giacometti.me
+    User janrito
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # TUNNELING
+    DynamicForward localhost:65000
+
+
 
