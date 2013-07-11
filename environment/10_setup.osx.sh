@@ -22,6 +22,9 @@ export HASKELLPATH=~/.cabal/bin
 export NODE_PATH=/usr/local/lib/node_modules
 export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
 
+# Java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/"
+
 # Mutlimarkdown support
 
 export MMDS_PATH=/usr/local/Cellar/multimarkdown/3.6/Support
