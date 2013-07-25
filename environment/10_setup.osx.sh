@@ -27,7 +27,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Hom
 
 # Mutlimarkdown support
 
-export MMDS_PATH=/usr/local/Cellar/multimarkdown/3.6/Support
+export MMDS_PATH=/usr/local/Cellar/multimarkdown/4.2/Support
 
 # Homebrew
 export BREWPATH=$NODE_BINS:$HASKELLPATH:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
