@@ -1,0 +1,16 @@
+font.family        : sans-serif
+font.serif         : Computer Modern Roman
+font.sans-serif    : Computer Modern Sans serif
+font.cursive       : Zapf Chancery
+font.monospace     : Computer Modern Typewriter
+font.size          : 10.0
+
+text.usetex        : true
+text.latex.preamble : \usepackage{sfmath}
+
+
+# Legend
+legend.fontsize    : small
+
+# Figure
+figure.dpi         : 150
