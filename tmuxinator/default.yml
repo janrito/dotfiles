@@ -1,0 +1,16 @@
+# ~/.tmuxinator/.yml
+# you can make as many tabs as you wish...
+
+name: default
+root: ~/
+# socket_name: foo # Remove to use default socket
+# pre: sudo /etc/rc.d/mysqld start # Runs before everything
+# pre_window: rbenv shell 2.0.0-p247 # Runs in each tab and pane
+# tmux_options: -v -2 # Pass arguments to tmux
+windows:
+  - main:
+      layout: even-horizontal
+      panes:
+        - #
+        - #
+  - htop: sudo htop

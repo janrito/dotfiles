@@ -22,3 +22,5 @@ then
 else
   $SHELL -l
 fi
+
+source "${PYTHON_PACKAGES}/powerline/bindings/tmux/powerline.conf"
