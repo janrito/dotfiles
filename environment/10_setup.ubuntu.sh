@@ -22,6 +22,7 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+export HOMEPATH=~/.bin
 
 # TEXLIVE_PATH
 export TEXLIVE_PATH=/usr/local/texlive/2012/bin/x86_64-linux
@@ -35,7 +36,7 @@ export CUDAPATH=/opt/bin
 export LD_LIBRARY_PATH=/opt/lib:/opt/lib64:/usr/local/lib:$LD_LIBRARY_PATH
 
 # PATH
-export PATH=$CUDAPATH:$TEXLIVE_PATH:$PATH
+export PATH=$HOMEPATH:$CUDAPATH:$TEXLIVE_PATH:$PATH
 
 
 # sudo tab completion
