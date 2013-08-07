@@ -11,5 +11,5 @@ windows:
   - main:
       layout: even-horizontal
       panes:
-        - subl .
+        - subl -b dissertation.sublime-project
         - cd out

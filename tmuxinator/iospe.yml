@@ -3,7 +3,7 @@
 
 name: iospe
 root: ~/Documents/largeprojects/iospe/branches/kiln
-socket_name: foo # Remove to use default socket
+# socket_name: foo # Remove to use default socket
 pre: vagrant up # Runs before everything
 # pre_window:
 # tmux_options: -v -2 # Pass arguments to tmux
