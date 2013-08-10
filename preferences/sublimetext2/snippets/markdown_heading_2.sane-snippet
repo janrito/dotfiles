@@ -1,9 +1,9 @@
 ---
 description: Markdowon Heading 2
-tabTrigger:  ## \w\w
+tabTrigger:  ## []
 scope:       text.html.markdown.multimarkdown, text.html.markdown
 ---
-${1:$SELECTION} [${2:${SELECTION/\W/_/g}}]
-${1/./-/g}--${2/./-/g}-
+${1:$SELECTION} [${2:${SELECTION/(?<whitespace>\W)|(?<uppercase>[A-Z])/(?{whitespace}_:\l$+{uppercase})/g}}]
+${1/./-/g}${2/(\w+)/(?1:--:)/g}${2/./-/g}-
 
 $0
