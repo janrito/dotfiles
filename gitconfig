@@ -15,5 +15,5 @@
     editor = subl -n -w
 [push]
     default = matching
-[diff]
-    external = /Users/alejandrogiacometti/.bin/git-diff.sh
+[merge]
+    tool = opendiff
