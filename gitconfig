@@ -1,16 +1,19 @@
 [user]
-	email = alejandro.giacometti@gmail.com
-	name = janrito
+    email = alejandro.giacometti@gmail.com
+    name = Alejandro Giacometti
 [alias]
-	switch = !legit switch \"$@\"
-	branches = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
+    switch = !legit switch \"$@\"
+    branches = !legit branches
+    sprout = !legit sprout \"$@\"
+    unpublish = !legit unpublish \"$@\"
+    harvest = !legit harvest \"$@\"
+    sync = !legit sync \"$@\"
+    publish = !legit publish \"$@\"
+    graft = !legit graft \"$@\"
+    wdiff = diff --patience --word-diff=plain
 [core]
-	editor = subl -n -w
+    editor = subl -n -w
 [push]
-	default = matching
+    default = matching
+[diff]
+    external = /Users/alejandrogiacometti/.bin/git-diff.sh
