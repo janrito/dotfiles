@@ -10,10 +10,12 @@
     sync = !legit sync \"$@\"
     publish = !legit publish \"$@\"
     graft = !legit graft \"$@\"
-    wdiff = diff --patience --word-diff=plain
+    wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
 [core]
     editor = subl -n -w
 [push]
     default = matching
 [merge]
     tool = opendiff
+[help]
+	autocorrect = 1
