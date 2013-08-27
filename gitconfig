@@ -13,9 +13,13 @@
     wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
 [core]
     editor = subl -n -w
+[diff]
+	tool = twdiff
 [push]
     default = matching
 [merge]
     tool = opendiff
 [help]
 	autocorrect = 1
+[difftool "twdiff"]
+	cmd = twdiff --wait \"$LOCAL\" \"$REMOTE\"
