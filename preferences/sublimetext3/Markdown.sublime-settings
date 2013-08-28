@@ -10,7 +10,7 @@
 		"mdown",
 		"txt"
 	],
-	"font_size": 11,
+	"font_size": 13,
 	"highlight_line": true,
 	"line_padding_top": 5,
 	"rulers":
