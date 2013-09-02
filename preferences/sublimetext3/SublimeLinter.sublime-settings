@@ -1,7 +1,7 @@
 {
     "sublimelinter": true,
     "sublimelinter_gutter_marks": true,
-    "sublimelinter_mark_style": "fill",
+    "sublimelinter_mark_style": "outline",
     "sublimelinter_executable_map":
     {
         "python": "/usr/local/bin/python"

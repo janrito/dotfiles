@@ -1,2 +1,6 @@
 *.cache
 *.last-run
+*.ca-list
+*.ca-bundle
+*.system-ca-bundle
+*.ca-certs

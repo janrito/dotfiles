@@ -15,6 +15,7 @@
 		"Jinja2",
 		"LESS",
 		"MarkdownEditing",
+		"Monokai Extended",
 		"Package Control",
 		"Paste as Column",
 		"Pretty JSON",
@@ -25,13 +26,14 @@
 		"SublimeCodeIntel",
 		"sublimelint",
 		"SublimeLinter",
-		"Sublimerge",
+		"Sublimerge Pro",
 		"Table Editor",
 		"Tag",
 		"Theme - Flatland",
 		"Theme - Soda",
 		"Tomorrow Color Schemes",
 		"WordCount",
+		"xmllint",
 		"XSLT Snippets"
 	]
 }
