@@ -1,0 +1,4 @@
+#!/bin/sh -r
+# Adapted from http://stackoverflow.com/questions/239340/automatically-remove-subversion-unversioned-files
+svn status | grep ^\? | cut -c9- | tr '\n' '\0' | xargs -0 rm
+svn revert -R .
