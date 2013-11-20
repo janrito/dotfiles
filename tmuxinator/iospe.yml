@@ -2,7 +2,7 @@
 # you can make as many tabs as you wish...
 
 name: iospe
-root: ~/Documents/largeprojects/iospe/branches/kiln
+root: ~/Documents/largeprojects/iospe/trunk/kiln
 # socket_name: foo # Remove to use default socket
 pre: vagrant up # Runs before everything
 # pre_window:
@@ -12,7 +12,7 @@ windows:
       layout: even-horizontal
       panes:
         - subl .
-        - subl ../../trunk/xmod
+        - svn status
   - virtual_server:
       pre:
         - vagrant ssh
