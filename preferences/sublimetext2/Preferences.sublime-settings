@@ -15,7 +15,6 @@
 		".hg",
 		"CVS",
 		"_build",
-		"dist",
 		"build",
 		"site",
 		".AppleDouble"
