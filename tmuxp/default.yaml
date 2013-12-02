@@ -1,0 +1,12 @@
+session_name: default
+start_directory: ~/
+windows:
+- window_name: main
+  layout: even-horizontal
+  panes:
+  -
+  -
+- window_name: htop
+  panes:
+  - sudo htop
+

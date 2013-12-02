@@ -1,0 +1,18 @@
+session_name: iospe
+start_directory: ~/Documents/largeprojects/iospe/trunk/kiln
+shell_command_before:
+- vagrant up
+windows:
+  - window_name: main
+    layout: even-horizontal
+    panes:
+      - subl .
+      - svn status
+  - window_name: virtual_server
+    layout: even-horizontal
+    panes:
+      - cd /vagrant; ./build.sh
+      - cd /vagrant
+    shell_command_before:
+      - vagrant ssh
+

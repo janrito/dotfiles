@@ -1,0 +1,8 @@
+session_name: diss
+start_directory: ~/Dropbox/projects/dissertation
+windows:
+- window_name: main
+  layout: even-horizontal
+  panes:
+  - subl -b dissertation.sublime-project
+  - cd out

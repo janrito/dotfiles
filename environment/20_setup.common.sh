@@ -13,3 +13,6 @@ fi
 # Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR
+
+# load tmuxp bash completion
+source /usr/local/bin/tmuxp.bash
