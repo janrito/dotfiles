@@ -1,3 +1,10 @@
+
+# Haskell
+export HASKELLPATH=~/.cabal/bin
+
+# Export local path
+export PATH=:$HASKELLPATH:$PATH
+
 #rbenv
 eval "$(rbenv init -)"
 

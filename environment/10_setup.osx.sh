@@ -30,7 +30,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Hom
 export MMDS_PATH=/usr/local/Cellar/multimarkdown/4.2/Support
 
 # Homebrew
-export BREWPATH=$NODE_BINS:$HASKELLPATH:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
+export BREWPATH=$NODE_BINS:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
 
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
