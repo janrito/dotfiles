@@ -5,3 +5,4 @@
 *.system-ca-bundle
 *.ca-certs
 linters/*
+*.tmTheme
