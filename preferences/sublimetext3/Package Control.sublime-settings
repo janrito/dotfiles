@@ -4,8 +4,10 @@
 	[
 		"Abacus",
 		"All Autocomplete",
+		"AutoFileName",
 		"AutoPEP8",
 		"BracketHighlighter",
+		"CleanCSS",
 		"CoffeeScript",
 		"Dotfiles Syntax Highlighting",
 		"EncodingHelper",
