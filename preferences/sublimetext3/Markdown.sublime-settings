@@ -3,13 +3,14 @@
 	"caret_style": "wide",
 	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Focus.tmTheme",
 	"draw_centered": true,
+	"draw_white_space": "all",
 	"enable_table_editor": true,
 	"extensions":
 	[
-		"md",
-		"mdown"
+		"mmd",
+		"md"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"line_padding_top": 5,
 	"rulers":
@@ -20,5 +21,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true,
-	"wrap_width": 85
+	"wrap_width": 78
 }
