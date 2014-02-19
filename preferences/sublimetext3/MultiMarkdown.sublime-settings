@@ -8,6 +8,7 @@
 	"extensions":
 	[
 		"mmd",
+		"md",
 		"md"
 	],
 	"font_size": 14,
