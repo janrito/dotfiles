@@ -89,7 +89,7 @@
                 "args": {
                                     "paths": [],
                                     "application": "Oxygen XML Editor.app",
-                                    "extensions":"xml|xsl|xmap" //any file with extension
+                                    "extensions":"xml|xsl|xmap|svg" //any file with extension
                                 }
             }
 
