@@ -9,18 +9,18 @@
 	[
 		"mmd",
 		"md",
-		"md"
+		"txt"
 	],
 	"font_size": 14,
 	"highlight_line": true,
 	"line_padding_top": 5,
 	"rulers":
 	[
-		80,
-		85
+		90,
+		100
 	],
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true,
-	"wrap_width": 78
+	"wrap_width": 88
 }
