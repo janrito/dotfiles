@@ -18,5 +18,5 @@ windows:
         - vagrant ssh
       layout: even-horizontal
       panes:
-        - cd /vagrant; ./build.sh
+        - cd /vagrant; nohup ./build.sh &
         - cd /vagrant
