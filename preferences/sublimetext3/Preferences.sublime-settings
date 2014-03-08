@@ -31,7 +31,8 @@
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage"
+		"Vintage",
+		"SaneSnippets"
 	],
 	"rulers":
 	[
