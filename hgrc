@@ -11,3 +11,8 @@ purge =
 hgshelve=
 progress=
 hggit=
+
+[auth]
+cch.schemes = http https
+cch.prefix = scm.cch.kcl.ac.uk/hg
+cch.username = agaicometti
