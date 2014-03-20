@@ -27,6 +27,8 @@
 		"SublimeCodeIntel",
 		"sublimelint",
 		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-pylint",
 		"Sublimerge Pro",
 		"Table Editor",
 		"Tag",
