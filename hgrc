@@ -12,7 +12,6 @@ hgshelve=
 progress=
 hggit=
 
-
 [auth]
 cch.prefix = scm.cch.kcl.ac.uk/hg
 cch.username = agiacometti
