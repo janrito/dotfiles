@@ -15,7 +15,27 @@
 			{
 				"@disable": true
 			},
+			"htmltidy":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"jshint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"json":
 			{
 				"@disable": false,
 				"args":
@@ -27,7 +47,7 @@
 			},
 			"pep8":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -38,9 +58,19 @@
 				"max-line-length": null,
 				"select": ""
 			},
-			"pylint":
+			"pyflakes":
 			{
 				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"pylint":
+			{
+				"@disable": true,
 				"args":
 				[
 				],
@@ -50,6 +80,26 @@
 				[
 				],
 				"rcfile": ""
+			},
+			"ruby":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"xmllint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			}
 		},
 		"mark_style": "outline",

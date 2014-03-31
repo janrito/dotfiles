@@ -30,9 +30,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"SaneSnippets",
 		"Markdown",
-		"Vintage"
+		"Vintage",
+		"SaneSnippets"
 	],
 	"rulers":
 	[
