@@ -60,7 +60,7 @@
 			},
 			"pyflakes":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
