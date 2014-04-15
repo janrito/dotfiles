@@ -43,4 +43,4 @@ export TEXPATH=/usr/texbin
 export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
 
 #bash completion for password store
-source /usr/local/etc/bash_completion.d/password-store
+source /usr/local/share/bash-completion/completions/password-store
