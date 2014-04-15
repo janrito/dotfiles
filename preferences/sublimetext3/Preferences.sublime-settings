@@ -15,7 +15,6 @@
 		".hg",
 		"CVS",
 		"_build",
-		"dist",
 		"build",
 		"site",
 		".AppleDouble"
@@ -30,9 +29,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"SaneSnippets",
 		"Markdown",
-		"Vintage",
-		"SaneSnippets"
+		"Vintage"
 	],
 	"rulers":
 	[
