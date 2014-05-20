@@ -16,3 +16,7 @@ hggit=
 cch.prefix = scm.cch.kcl.ac.uk/hg
 cch.username = agiacometti
 cch.schemes = http https
+
+[trusted]
+users = root
+groups = histpag ddh-research moi
