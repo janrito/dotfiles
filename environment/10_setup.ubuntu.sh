@@ -22,14 +22,13 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-export HOMEPATH=~/.bin
+export HOMEPATH=~/.local/bin
 
 # TEXLIVE_PATH
 export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 
 # PYTHONPATH
-export PYTHONPATH=/usr/local/lib/python2.7/dist-packages
-export PYTHON_PACKAGES=/usr/local/lib/python2.7/dist-packages
+export PYTHON_PACKAGES=~/.local/lib/python2.7/site-packages
 
 # CUDA
 export CUDAPATH=/opt/bin
