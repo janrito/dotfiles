@@ -22,4 +22,4 @@ CLICOLOR=True
 export CLICOLOR
 
 # load tmuxp bash completion
-source /usr/local/bin/tmuxp.bash
+tmuxp.bash
