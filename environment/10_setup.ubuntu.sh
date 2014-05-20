@@ -22,7 +22,7 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-export HOMEPATH=~.bin:~/.local/bin
+export HOMEPATH=~/.bin:~/.local/bin
 
 # TEXLIVE_PATH
 export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
