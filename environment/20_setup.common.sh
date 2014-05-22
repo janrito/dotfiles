@@ -6,7 +6,9 @@ export HASKELLPATH=~/.cabal/bin
 export PATH=:$HASKELLPATH:$PATH
 
 #rbenv
-eval "$(rbenv init -)"
+if [[ "$(type -P rbenv)" ]]; then
+     eval "$(rbenv init -)"
+fi
 
 
 if [[ "$(type -P subl)" ]]; then
@@ -22,4 +24,6 @@ CLICOLOR=True
 export CLICOLOR
 
 # load tmuxp bash completion
-tmuxp.bash
+if [[ "$(type -P tmuxp.bash)" ]]; then
+  tmuxp.bash
+fi
