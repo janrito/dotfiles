@@ -14,4 +14,7 @@ function src() {
 
 src
 
-dotfiles -c
+# dotfiles sync
+if [[ "$(type -P dotfiles)" ]]; then
+  dotfiles -c
+fi
