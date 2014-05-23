@@ -24,6 +24,6 @@ CLICOLOR=True
 export CLICOLOR
 
 # load tmuxp bash completion
-if [[ "$(type -P tmuxp.bash)" ]]; then
+if check_python && [[ "$(type -P tmuxp.bash)" ]]; then
   tmuxp.bash
 fi
