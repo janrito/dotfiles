@@ -15,6 +15,6 @@ function src() {
 src
 
 # dotfiles sync
-if [[ "$(type -P dotfiles)" ]]; then
+if check_python && [[ "$(type -P dotfiles)" ]]; then
   dotfiles -c
 fi

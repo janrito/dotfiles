@@ -42,4 +42,6 @@ export PATH=$HOMEPATH:$CUDAPATH:$TEXLIVE_PATH:$PATH
 complete -cf sudo
 
 #bash completion for password store
-source /etc/bash_completion.d/password-store
+if [[ -e /etc/bash_completion.d/password-store ]]; then
+    source /etc/bash_completion.d/password-store
+fi
