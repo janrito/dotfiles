@@ -120,5 +120,29 @@ Host giacometti.me
     # TUNNELING
     DynamicForward localhost:65000
 
+Host home
+    HostName home.giacometti.me
+    User alejandro
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # TUNNELING
+    DynamicForward localhost:65000
+
+Host alejandrogiacometti.com
+    Hostname alejandrogiacometti.com
+    User janrito
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # TUNNELING
+    DynamicForward localhost:8888
+
 
 
