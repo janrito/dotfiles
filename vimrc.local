@@ -11,3 +11,7 @@ augroup pencil
     autocmd FileType textile call pencil#init()
     autocmd FileType text call pencil#init({'wrap': 'soft'})
 augroup END
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
