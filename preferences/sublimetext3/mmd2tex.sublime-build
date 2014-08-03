@@ -1,0 +1,4 @@
+{
+    "cmd": ["mmd2tex", "--output=${file_path}/${file_base_name}.tex", "$file"],
+    "selector": "text.html.markdown"
+}
