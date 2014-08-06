@@ -15,7 +15,6 @@
 		".hg",
 		"CVS",
 		"_build",
-		"build",
 		"site",
 		".AppleDouble"
 	],
@@ -30,8 +29,8 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"SaneSnippets",
-		"Markdown"
+		"Markdown",
+		"SaneSnippets"
 	],
 	"rulers":
 	[
