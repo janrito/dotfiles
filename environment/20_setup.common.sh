@@ -23,7 +23,7 @@ fi
 CLICOLOR=True
 export CLICOLOR
 
-# load tmuxp bash completion
-if check_python && [[ "$(type -P tmuxp.bash)" ]]; then
-  tmuxp.bash
+# load tmuxinator bash completion
+if [[ -e ~/.bin/tmuxinator.bash ]]; then
+  tmuxinator.bash
 fi
