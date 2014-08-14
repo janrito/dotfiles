@@ -23,7 +23,7 @@ fi
 CLICOLOR=True
 export CLICOLOR
 
-# load tmuxinator bash completion
+# tmuxinator bash completion
 if [[ -e ~/.bin/tmuxinator.bash ]]; then
-  tmuxinator.bash
+    source ~/.bin/tmuxinator.bash
 fi
