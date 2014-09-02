@@ -1,0 +1,145 @@
+TCPKeepAlive no
+ServerAliveInterval 60
+ServerAliveCountMax 10
+
+Host cleopatra
+    HostName cleopatra.medphys.ucl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # IPYTHON NOTEBOOK
+    LocalForward localhost:8080 cleopatra:8080
+
+    # Samba
+    LocalForward localhost:9139 cleopatra:139
+
+    # AFP
+    LocalForward localhost:5480 cleopatra:548
+
+    #IRC
+    LocalForward 6030 irc.freenode.com:6667
+
+    # TUNNELING
+    DynamicForward localhost:65000
+
+Host hydra1
+    Hostname hydra1.cch.kcl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # SSH
+    LocalForward localhost:2220 hydra1:22
+
+    # Samba
+    LocalForward localhost:9139 hydra1:139
+
+    # AFP
+    LocalForward localhost:5480 hydra1:548
+
+    # TUNNELING
+    DynamicForward localhost:8888
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # IPYTHON NOTEBOOK
+    LocalForward localhost:8080 hydra1:8080
+
+Host *.cch.kcl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+
+
+Host bach_tunnel
+    HostName bach.medphys.ucl.ac.uk
+    User rmapagi
+    Protocol 2,1
+    Compression no
+
+    # IPYTHON NOTEBOOK
+    LocalForward localhost:8080 bach_tunnel:8080
+
+    # SSH
+    LocalForward localhost:2220 bach_tunnel:22
+
+    # Samba
+    LocalForward localhost:9139 bach_tunnel:139
+
+    # AFP
+    LocalForward localhost:5480 bach_tunnel:548
+
+    # TUNNELING
+    DynamicForward localhost:8888
+
+    #IRC
+    LocalForward 6030 irc.example.com:6667
+
+Host cch
+    Hostname ssh.cch.kcl.ac.uk
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # SSH
+    LocalForward localhost:2220 cch:22
+
+    # Samba
+    LocalForward localhost:9139 cch:139
+
+    # AFP
+    LocalForward localhost:5480 cch:548
+
+    # TUNNELING
+    DynamicForward localhost:8888
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+Host giacometti.me
+    Hostname giacometti.me
+    User janrito
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # TUNNELING
+    DynamicForward localhost:65000
+
+Host home
+    HostName home.giacometti.me
+    User alejandro
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # TUNNELING
+    DynamicForward localhost:65000
+
+    # IRC
+    LocalForward 6030 irc.freenode.net:6667
+
+Host alejandrogiacometti.com
+    Hostname alejandrogiacometti.com
+    User janrito
+    Protocol 2,1
+    Compression no
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # TUNNELING
+    DynamicForward localhost:8888
