@@ -43,7 +43,8 @@
 				],
 				"excludes":
 				[
-				]
+				],
+				"strict": true
 			},
 			"pep8":
 			{
@@ -79,7 +80,11 @@
 				"excludes":
 				[
 				],
-				"rcfile": ""
+				"paths":
+				[
+				],
+				"rcfile": "",
+				"show-codes": false
 			},
 			"ruby":
 			{
