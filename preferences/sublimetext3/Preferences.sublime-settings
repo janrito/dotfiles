@@ -1,7 +1,7 @@
 {
 	"auto_complete": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/cobalt2 (Colorcoded) (SL).tmTheme",
+	"color_scheme": "Packages/User/Cobalt (SL).tmTheme",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "all",
@@ -28,10 +28,10 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
-		"SaneSnippets",
 		"Vintage",
-		"Colorcoder"
+		"Markdown",
+		"Colorcoder",
+		"SaneSnippets"
 	],
 	"rulers":
 	[
