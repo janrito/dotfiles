@@ -29,8 +29,16 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Markdown",
+		"Theme - Flatland",
+		"xmllint",
+		"rsub",
 		"Vintage",
-		"Markdown"
+		"Sublimerge Pro",
+		"Pretty JSON",
+		"Theme - Soda",
+		"SaneSnippets",
+		"Monokai Extended"
 	],
 	"rulers":
 	[
