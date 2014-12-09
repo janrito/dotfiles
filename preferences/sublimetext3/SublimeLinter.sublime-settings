@@ -1,93 +1,159 @@
 {
-	"user": {
+	"user":
+	{
 		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
 		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
-		"gutter_theme_excludes": [],
+		"gutter_theme_excludes":
+		[
+		],
 		"lint_mode": "background",
-		"linters": {
-			"csslint": {
+		"linters":
+		{
+			"csslint":
+			{
 				"@disable": true
 			},
-			"htmltidy": {
+			"htmltidy":
+			{
 				"@disable": false,
-				"args": [],
-				"excludes": []
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			},
-			"jshint": {
+			"jshint":
+			{
 				"@disable": false,
-				"args": [],
-				"excludes": []
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			},
-			"json": {
+			"json":
+			{
 				"@disable": false,
-				"args": [],
-				"excludes": [],
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
 				"strict": true
 			},
-			"pep8": {
+			"pep8":
+			{
 				"@disable": false,
-				"args": [],
-				"excludes": [],
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
 				"ignore": "",
 				"max-line-length": null,
 				"select": ""
 			},
-			"pyflakes": {
+			"pyflakes":
+			{
 				"@disable": true,
-				"args": [],
-				"excludes": []
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			},
-			"pylint": {
+			"pylint":
+			{
 				"@disable": true,
-				"args": [],
+				"args":
+				[
+				],
 				"disable": "",
 				"enable": "",
-				"excludes": [],
-				"paths": [],
+				"excludes":
+				[
+				],
+				"paths":
+				[
+				],
 				"rcfile": "",
 				"show-codes": false
 			},
-			"ruby": {
+			"ruby":
+			{
 				"@disable": false,
-				"args": [],
-				"excludes": []
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			},
-			"scss": {
+			"scss":
+			{
 				"@disable": false,
-				"args": [],
+				"args":
+				[
+				],
 				"exclude-linter": "",
-				"excludes": [],
+				"excludes":
+				[
+				],
 				"include-linter": ""
 			},
-			"xmllint": {
+			"xmllint":
+			{
 				"@disable": false,
-				"args": [],
-				"excludes": []
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			}
 		},
 		"mark_style": "outline",
 		"no_column_highlights_line": true,
-		"paths": {
-			"linux": [],
-			"osx": [
+		"passive_warnings": false,
+		"paths":
+		{
+			"linux":
+			[
+			],
+			"osx":
+			[
 				"~/.rbenv/shims"
 			],
-			"windows": []
+			"windows":
+			[
+			]
 		},
-		"python_paths": {
-			"linux": [],
-			"osx": [
+		"python_paths":
+		{
+			"linux":
+			[
+			],
+			"osx":
+			[
 				"/usr/local/bin/python"
 			],
-			"windows": []
+			"windows":
+			[
+			]
 		},
 		"rc_search_limit": 3,
 		"shell_timeout": 10,
 		"show_errors_on_save": false,
 		"show_marks_in_minimap": true,
-		"syntax_map": {
+		"syntax_map":
+		{
 			"html (django)": "html",
 			"html (rails)": "html",
 			"html 5": "html",
