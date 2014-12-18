@@ -3,6 +3,11 @@
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/cobalt2 (SL).tmTheme",
 	"detect_indentation": true,
+	"indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "all",
 	"find_selected_text": true,
@@ -30,8 +35,8 @@
 	[
 		"Markdown",
 		"Colorcoder",
-		"Vintage",
-		"SaneSnippets"
+		"SaneSnippets",
+		"Vintage"
 	],
 	"rulers":
 	[
