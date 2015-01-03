@@ -1,4 +1,0 @@
-{
-  // do not fix these errors / warnings(e.g. E4, W)
-    "ignore": "E24, E226"
-}

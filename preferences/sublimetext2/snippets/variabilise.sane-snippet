@@ -1,4 +1,0 @@
----
-description: variabilise
----
-${1:${SELECTION/(?<whitespace>\W)|(?<uppercase>[A-Z])/(?{whitespace}_:\l$+{uppercase})/g}}
