@@ -1,0 +1,9 @@
+'global':
+  'exception-reporting':
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+  'editor':
+    'fontSize': 12
+    'invisibles': {}
+  'core': {}
