@@ -1,6 +1,0 @@
----
-description: utf
-tabTrigger:  utf
-scope:       source.python
----
-# -*- coding: utf-8 -*-

@@ -38,6 +38,7 @@
 		"rsub",
 		"Rust",
 		"RustAutoComplete",
+		"SaneSnippets",
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
@@ -70,8 +71,7 @@
 	],
 	"repositories":
 	[
-		"http://github.com/BoundInCode/AutoFileName/tree/st3",
-		"https://github.com/facelessuser/BracketHighlighter/tree/BH2ST3",
-		"https://github.com/stolksdorf/CleanCSS"
+		"https://github.com/stolksdorf/CleanCSS",
+		"https://github.com/bobthecow/sublime-sane-snippets"
 	]
 }
