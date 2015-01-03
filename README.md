@@ -28,7 +28,7 @@ dotfiles -s
 
 ## atom
 
-Preliminary support for atom works by manually exporting installed packages[^atom_p_strat]
+Preliminary support for atom works by manually exporting installed packages ([source](https://discuss.atom.io/t/installed-packages-list-into-single-file/12227/2)/).
 
 To export package list use:
 
@@ -41,5 +41,3 @@ To install the packages use:
 ```    
 apm install --packages-file ~/.atom/package-list.txt
 ```
-
-[^atom_p_strat]: From https://discuss.atom.io/t/installed-packages-list-into-single-file/12227/2
