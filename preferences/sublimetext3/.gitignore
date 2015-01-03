@@ -2,6 +2,6 @@
 *.last-run
 *.ca-list
 *.ca-bundle
-*.system-ca-bundle
+*.*-ca-bundle
 *.ca-certs
 linters/*

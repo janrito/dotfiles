@@ -29,9 +29,9 @@
 	"ignored_packages":
 	[
 		"SaneSnippets",
-		"Colorcoder",
+		"Markdown",
 		"Vintage",
-		"Markdown"
+		"Colorcoder"
 	],
 	"indent_guide_options":
 	[
