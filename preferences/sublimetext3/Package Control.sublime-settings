@@ -3,11 +3,6 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"Abacus",
@@ -27,6 +22,7 @@
 		"FindKeyConflicts",
 		"HTML Mustache",
 		"Indent XML",
+		"INI",
 		"Jinja2",
 		"JsFormat",
 		"LESS",
@@ -55,6 +51,7 @@
 		"SublimeLinter-pep8",
 		"SublimeLinter-pyflakes",
 		"SublimeLinter-pylint",
+		"SublimeLinter-pyyaml",
 		"SublimeLinter-ruby",
 		"SublimeLinter-xmllint",
 		"SyncedSideBar",

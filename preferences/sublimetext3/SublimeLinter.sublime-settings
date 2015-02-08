@@ -48,7 +48,7 @@
 			},
 			"pep8":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -71,7 +71,7 @@
 			},
 			"pylint":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -86,6 +86,16 @@
 				"rcfile": "",
 				"show-codes": false
 			},
+			"pyyaml":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"ruby":
 			{
 				"@disable": false,
@@ -95,6 +105,19 @@
 				"excludes":
 				[
 				]
+			},
+			"rust":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"crate-root": null,
+				"excludes":
+				[
+				],
+				"use-cargo": false,
+				"use-crate-root": false
 			},
 			"scss":
 			{
