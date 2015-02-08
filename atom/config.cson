@@ -1,9 +1,10 @@
-'global':
-  'exception-reporting':
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-  'editor':
-    'fontSize': 12
-    'invisibles': {}
-  'core': {}
+"*":
+  welcome:
+    showOnStartup: false
+  editor:
+    fontSize: 12
+    invisibles: {}
+    showInvisibles: true
+    showIndentGuide: true
+  core: {}
+  linter: {}
