@@ -1,4 +1,5 @@
 {
   // do not fix these errors / warnings(e.g. E4, W)
-    "ignore": "E24, E226"
+    "ignore": "E24, E226",
+    "syntax_list": ["Python", "Python Django"],
 }

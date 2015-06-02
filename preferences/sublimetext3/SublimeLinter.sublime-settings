@@ -48,7 +48,7 @@
 			},
 			"pep8":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -71,7 +71,7 @@
 			},
 			"pylint":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
