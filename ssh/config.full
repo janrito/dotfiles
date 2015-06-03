@@ -111,8 +111,8 @@ Host cch
     # IPYTHON NOTEBOOK
     LocalForward localhost:8080 cch:8080
 
-Host giacometti.me
-    Hostname giacometti.me
+Host p.giacometti.me
+    Hostname p.giacometti.me
     User janrito
     Protocol 2,1
     Compression no
