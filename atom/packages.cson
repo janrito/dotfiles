@@ -1,8 +1,13 @@
 'packages': [
+  'atom-beautify'
   'autocomplete'
   'feedback'
+  'linter'
   'markmon-preview'
+  'merge-conflicts'
+  'minimap'
   'parcel'
+  'pigments'
   'seti-syntax'
   'seti-ui'
   'atom-dark-syntax'
