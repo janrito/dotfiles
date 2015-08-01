@@ -6,6 +6,7 @@ log = -v -G
 editor = subl -n -w
 username = Alejandro Giacometti <alejandro.giacometti@gmail.com>
 ssh = ssh -C
+merge = internal:merge
 
 [extensions]
 mercurial_keyring =
