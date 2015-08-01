@@ -4,3 +4,4 @@ dev
 packages
 .npm
 .node-gyp
+.apm
