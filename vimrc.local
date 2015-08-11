@@ -4,6 +4,7 @@ set nocompatible
 filetype plugin on       " may already be in your .vimrc
 
 let g:pencil#wrapModeDefault = 'soft'   " or 'hard'
+let NERDTreeQuitOnOpen=0
 
 augroup pencil
     autocmd!
