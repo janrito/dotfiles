@@ -6,6 +6,11 @@ filetype plugin on       " may already be in your .vimrc
 let g:pencil#wrapModeDefault = 'soft'   " or 'hard'
 let NERDTreeQuitOnOpen=0
 
+" Add support for 'paste mode', which allows you to mass paste text without it
+" getting munged.
+set pastetoggle=<F2>
+
+
 augroup pencil
     autocmd!
     autocmd FileType markdown,mkd,md,mmd call pencil#init()
