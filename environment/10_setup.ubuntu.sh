@@ -30,12 +30,11 @@ export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 # PYTHONPATH
 export PYTHON_PACKAGES=~/.local/lib/python2.7/site-packages
 
-# CUDA
-export CUDAPATH=/opt/bin
-export LD_LIBRARY_PATH=/opt/lib:/opt/lib64:/usr/local/lib:$LD_LIBRARY_PATH
+# Ruby
+export RUBYPATH=$HOME/.rbenv/bin
 
 # PATH
-export PATH=$HOMEPATH:$CUDAPATH:$TEXLIVE_PATH:$PATH
+export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$PATH
 
 
 # sudo tab completion
