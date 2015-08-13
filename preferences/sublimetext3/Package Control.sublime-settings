@@ -7,6 +7,7 @@
 	[
 		"Abacus",
 		"All Autocomplete",
+		"Apache Hive",
 		"AutoFileName",
 		"AutoPEP8",
 		"Better CoffeeScript",
@@ -35,6 +36,7 @@
 		"Package Control",
 		"Paste as Column",
 		"Pretty JSON",
+		"Python Fix Imports",
 		"rsub",
 		"Rust",
 		"RustAutoComplete",
