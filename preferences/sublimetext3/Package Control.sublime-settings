@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Abacus",
+		"Alignment",
 		"All Autocomplete",
 		"Apache Hive",
 		"AutoFileName",
@@ -59,7 +60,6 @@
 		"SublimeLinter-ruby",
 		"SublimeLinter-xmllint",
 		"SyncedSideBar",
-		"Table Editor",
 		"Tag",
 		"Theme - Cobalt2",
 		"Theme - Soda",
