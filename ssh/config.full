@@ -61,12 +61,15 @@ Host *.cch.kcl.ac.uk
     # RMATE
     RemoteForward 52698 localhost:52698
 
-Host *.amazonaws.com
+Host *.amazonaws.com aws
     Protocol 2,1
     Compression no
 
     # RMATE
     RemoteForward 52698 localhost:52698
+
+    # HUE
+    LocalForward localhost:8888 *:8888
 
 
 Host bach_tunnel
