@@ -68,9 +68,36 @@ Host *.amazonaws.com aws
     # RMATE
     RemoteForward 52698 localhost:52698
 
-    # HUE
-    LocalForward localhost:8888 *:8888
+    # SOCKS Tunnel
+    DynamicForward localhost:54321
 
+    # logging
+    # LogLevel DEBUG3
+    LogLevel QUIET
+
+Host app2
+    HostName 172.23.114.32
+    User agiacometti
+    Protocol 2,1
+    Compression no
+
+    # SSH
+    LocalForward localhost:2220 app2:22
+
+    # Samba
+    LocalForward localhost:9139 app2:139
+
+    # AFP
+    LocalForward localhost:5480 app2:548
+
+    # TUNNELING
+    DynamicForward localhost:54322
+
+    # RMATE
+    RemoteForward 52698 localhost:52698
+
+    # IPYTHON NOTEBOOK
+    LocalForward localhost:8080 app2:8080
 
 Host bach_tunnel
     HostName bach.medphys.ucl.ac.uk
