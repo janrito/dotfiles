@@ -9,6 +9,7 @@
 		"Alignment",
 		"All Autocomplete",
 		"Apache Hive",
+		"Apache Pig",
 		"AutoFileName",
 		"AutoPEP8",
 		"Better CoffeeScript",
@@ -37,6 +38,7 @@
 		"Monokai Extended",
 		"Package Control",
 		"Paste as Column",
+		"PgSQL",
 		"Pretty JSON",
 		"Python Fix Imports",
 		"rsub",
@@ -48,6 +50,7 @@
 		"SideBarEnhancements",
 		"Siteleaf Liquid Syntax",
 		"SmartMarkdown",
+		"SqlBeautifier",
 		"SublimeLinter",
 		"SublimeLinter-contrib-rustc",
 		"SublimeLinter-contrib-scss-lint",
@@ -70,6 +73,7 @@
 		"URLEncode",
 		"VCS Gutter",
 		"WordCount",
+		"Wrap Plus",
 		"XSLT Snippets"
 	],
 	"repositories":
