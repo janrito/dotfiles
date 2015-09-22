@@ -1277,12 +1277,10 @@
 	<false/>
 	<key>MinimumContrast</key>
 	<real>0.0</real>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 0</string>
-	<key>NSNavBrowserPreferedColumnContentWidth</key>
-	<real>186</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads</string>
+	<string>~/Public</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1300,37 +1298,18 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>198</string>
+		<string>302</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>807 209 445 399 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>308 194 924 485 0 0 1440 900 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>528 579 384 129 0 0 1440 900 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>99 294 592 584 0 0 1440 878 </string>
-	<key>NSWindow Frame com.apple.typography_panel_SourceSansPro-RegularForPowerline</key>
-	<string>340 480 260 156 0 0 1440 900 </string>
+	<string>269 110 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 29 1440 848 0 0 1440 900 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 10 1440 826 0 0 1440 900 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 4 1440 874 0 0 1440 878 </string>
+	<string>0 11 1440 866 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1901,11 +1880,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-RegularForPowerline 12</string>
+			<string>SourceCodePro-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-RegularForPowerline 12</string>
+			<string>SourceCodePro-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2080,8 +2059,10 @@
 			<string>/Users/alejandro</string>
 		</dict>
 	</array>
-	<key>NoSyncNeverRemindPrefsChangesLost</key>
-	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>464261119.370107</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>464613563.373469</real>
 	<key>NotFirstRun</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -2130,7 +2111,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/.dotfiles/preferences/iterm2</string>
+	<string>/Volumes/Data/Users/alegiaco/.dotfiles/preferences/iterm2/</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2148,7 +2129,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-11-30T17:25:12Z</date>
+	<date>2015-09-22T11:19:22Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2182,8 +2163,6 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1319797120</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2207,6 +2186,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
