@@ -65,6 +65,14 @@ Host *.amazonaws.com aws
     Protocol 2,1
     Compression no
 
+    # don't update known hosts
+    UserKnownHostsFile /dev/null
+    # don't check for known hosts
+    StrictHostKeyChecking no
+
+    # Use this identifile
+    IdentityFile ~/.keys/auto_key.pem
+
     # RMATE
     RemoteForward 52698 localhost:52698
 
