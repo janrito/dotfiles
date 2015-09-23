@@ -4,6 +4,9 @@
 # link sublimetext user directory to the dotfiles repo
 ln -sfn $HOME/.dotfiles/preferences/sublimetext3/ $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
+# link subl utilty
+ln -sfn "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $HOME/.dotfiles/bin/subl
+
 # link Mou user directory to the dotfiles repo
 ln -sfn $HOME/.dotfiles/preferences/Mou/ $HOME/Library/Application\ Support/Mou
 
