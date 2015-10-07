@@ -5,6 +5,4 @@ linter-python-pep8@0.2.0
 merge-conflicts@1.3.6
 minimap@4.13.4
 python-autopep8@0.1.3
-seti-syntax@0.4.0
-seti-ui@0.8.0
 
