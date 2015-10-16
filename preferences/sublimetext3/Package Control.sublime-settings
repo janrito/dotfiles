@@ -1,7 +1,9 @@
 {
 	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"CoffeeScript"
 	],
 	"installed_packages":
 	[
@@ -13,15 +15,12 @@
 		"Apache Pig",
 		"AutoFileName",
 		"AutoPEP8",
-		"Better CoffeeScript",
 		"BracketHighlighter",
-		"CleanCSS",
 		"CodeComplice",
 		"CoffeeScript",
 		"Colorcoder",
 		"Compare Side-By-Side",
 		"Dictionaries",
-		"Djaneiro",
 		"Dotfiles Syntax Highlighting",
 		"EncodingHelper",
 		"FindKeyConflicts",
@@ -51,6 +50,7 @@
 		"SideBarEnhancements",
 		"Siteleaf Liquid Syntax",
 		"SmartMarkdown",
+		"Spark",
 		"SqlBeautifier",
 		"SublimeLinter",
 		"SublimeLinter-contrib-rustc",
@@ -74,12 +74,10 @@
 		"URLEncode",
 		"VCS Gutter",
 		"WordCount",
-		"Wrap Plus",
-		"XSLT Snippets"
+		"Wrap Plus"
 	],
 	"repositories":
 	[
-		"https://github.com/stolksdorf/CleanCSS",
 		"https://github.com/bobthecow/sublime-sane-snippets"
 	]
 }
