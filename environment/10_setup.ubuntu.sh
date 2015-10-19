@@ -36,6 +36,11 @@ export RUBYPATH=$HOME/.rbenv/bin
 # PATH
 export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$PATH
 
+if [[ -e $HOME/.linuxbrew/bin/brew ]]; then
+    export PATH="$HOME/.linuxbrew/bin:$PATH"
+    export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+    export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+fi
 
 # sudo tab completion
 complete -cf sudo
