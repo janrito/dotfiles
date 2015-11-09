@@ -23,7 +23,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home"
 
 # Mutlimarkdown support
 
