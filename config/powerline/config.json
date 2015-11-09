@@ -12,8 +12,12 @@
 				"in2": "in2"
 			}
 		},
+		"pdb": {
+			"colorscheme": "solarized",
+			"theme": "default"
+		},
 		"shell": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default",
 			"local_themes": {
 				"continuation": "continuation",
@@ -21,11 +25,11 @@
 			}
 		},
 		"tmux": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		},
 		"vim": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default",
 			"local_themes": {
 				"__tabline__": "tabline",
