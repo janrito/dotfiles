@@ -67,6 +67,7 @@ Host *.amazonaws.com aws
 
     # don't update known hosts
     UserKnownHostsFile /dev/null
+
     # don't check for known hosts
     StrictHostKeyChecking no
 
@@ -95,17 +96,12 @@ Host app2
     # Samba
     LocalForward localhost:9139 app2:139
 
-    # AFP
-    LocalForward localhost:5480 app2:548
-
     # TUNNELING
     DynamicForward localhost:54322
 
     # RMATE
     RemoteForward 52698 localhost:52698
 
-    # IPYTHON NOTEBOOK
-    LocalForward localhost:8080 app2:8080
 
 Host bach_tunnel
     HostName bach.medphys.ucl.ac.uk
