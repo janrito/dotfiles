@@ -1,5 +1,5 @@
 #tmux powerline
-if check_python && [[ -e "${PYTHON_PACKAGES}/powerline/bindings/bash/powerline.sh" ]]
+if [[ -e "${PYTHON_PACKAGES}/powerline/bindings/bash/powerline.sh" ]]
   then
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
