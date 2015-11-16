@@ -498,8 +498,8 @@ def save_script_and_markdown(model, os_path, contents_manager):
     if model['type'] != 'notebook':
         return  # only do this for notebooks
     d, fname = os.path.split(os_path)
-    check_call(['ipython', 'nbconvert', '--to', 'script', fname], cwd=d)
-    check_call(['ipython', 'nbconvert', '--to', 'markdown', fname], cwd=d)
+    check_call(['jupyter', 'nbconvert', '--to', 'script', fname], cwd=d)
+    check_call(['jupyter', 'nbconvert', '--to', 'markdown', fname], cwd=d)
 
 
 def post_save(*args, **kwargs):
