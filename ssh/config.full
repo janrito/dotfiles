@@ -72,7 +72,7 @@ Host *.amazonaws.com aws
     StrictHostKeyChecking no
 
     # Use this identifile
-    IdentityFile ~/.keys/auto_key.pem
+    IdentityFile ~/.keys/kp-user-alejandro.giacometti.pem
 
     # RMATE
     RemoteForward 52698 localhost:52698
