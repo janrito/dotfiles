@@ -1,8 +1,11 @@
 # dotfiles
 
-These are my personal configuration dotfiles. 
+These are dotfiles. Based on the [dotbot] simple configuration concept.
 
-run 
+Run this to install
+
 ```
-./install update
+./install 
 ```
+
+
