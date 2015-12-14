@@ -1,6 +1,6 @@
 - clean: ['~', '~/.bin', '~/.ssh']
 - link:
-~/.gitconfig: gitconfig
+    ~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
     ~/.inputrc: inputrc
     ~/.bash_profile: bash_profile
