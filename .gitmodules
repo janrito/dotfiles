@@ -1,0 +1,9 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "vendor/tpm"]
+	path = vendor/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "vendor/rmate"]
+	path = vendor/rmate
+	url = https://github.com/aurora/rmate

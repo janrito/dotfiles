@@ -13,8 +13,3 @@ function src() {
 }
 
 src
-
-# dotfiles sync
-if  [[ "$(type -P dotfiles)" ]]; then
-  dotfiles -c
-fi

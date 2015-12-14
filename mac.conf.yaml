@@ -1,0 +1,17 @@
+- clean:
+    - ~/Library/Application Support/Sublime Text 3/Packages/
+    - ~/Library/Application Support/
+    - ~/Library/Application Support/TaskPaper/
+- link:
+    '~/Library/Application Support/Sublime Text 3/Packages/User':
+        create: true
+        path: preferences/sublimetext3/
+        force: true
+    '~/Library/Application Support/Mou':
+        create: true
+        path: preferences/Mou/
+        force: true
+    '~/Library/Application Support/TaskPaper/Themes':
+        create: true
+        path: preferences/TaskPaperThemes/
+        force: true

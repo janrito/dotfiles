@@ -1,5 +1,0 @@
-#!/bin/sh -r
-
-svn stat | grep '^?' | awk '{print $2}' | xargs svn add
-svn stat | grep '^!' | awk '{print $2}' | xargs svn remove
-

@@ -1,0 +1,43 @@
+- clean: ['~', '~/.bin', '~/.ssh']
+- link:
+    ~/.atom: atom
+    ~/.bash_profile: bash_profile
+    ~/.gitconfig: gitconfig
+    ~/.hgrc: hgrc
+    ~/.inputrc: inputrc
+    ~/.rmate.rc: rmate.rc
+    ~/.tm_properties: tm_properties
+    ~/.tmux.conf: tmux.conf
+    ~/.tmuxinator: tmuxinator
+    ~/.vimrc.bundles.local: vimrc.bundles.local
+    ~/.vimrc.local: vimrc.local
+    ~/.config/matplotlib:
+        create: true
+        path: config/matplotlib
+    ~/.config/mpv:
+        create: true
+        path: config/mpv
+    ~/.config/powerline:
+        create: true
+        path: config/powerline
+    ~/.jupyter/jupyter_notebook_config.py:
+        create: true
+        path: jupyter/jupyter_notebook_config.py
+    ~/.ssh/config:
+        create: true
+        path: ssh/config.full
+        force: true
+    ~/.tmux/plugins/tpm:
+        create: true
+        path: vendor/tpm
+        force: true
+    ~/.config/sublime-text-3/Packages/User:
+        create: true
+        path: preferences/sublimetext3/
+        force: true
+    ~/.bin/rmate:
+        create: true
+        path: vendor/rmate/rmate
+        force: true
+
+
