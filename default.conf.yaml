@@ -1,10 +1,19 @@
 - clean: ['~', '~/.bin', '~/.ssh']
 - link:
-    ~/.atom: atom
-    ~/.bash_profile: bash_profile
-    ~/.gitconfig: gitconfig
+~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
     ~/.inputrc: inputrc
+    ~/.bash_profile: bash_profile
+    ~/.ssh/config:
+        create: true
+        path: ssh/config.full
+        force: true
+- shell:
+  -
+    command: git submodule update --init --recursive
+    description: "Installing/updating submodules"
+- link:
+    ~/.atom: atom
     ~/.rmate.rc: rmate.rc
     ~/.tm_properties: tm_properties
     ~/.tmux.conf: tmux.conf
@@ -23,10 +32,6 @@
     ~/.jupyter/jupyter_notebook_config.py:
         create: true
         path: jupyter/jupyter_notebook_config.py
-    ~/.ssh/config:
-        create: true
-        path: ssh/config.full
-        force: true
     ~/.tmux/plugins/tpm:
         create: true
         path: vendor/tpm
