@@ -7,3 +7,6 @@
 [submodule "vendor/rmate"]
 	path = vendor/rmate
 	url = https://github.com/aurora/rmate
+[submodule "vendor/get_iplayer"]
+	path = vendor/get_iplayer
+	url = https://github.com/get-iplayer/get_iplayer
