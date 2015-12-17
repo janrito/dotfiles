@@ -33,3 +33,6 @@ cch.schemes = http https
 [trusted]
 users = root
 groups = histpag ddh-research moi
+
+# Allow local customizations
+%include ~/.hgrc_local
