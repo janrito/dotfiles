@@ -2,4 +2,7 @@
 [[ "$OSTYPE" =~ ^darwin ]] || return 1
 
 # link subl utilty
-ln -sfn "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $HOME/.dotfiles/bin/subl
+if [[ -e "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ]]; then
+    ln -sfn "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $HOME/.bin/subl
+fi
+
