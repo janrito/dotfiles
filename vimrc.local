@@ -21,3 +21,10 @@ augroup END
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+
+" local customizations in ~/.vimrc.local.local
+let $LOCALFILE=expand("~/.vimrc.local.local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
