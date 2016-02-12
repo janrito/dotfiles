@@ -28,7 +28,7 @@ export HOMEPATH=~/.bin:~/.local/bin
 export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 
 # PYTHONPATH
-export PYTHON_PACKAGES=~/.local/lib/python2.7/site-packages
+export PYTHON_PACKAGES=$HOME/.local/lib/python2.7/site-packages
 
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
@@ -36,10 +36,10 @@ export RUBYPATH=$HOME/.rbenv/bin
 # PATH
 export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$PATH
 
-if [[ -e $HOME/.linuxbrew/bin/brew ]]; then
-    export PATH="$HOME/.linuxbrew/bin:$PATH"
-    export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-    export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+if [[ -e $HOME/.pyenv/bin/pyenv ]]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
 fi
 
 # sudo tab completion
