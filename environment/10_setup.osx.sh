@@ -3,8 +3,7 @@
 
 
 # Paths in home directory
-export MATLABPATH=/Applications/MATLAB_R2012b.app/bin
-export HOMEPATH=~/.bin:$MATLABPATH
+export HOMEPATH=~/.bin
 
 
 # Python
@@ -23,7 +22,16 @@ export NODE_PATH=/usr/local/lib/node_modules
 export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home"
+
+# CUDA
+if [[ -e /Developer/NVIDIA/CUDA-7.5/bin/ ]]; then
+    PATH=/Developer/NVIDIA/CUDA-7.5/bin/:$PATH
+    export LD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib/:$LD_LIBRARY_PATH
+    export CUDA_ROOT=/Developer/NVIDIA/CUDA-7.5/
+    export THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32'
+fi
+
 
 # Mutlimarkdown support
 
