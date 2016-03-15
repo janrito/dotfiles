@@ -7,10 +7,13 @@
     ~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
     ~/.inputrc: inputrc
-    ~/.bash_profile: bash_profile
+    ~/.bash_profile:
+        create: true
+        path: bash_profile
+        force: true
     ~/.ssh/config:
         create: true
-        path: ssh/config.full
+        path: ssh/config
         force: true
 - shell:
   -

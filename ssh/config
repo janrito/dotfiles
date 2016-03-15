@@ -1,1 +1,64 @@
-config.full
+Host p.giacometti.me
+  Hostname p.giacometti.me
+  User janrito
+
+Host home
+  HostName home.giacometti.me
+  User alejandro
+
+Host alejandrogiacometti.com
+  Hostname alejandrogiacometti.com
+  User janrito
+
+Host *.amazonaws.com aws
+  # set default user, override if necessary
+  User ubuntu
+
+  # don't update known hosts
+  UserKnownHostsFile /dev/null
+
+  # don't check for known hosts
+  StrictHostKeyChecking no
+
+  # Use this identifile
+  IdentityFile ~/.keys/kp-user-alejandro.giacometti.pem
+
+  # SOCKS Tunnel
+  DynamicForward localhost:54321
+
+Host app2
+  HostName 172.23.114.32
+  User agiacometti
+
+  # SOCKS Tunnel
+  DynamicForward localhost:54322
+
+  # SSH
+  LocalForward localhost:2220 app2:22
+
+Host *
+  ControlMaster auto
+  ControlPath /tmp/ssh_mux_%h_%p_%r
+  ControlPersist 4h
+  TCPKeepAlive no
+  ServerAliveInterval 60
+  ServerAliveCountMax 10
+
+  Protocol 2,1
+  Compression no
+
+  # SOCKS Tunnel
+  DynamicForward localhost:65000
+
+  # RMATE
+  RemoteForward 52698 localhost:52698
+
+  # IRC
+  LocalForward 6030 irc.freenode.net:6667
+
+  # Samba
+  LocalForward localhost:9139 app2:139
+
+  # logging
+  # LogLevel DEBUG3
+  LogLevel QUIET
