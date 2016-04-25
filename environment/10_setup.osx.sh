@@ -22,7 +22,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
 
 # CUDA
 if [[ -e /Developer/NVIDIA/CUDA-7.5/bin/ ]]; then
