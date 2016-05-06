@@ -26,7 +26,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Hom
 
 # CUDA
 if [[ -e /Developer/NVIDIA/CUDA-7.5/bin/ ]]; then
-    PATH=/Developer/NVIDIA/CUDA-7.5/bin/:$PATH
+    PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
     export LD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib/:$LD_LIBRARY_PATH
     export CUDA_ROOT=/Developer/NVIDIA/CUDA-7.5/
     export THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32'
