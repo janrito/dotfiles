@@ -11,5 +11,6 @@ pigments@0.26.2
 python-autopep8@0.1.3
 seti-syntax@1.0.1
 seti-ui@1.0.4
+tablr@1.3.0
 
 
