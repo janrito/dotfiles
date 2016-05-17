@@ -14,5 +14,5 @@ function apm_update() {
 }
 
 function apm_commit() {
-    apm list --installed --bare > ~/.dotfiles/atom/installed-packages.txt
+    apm list --installed --bare | grep '^[^@]\+' -o > ~/.dotfiles/atom/installed-packages.txt
 }
