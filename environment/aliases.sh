@@ -9,8 +9,12 @@ function wd() {
 
 # apm
 
-function apm_update() {
+function apm_install_all() {
     apm install --packages-file ~/.dotfiles/atom/installed-packages.txt
+}
+
+function apm_diff() {\
+    apm list --installed --bare | grep '^[^@]\+' -o | diff - ~/.dotfiles/atom/installed-packages.txt
 }
 
 function apm_commit() {
