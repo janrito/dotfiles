@@ -20,3 +20,11 @@ function apm_diff() {\
 function apm_commit() {
     apm list --installed --bare | grep '^[^@]\+' -o > ~/.dotfiles/atom/installed-packages.txt
 }
+
+
+function spf13_update() {
+    cd $HOME/.spf13-vim-3/
+    git pull
+    vim +BundleInstall! +BundleClean +qa
+    cd -
+}
