@@ -3,6 +3,7 @@ Hydrogen
 atom-beautify
 autocomplete
 feedback
+kite
 linter
 linter-python-pep8
 merge-conflicts
