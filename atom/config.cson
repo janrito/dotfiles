@@ -1,9 +1,24 @@
 "*":
-  welcome:
-    showOnStartup: false
+  Hydrogen:
+    kernelspec: "{\"kernelspecs\":{\"pyspark\":{\"resource_dir\":\"/Volumes/Data/Users/alegiaco/.ipython/kernels/pyspark\",\"spec\":{\"language\":\"python\",\"display_name\":\"pyspark\",\"env\":{\"SPARK_HOME\":\"/usr/local/Cellar/apache-spark/1.6.1/libexec/\",\"PYSPARK_PYTHON\":\"/usr/local/bin/python2.7\",\"PYSPARK_SUBMIT_ARGS\":\"--master local[*] pyspark-shell\"},\"argv\":[\"python\",\"-m\",\"IPython.kernel\",\"--profile=pyspark\",\"-f\",\"{connection_file}\"]}},\"python2\":{\"resource_dir\":\"/usr/local/lib/python2.7/site-packages/ipykernel/resources\",\"spec\":{\"language\":\"python\",\"display_name\":\"Python 2\",\"env\":{},\"argv\":[\"/usr/local/opt/python/bin/python2.7\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"]}},\"python3\":{\"resource_dir\":\"/Volumes/Data/Users/alegiaco/.ipython/kernels/python3\",\"spec\":{\"language\":\"python3\",\"display_name\":\"Python 3\",\"env\":{},\"argv\":[\"python3\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"]}}}}"
+  core: {}
   editor:
     fontSize: 12
     invisibles: {}
-    showInvisibles: true
     showIndentGuide: true
-  core: {}
+    showInvisibles: true
+  minimap: {}
+  "spell-check": {}
+  welcome:
+    showOnStartup: false
+".gfm.source":
+  editor:
+    preferredLineLength: 75
+    softWrap: true
+    tabLength: 4
+".python.source":
+  editor:
+    tabLength: 4
+".ruby.source":
+  editor:
+    tabLength: 2
