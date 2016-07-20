@@ -9,6 +9,7 @@ git-plus
 git-time-machine
 highlight-selected
 kite
+language-r
 linter
 linter-python-pep8
 markdown-format
