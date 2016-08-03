@@ -1,4 +1,4 @@
-colorscheme Tomorrow-Night
+colorscheme Solarized
 
 set nocompatible
 filetype plugin on       " may already be in your .vimrc

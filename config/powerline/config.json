@@ -4,7 +4,7 @@
 	},
 	"ext": {
 		"ipython": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "in",
 			"local_themes": {
 				"rewrite": "rewrite",
@@ -13,11 +13,11 @@
 			}
 		},
 		"pdb": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		},
 		"shell": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default",
 			"local_themes": {
 				"continuation": "continuation",
@@ -25,11 +25,11 @@
 			}
 		},
 		"tmux": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		},
 		"vim": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default",
 			"local_themes": {
 				"__tabline__": "tabline",
@@ -45,7 +45,7 @@
 			}
 		},
 		"wm": {
-			"colorscheme": "default",
+			"colorscheme": "solarized",
 			"theme": "default"
 		}
 	}
