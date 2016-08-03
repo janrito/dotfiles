@@ -14,6 +14,9 @@
 		"branch": {
 			"before": "🔀 "
 		},
+		"stash": {
+			"before": "📝"
+		},
 		"cwd": {
 			"args": {
 				"ellipsis": "⋯"
@@ -142,6 +145,15 @@
 		"powerline.segments.vim.modified_indicator": {
 			"args": {
 				"text": "🖫⃥"
+			}
+		},
+
+		"powerline.segments.i3wm.scratchpad": {
+			"args": {
+				"icons": {
+					"fresh": "●",
+					"changed": "○"
+				}
 			}
 		}
 	}
