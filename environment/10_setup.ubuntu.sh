@@ -27,9 +27,6 @@ export HOMEPATH=~/.bin:~/.local/bin
 # TEXLIVE_PATH
 export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 
-# PYTHONPATH
-export PYTHON_PACKAGES=$HOME/.local/lib/python2.7/site-packages
-
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
 

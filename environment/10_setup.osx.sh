@@ -9,8 +9,6 @@ export HOMEPATH=~/.bin
 # Python
 export PYTHONPATH=/usr/local/lib/python
 
-export PYTHON_PACKAGES=/usr/local/lib/python2.7/site-packages
-
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
 
