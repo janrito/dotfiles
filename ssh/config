@@ -36,9 +36,12 @@ Host app2
   # SSH
   LocalForward localhost:2220 app2:22
 
+Host bitbucket.org
+  ControlMaster no
+
 Host *
   ControlMaster auto
-  ControlPath /tmp/ssh_mux_%h_%p_%r
+  ControlPath ~/.ssh/controlmasters/%r@%h:%p
   ControlPersist 4h
   TCPKeepAlive no
   ServerAliveInterval 60
