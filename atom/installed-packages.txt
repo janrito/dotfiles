@@ -10,6 +10,7 @@ git-time-machine
 highlight-selected
 kite
 language-r
+language-restructuredtext
 linter
 linter-python-pep8
 markdown-format
@@ -20,6 +21,7 @@ merge-conflicts
 minimap
 pigments
 python-autopep8
+rst-preview
 set-syntax
 seti-syntax
 seti-ui
