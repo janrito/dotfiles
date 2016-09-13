@@ -8,4 +8,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # generic colourizer
-source "`brew --prefix grc`/etc/grc.bashrc"
+if [ -f $(brew --prefix)/etc/grc.bashrc ]; then
+  . $(brew --prefix)/etc/grc.bashrc
+fi
