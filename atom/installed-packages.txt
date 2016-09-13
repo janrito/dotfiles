@@ -8,7 +8,6 @@ file-icons
 git-plus
 git-time-machine
 highlight-selected
-kite
 language-r
 language-restructuredtext
 linter
