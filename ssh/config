@@ -26,6 +26,13 @@ Host *.amazonaws.com aws
 Host bitbucket.org
   ControlMaster no
 
+host *.edtd.net
+  ForwardAgent yes
+  StrictHostKeyChecking no
+
+host 127.0.0.1
+  ForwardAgent yes
+
 Host *
   ControlMaster auto
   ControlPath ~/.ssh/controlmasters/%r@%h:%p
