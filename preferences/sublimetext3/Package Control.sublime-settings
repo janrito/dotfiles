@@ -19,9 +19,7 @@
 		"CodeComplice",
 		"CoffeeScript",
 		"Compare Side-By-Side",
-		"Dictionaries",
 		"Dotfiles Syntax Highlighting",
-		"EncodingHelper",
 		"FindKeyConflicts",
 		"Handlebars",
 		"HTML Mustache",
@@ -47,7 +45,6 @@
 		"SaneSnippets",
 		"Sass",
 		"SCSS",
-		"SideBarEnhancements",
 		"Siteleaf Liquid Syntax",
 		"SmartMarkdown",
 		"Spark",
@@ -65,7 +62,6 @@
 		"SublimeLinter-ruby",
 		"SublimeLinter-xmllint",
 		"SyncedSideBar",
-		"Tag",
 		"Theme - Cobalt2",
 		"Theme - Soda",
 		"ToggleQuotes",
@@ -73,7 +69,6 @@
 		"Tomorrow Color Schemes",
 		"URLEncode",
 		"VCS Gutter",
-		"WordCount",
 		"Wrap Plus"
 	],
 	"repositories":
