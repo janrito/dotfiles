@@ -20,21 +20,8 @@ Host *.amazonaws.com aws
   # don't check for known hosts
   StrictHostKeyChecking no
 
-  # Use this identifile
-  IdentityFile ~/.keys/kp-user-alejandro.giacometti.pem
-
   # SOCKS Tunnel
   DynamicForward localhost:54321
-
-Host app2
-  HostName 172.23.114.32
-  User agiacometti
-
-  # SOCKS Tunnel
-  DynamicForward localhost:54322
-
-  # SSH
-  LocalForward localhost:2220 app2:22
 
 Host bitbucket.org
   ControlMaster no
