@@ -12,7 +12,6 @@ language-r
 language-restructuredtext
 linter
 linter-python-pep8
-markdown-format
 markdown-scroll-sync
 markdown-table-formatter
 markdown-writer
