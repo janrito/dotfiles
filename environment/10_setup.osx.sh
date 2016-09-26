@@ -23,10 +23,10 @@ export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
 
 # CUDA
-if [[ -e /Developer/NVIDIA/CUDA-7.5/bin/ ]]; then
-    PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
-    export LD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib/:$LD_LIBRARY_PATH
-    export CUDA_ROOT=/Developer/NVIDIA/CUDA-7.5/
+if [[ -e /usr/local/cuda ]]; then
+    export CUDA_HOME=/usr/local/cuda
+    export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+    PATH="$CUDA_HOME/bin:$PATH"
     export THEANO_FLAGS='mode=FAST_RUN,device=gpu,floatX=float32'
 fi
 
