@@ -13,7 +13,7 @@
     graft = !legit graft \"$@\"
     wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
 [branch]
-   autosetupmerge = true
+   autosetupmerge = always
    autosetuprebase = always
    rebase = true
 [core]
