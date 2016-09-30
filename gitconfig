@@ -1,48 +1,49 @@
 [user]
-    email = alejandro.giacometti@gmail.com
-    name = Alejandro Giacometti
+  email = alejandro.giacometti@gmail.com
+  name = Alejandro Giacometti
 [alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-    switch = !legit switch \"$@\"
-    branches = !legit branches
-    sprout = !legit sprout \"$@\"
-    unpublish = !legit unpublish \"$@\"
-    harvest = !legit harvest \"$@\"
-    sync = !legit sync \"$@\"
-    publish = !legit publish \"$@\"
-    graft = !legit graft \"$@\"
-    wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  switch = !legit switch
+  branches = !legit branches
+  sprout = !legit sprout
+  unpublish = !legit unpublish
+  harvest = !legit harvest
+  sync = !legit sync
+  publish = !legit publish
+  graft = !legit graft
+  wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
+  resync = !legit resync
 [branch]
-   autosetupmerge = always
-   autosetuprebase = always
-   rebase = true
+  autosetupmerge = always
+  autosetuprebase = always
+  rebase = true
 [core]
-    editor = subl -n -w
+  editor = subl -n -w
 [diff]
-	tool = twdiff
+  tool = twdiff
 [push]
-    default = matching
+  default = matching
 [merge]
-    tool = opendiff
+  tool = opendiff
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [difftool "twdiff"]
-	cmd = twdiff --wait \"$LOCAL\" \"$REMOTE\"
+  cmd = twdiff --wait \"$LOCAL\" \"$REMOTE\"
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 
 # Allow local customizations in the .gitconfig_local file
 [include]
-    path = ~/.gitconfig_local
+  path = ~/.gitconfig_local
