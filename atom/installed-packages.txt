@@ -19,6 +19,7 @@ merge-conflicts
 minimap
 pigments
 python-autopep8
+react
 rst-preview
 set-syntax
 seti-syntax
