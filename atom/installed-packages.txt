@@ -12,6 +12,7 @@ language-babel
 language-r
 language-restructuredtext
 linter
+linter-eslint
 linter-python-pep8
 markdown-scroll-sync
 markdown-table-formatter
