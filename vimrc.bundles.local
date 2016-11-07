@@ -1,1 +1,2 @@
 Bundle 'reedes/vim-pencil'
+Plugin 'chriskempson/base16-vim'

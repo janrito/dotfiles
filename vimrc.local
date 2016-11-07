@@ -1,4 +1,4 @@
-colorscheme Solarized
+colorscheme base16-atelier-lakeside
 
 set nocompatible
 filetype plugin on       " may already be in your .vimrc
