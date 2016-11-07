@@ -1,0 +1,5 @@
+{
+	"groups": {
+		"stack_depth": { "fg": "mexico:base04", "bg": "lakeside:base01", "attrs": ["bold"] }
+	}
+}
