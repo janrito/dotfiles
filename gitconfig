@@ -22,7 +22,7 @@
 [diff]
   tool = twdiff
 [push]
-  default = matching
+  default = simple
 [merge]
   tool = opendiff
 [help]
