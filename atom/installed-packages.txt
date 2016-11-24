@@ -13,12 +13,14 @@ language-r
 language-restructuredtext
 linter
 linter-eslint
+linter-flake8
 linter-python-pep8
 markdown-scroll-sync
 markdown-table-formatter
 markdown-writer
 merge-conflicts
 minimap
+multi-cursor
 pigments
 python-autopep8
 rst-preview
@@ -28,4 +30,5 @@ seti-ui
 sort-lines
 synced-sidebar
 tablr
+toggle-quotes
 wordcount
