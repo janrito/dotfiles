@@ -23,9 +23,6 @@ fi
 CLICOLOR=True
 export CLICOLOR
 
-BASE16_SHELL=$HOME/.dotfiles/vendor/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
 # tmuxinator bash completion
 if [[ -e ~/.bin/tmuxinator.bash ]]; then
     source ~/.bin/tmuxinator.bash
