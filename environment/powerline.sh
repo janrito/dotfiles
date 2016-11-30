@@ -1,4 +1,4 @@
-#powerline
+# powerline
 
 export POWERLINE_BINDINGS=$(_find_powerline_bindings)
 
