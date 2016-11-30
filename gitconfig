@@ -1,6 +1,6 @@
 [user]
-  email = alejandro.giacometti@gmail.com
-  name = Alejandro Giacometti
+	email = alejandro.giacometti@gmail.com
+	name = Alejandro Giacometti
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
   switch = !legit switch
