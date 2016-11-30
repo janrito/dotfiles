@@ -1,0 +1,13 @@
+{
+	"name": "Base16 Atelier Lakeside for shell",
+	"groups": {
+		"mode": { "fg": "atelierlakeside:base00", "bg": "atelierlakeside:base0Bgreen", "attrs": ["bold"] }
+	},
+	"mode_translations": {
+		"vicmd": {
+			"groups": {
+				"mode": { "fg": "atelierlakeside:base00", "bg": "atelierlakeside:base0Dblue", "attrs": ["bold"] }
+			}
+		}
+	}
+}

@@ -1,10 +1,10 @@
 {
 	"common": {
-		"term_truecolor": false
+		"term_truecolor": true
 	},
 	"ext": {
 		"ipython": {
-			"colorscheme": "mexico",
+			"colorscheme": "default",
 			"theme": "in",
 			"local_themes": {
 				"rewrite": "rewrite",
@@ -13,11 +13,11 @@
 			}
 		},
 		"pdb": {
-			"colorscheme": "mexico",
+			"colorscheme": "default",
 			"theme": "default"
 		},
 		"shell": {
-			"colorscheme": "mexico",
+			"colorscheme": "default",
 			"theme": "default_leftonly",
 			"local_themes": {
 				"continuation": "continuation",
@@ -25,11 +25,11 @@
 			}
 		},
 		"tmux": {
-			"colorscheme": "mexico",
+			"colorscheme": "default",
 			"theme": "default"
 		},
 		"vim": {
-			"colorscheme": "mexico",
+			"colorscheme": "default",
 			"theme": "default",
 			"local_themes": {
 				"__tabline__": "tabline",
@@ -45,7 +45,7 @@
 			}
 		},
 		"wm": {
-			"colorscheme": "mexico",
+			"colorscheme": "default",
 			"theme": "default"
 		}
 	}

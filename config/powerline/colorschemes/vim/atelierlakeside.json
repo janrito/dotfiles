@@ -1,0 +1,97 @@
+{
+	"name": "Atelier Lakeside for vim",
+	"groups": {
+		"information:additional":   { "fg": "atelierlakeside:base06", "bg": "atelierlakeside:base01", "attrs": [] },
+		"information:unimportant":  { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base01", "attrs": [] },
+		"background":               { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base02", "attrs": [] },
+		"background:divider":       { "fg": "atelierlakeside:base00", "bg": "atelierlakeside:base02", "attrs": [] },
+		"mode":                     { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base0Bgreen", "attrs": ["bold"] },
+		"visual_range":             { "fg": "atelierlakeside:base0Bgreen", "bg": "atelierlakeside:base07", "attrs": ["bold"] },
+		"modified_indicator":       { "fg": "atelierlakeside:base0Ayellow", "bg": "atelierlakeside:base01", "attrs": ["bold"] },
+		"paste_indicator":          { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base09orange", "attrs": ["bold"] },
+		"readonly_indicator":       { "fg": "atelierlakeside:base08red", "bg": "atelierlakeside:base01", "attrs": [] },
+		"branch_dirty":             { "fg": "atelierlakeside:base0Ayellow", "bg": "atelierlakeside:base01", "attrs": [] },
+		"branch:divider":           { "fg": "atelierlakeside:base05", "bg": "atelierlakeside:base01", "attrs": [] },
+		"stash:divider":            "branch:divider",
+		"file_name":                { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base01", "attrs": ["bold"] },
+		"window_title":             { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base01", "attrs": [] },
+		"file_name_no_file":        { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base01", "attrs": ["bold"] },
+		"file_format":              { "fg": "atelierlakeside:base05", "bg": "atelierlakeside:base02", "attrs": [] },
+		"file_vcs_status":          { "fg": "atelierlakeside:base08red", "bg": "atelierlakeside:base01", "attrs": [] },
+		"file_vcs_status_M":        { "fg": "atelierlakeside:base0Ayellow", "bg": "atelierlakeside:base01", "attrs": [] },
+		"file_vcs_status_A":        { "fg": "atelierlakeside:base0Bgreen", "bg": "atelierlakeside:base01", "attrs": [] },
+		"line_percent":             { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base00", "attrs": [] },
+		"line_percent_gradient":    { "fg": "green_yellow_orange_red", "bg": "atelierlakeside:base00", "attrs": [] },
+		"position":                 { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base00", "attrs": [] },
+		"position_gradient":        { "fg": "green_yellow_orange_red", "bg": "atelierlakeside:base00", "attrs": [] },
+		"line_current":             { "fg": "atelierlakeside:base03", "bg": "atelierlakeside:base06", "attrs": ["bold"] },
+		"line_current_symbol":      { "fg": "atelierlakeside:base03", "bg": "atelierlakeside:base06", "attrs": [] },
+		"virtcol_current_gradient": { "fg": "GREEN_Orange_red", "bg": "atelierlakeside:base06", "attrs": [] },
+		"col_current":              { "fg": "atelierlakeside:base04", "bg": "atelierlakeside:base06", "attrs": [] },
+		"environment":              { "fg": "atelierlakeside:base05", "bg": "atelierlakeside:base02", "attrs": [] },
+		"attached_clients":         { "fg": "atelierlakeside:base05", "bg": "atelierlakeside:base02", "attrs": [] },
+		"error":                    { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base08red", "attrs": ["bold"] },
+		"warning":                  { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base09orange", "attrs": ["bold"] },
+		"current_tag":              { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base02", "attrs": ["bold"] }
+	},
+	"mode_translations": {
+		"nc": {
+			"colors": {
+				"atelierlakeside:base01": "atelierlakeside:base02",
+				"atelierlakeside:base00": "atelierlakeside:base02",
+				"atelierlakeside:base04": "atelierlakeside:base01",
+				"atelierlakeside:base05": "atelierlakeside:base00",
+				"atelierlakeside:base06": "atelierlakeside:base04",
+				"atelierlakeside:base07": "atelierlakeside:base05"
+			}
+		},
+		"i": {
+			"groups": {
+				"background":             { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base01", "attrs": [] },
+				"background:divider":     { "fg": "atelierlakeside:base06", "bg": "atelierlakeside:base01", "attrs": [] },
+				"mode":                   { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base0Dblue", "attrs": ["bold"] },
+				"modified_indicator":     { "fg": "atelierlakeside:base0Ayellow", "bg": "atelierlakeside:base06", "attrs": ["bold"] },
+				"paste_indicator":        { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base09orange", "attrs": ["bold"] },
+				"readonly_indicator":     { "fg": "atelierlakeside:base08red", "bg": "atelierlakeside:base06", "attrs": [] },
+				"branch":                 { "fg": "atelierlakeside:base01", "bg": "atelierlakeside:base06", "attrs": [] },
+				"branch:divider":         { "fg": "atelierlakeside:base00", "bg": "atelierlakeside:base06", "attrs": [] },
+				"file_directory":         { "fg": "atelierlakeside:base01", "bg": "atelierlakeside:base06", "attrs": [] },
+				"file_name":              { "fg": "atelierlakeside:base02", "bg": "atelierlakeside:base06", "attrs": ["bold"] },
+				"file_size":              { "fg": "atelierlakeside:base02", "bg": "atelierlakeside:base06", "attrs": [] },
+				"file_name_no_file":      { "fg": "atelierlakeside:base02", "bg": "atelierlakeside:base06", "attrs": ["bold"] },
+				"file_name_empty":        { "fg": "atelierlakeside:base02", "bg": "atelierlakeside:base06", "attrs": [] },
+				"file_format":            { "fg": "atelierlakeside:base06", "bg": "atelierlakeside:base01", "attrs": [] },
+				"file_vcs_status":        { "fg": "atelierlakeside:base08red", "bg": "atelierlakeside:base06", "attrs": [] },
+				"file_vcs_status_M":      { "fg": "atelierlakeside:base0Ayellow", "bg": "atelierlakeside:base06", "attrs": [] },
+				"file_vcs_status_A":      { "fg": "atelierlakeside:base0Bgreen", "bg": "atelierlakeside:base06", "attrs": [] },
+				"line_percent":           { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base05", "attrs": [] },
+				"line_percent_gradient":  { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base05", "attrs": [] },
+				"position":               { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base05", "attrs": [] },
+				"position_gradient":      { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base05", "attrs": [] },
+				"line_current":           { "fg": "atelierlakeside:base03", "bg": "atelierlakeside:base07", "attrs": ["bold"] },
+				"line_current_symbol":    { "fg": "atelierlakeside:base03", "bg": "atelierlakeside:base07", "attrs": [] },
+				"col_current":            { "fg": "atelierlakeside:base04", "bg": "atelierlakeside:base07", "attrs": [] }
+			}
+		},
+		"v": {
+			"groups": {
+				"mode": { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base09orange", "attrs": ["bold"] }
+			}
+		},
+		"V": {
+			"groups": {
+				"mode": { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base09orange", "attrs": ["bold"] }
+			}
+		},
+		"^V": {
+			"groups": {
+				"mode": { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base09orange", "attrs": ["bold"] }
+			}
+		},
+		"R": {
+			"groups": {
+				"mode": { "fg": "atelierlakeside:base07", "bg": "atelierlakeside:base08red", "attrs": ["bold"] }
+			}
+		}
+	}
+}
