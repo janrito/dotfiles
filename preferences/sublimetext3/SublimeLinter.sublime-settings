@@ -15,6 +15,34 @@
 			{
 				"@disable": true
 			},
+			"eslint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"flake8":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"builtins": "",
+				"excludes":
+				[
+				],
+				"executable": "",
+				"ignore": "",
+				"jobs": "1",
+				"max-complexity": -1,
+				"max-line-length": null,
+				"select": "",
+				"show-code": false
+			},
 			"htmltidy":
 			{
 				"@disable": false,
@@ -48,7 +76,7 @@
 			},
 			"pep8":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -117,6 +145,7 @@
 				[
 				],
 				"use-cargo": false,
+				"use-cargo-check": false,
 				"use-crate-root": false
 			},
 			"scss":

@@ -54,6 +54,7 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-rustc",
 		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-flake8",
 		"SublimeLinter-html-tidy",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
