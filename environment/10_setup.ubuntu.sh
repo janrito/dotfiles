@@ -1,7 +1,6 @@
 # Ubuntu or Debian only stuff. Abort if not Ubuntu.
-[[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu || "$(cat /etc/issue 2> /dev/null)" =~ Debian ]] || return 1
-
-
+_LINUX_OS="$(cat /etc/issue 2> /dev/null)"
+[[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
 
 
 # ~/.profile: executed by the command interpreter for login shells.
