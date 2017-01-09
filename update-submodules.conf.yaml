@@ -1,0 +1,4 @@
+- shell:
+  -
+    command: git submodule update --recursive --remote
+    description: "Updating submodules to master"
