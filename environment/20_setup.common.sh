@@ -1,3 +1,5 @@
+# Default Pager
+export PAGER="/usr/bin/less -isM"
 
 # Haskell
 export HASKELLPATH=~/.cabal/bin
