@@ -18,7 +18,7 @@
   autosetuprebase = always
   rebase = true
 [core]
-  editor = subl -n -w
+  editor = vim
 [diff]
   tool = twdiff
 [push]
