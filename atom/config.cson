@@ -19,7 +19,6 @@
     telemetryConsent: "no"
   editor:
     fontFamily: "Fira Code"
-    fontSize: 13
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
@@ -47,8 +46,13 @@
 ".languagebabel.ttlextension":
   editor:
     tabLength: 4
+".python.regexp.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
 ".python.source":
   editor:
+    preferredLineLength: 100
     tabLength: 4
 ".ruby.source":
   editor:
