@@ -1,2 +1,3 @@
 Bundle 'reedes/vim-pencil'
-Plugin 'chriskempson/base16-vim'
+Bundle 'chriskempson/base16-vim'
+Bundle 'andviro/flake8-vim'
