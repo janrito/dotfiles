@@ -1,3 +1,7 @@
 .DS_Store
 .AppleDouble
+
+# specific ignores
 bin/subl
+/preferences/sublimetext3/Preferences.sublime-settings.0.bak
+/preferences/sublimetext3/oscrypto-ca-bundle.crt
