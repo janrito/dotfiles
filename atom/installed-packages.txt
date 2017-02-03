@@ -1,5 +1,6 @@
 Hive
 Hydrogen
+MagicPython
 atom-beautify
 autocomplete
 autocomplete-modules

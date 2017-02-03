@@ -27,31 +27,33 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-        "Git",
-        "RestructuredText",
-        "Vintage"
-    ],
-     "material_theme_accent_orange": true,
-    "material_theme_accent_scrollbars": true,
-    "material_theme_appbar_orange": true,
-    "material_theme_arrow_folders": true,
-    "material_theme_bullet_tree_indicator": true,
-    "material_theme_compact_sidebar": true,
-    "material_theme_contrast_mode": true,
-    "material_theme_small_statusbar": true,
-    "material_theme_small_tab": true,
-    "material_theme_tree_headings": false,
+		"Git",
+		"JavaScript",
+		"Python",
+		"RestructuredText",
+		"Vintage"
+	],
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
+	"material_theme_accent_orange": true,
+	"material_theme_accent_scrollbars": true,
+	"material_theme_appbar_orange": true,
+	"material_theme_arrow_folders": true,
+	"material_theme_bullet_tree_indicator": true,
+	"material_theme_compact_sidebar": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tree_headings": false,
 	"rulers":
 	[
-        72,
-        79,
-        100
-    ],
+		72,
+		79,
+		100
+	],
 	"show_encoding": true,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
