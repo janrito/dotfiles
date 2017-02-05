@@ -12,6 +12,7 @@ highlight-selected
 language-babel
 language-r
 language-restructuredtext
+language-tmux
 linter
 linter-eslint
 linter-flake8
