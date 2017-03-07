@@ -3,18 +3,19 @@
 	name = Alejandro Giacometti
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-  switch = !legit switch
-  branches = !legit branches
+	switch = !legit switch
+	branches = !legit branches
   sprout = !legit sprout
-  unpublish = !legit unpublish
+	unpublish = !legit unpublish
   harvest = !legit harvest
-  sync = !legit sync
-  publish = !legit publish
+	sync = !legit sync
+	publish = !legit publish
   graft = !legit graft
   wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
-  resync = !legit resync
+	resync = !legit resync
+	undo = !legit undo
 [branch]
-  autosetupmerge = always
+  autosetupmerge = true
   autosetuprebase = always
   rebase = true
 [core]
