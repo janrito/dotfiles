@@ -11,7 +11,6 @@
 		"md",
 		"txt"
 	],
-	"font_size": 10,
 	"highlight_line": true,
 	"line_padding_top": 5,
 	"rulers":
