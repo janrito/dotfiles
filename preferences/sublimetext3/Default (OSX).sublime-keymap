@@ -3,4 +3,15 @@
 
   { "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["shift+super+'"],  "command": "bh_async_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+                "command": "bh_modules.swapquotes"
+            }
+        }
+    }
 ]
