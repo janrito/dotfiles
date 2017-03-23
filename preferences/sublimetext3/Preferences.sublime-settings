@@ -1,7 +1,7 @@
 {
 	"auto_complete": true,
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "all",
@@ -55,7 +55,7 @@
 		100
 	],
 	"show_encoding": true,
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true
