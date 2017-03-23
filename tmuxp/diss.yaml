@@ -1,15 +1,21 @@
-# ~/.tmuxinator/.yml
-# you can make as many tabs as you wish...
-
-name: diss
-root: ~/Dropbox/projects/dissertation
-# socket_name: foo # Remove to use default socket
-# pre: sudo /etc/rc.d/mysqld start # Runs before everything
-# pre_window: rbenv shell 2.0.0-p247 # Runs in each tab and pane
-# tmux_options: -v -2 # Pass arguments to tmux
+# tmuxp
+# SESSION CONFIGURATION
+# =====================
+# Every configuration is required to have:
+# - session_name
+# - list of windows
+# - list of panes for every window in windows
+session_name: "diss"
+start_directory: "~/Dropbox/projects/dissertation/"
 windows:
-  - main:
-      layout: even-horizontal
-      panes:
-        - subl -b dissertation.sublime-project
-        - cd out
+- window_name: main
+  layout: even-horizontal
+  focus: true
+  options:
+    automatic-rename: on
+  start_directory: "./"
+  panes:
+  - shell_command: subl -b dissertation.sublime-project
+    focus: true
+  - shell_command: "ls -al"
+    start_directory: "./out"

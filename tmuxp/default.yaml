@@ -1,16 +1,27 @@
-# ~/.tmuxinator/.yml
-# you can make as many tabs as you wish...
-
-name: default
-root: ~/
-# socket_name: foo # Remove to use default socket
-# pre: sudo /etc/rc.d/mysqld start # Runs before everything
-# pre_window: rbenv shell 2.0.0-p247 # Runs in each tab and pane
-# tmux_options: -v -2 # Pass arguments to tmux
+# tmuxp
+# SESSION CONFIGURATION
+# =====================
+# Every configuration is required to have:
+# - session_name
+# - list of windows
+# - list of panes for every window in windows
+session_name: "default"
+start_directory: "~/"
+# shell_command_before: "echo hello"
+# before_script: "before_script.sh"
+# environment:
+#   EDITOR: /usr/bin/vim
+#   HOME: /tmp/hm
 windows:
-  - main:
-      layout: even-horizontal
-      panes:
-        - #
-        - #
-  - htop: sudo htop
+- window_name: "default"
+  focus: true
+  # shell_command_before: echo hello
+  options:
+    automatic-rename: on
+  layout: even-horizontal # even-vertical, main-horizontal, main-vertical, or tiled.
+  panes:
+  # - shell_command: echo hello
+  - focus: true
+  - #
+- panes:
+  - shell_command: sudo htop
