@@ -1,14 +1,15 @@
-Hive
-Hydrogen
-MagicPython
 atom-beautify
 autocomplete
 autocomplete-modules
+busy-signal
 feedback
 file-icons
 git-plus
 git-time-machine
 highlight-selected
+Hive
+Hydrogen
+intentions
 language-babel
 language-r
 language-restructuredtext
@@ -17,6 +18,8 @@ linter
 linter-eslint
 linter-flake8
 linter-python-pep8
+linter-ui-default
+MagicPython
 markdown-scroll-sync
 markdown-table-formatter
 markdown-writer

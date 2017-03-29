@@ -14,11 +14,11 @@ function apm_install_all() {
 }
 
 function apm_diff() {\
-    apm list --installed --bare | grep '^[^@]\+' -o | diff - ~/.dotfiles/atom/installed-packages.txt
+    apm list --installed --bare | grep '^[^@]\+' -o | sort -f | diff - ~/.dotfiles/atom/installed-packages.txt
 }
 
 function apm_commit() {
-    apm list --installed --bare | grep '^[^@]\+' -o > ~/.dotfiles/atom/installed-packages.txt
+    apm list --installed --bare | grep '^[^@]\+' -o  | sort -f > ~/.dotfiles/atom/installed-packages.txt
 }
 
 
