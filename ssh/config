@@ -44,6 +44,8 @@ Host *
   Protocol 2,1
   Compression no
 
+  IdentityFile ~/.ssh/id_rsa
+
   # SOCKS Tunnel
   DynamicForward localhost:65000
 
