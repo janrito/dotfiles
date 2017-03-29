@@ -28,10 +28,10 @@
     showInvisibles: true
   "language-babel":
     autoIndentJSX: true
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-flake8": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   minimap: {}
   "one-light-ui": {}
   "spell-check": {}
