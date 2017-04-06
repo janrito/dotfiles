@@ -4,6 +4,7 @@ autocomplete-modules
 busy-signal
 feedback
 file-icons
+git-blame
 git-plus
 git-time-machine
 highlight-selected
@@ -33,6 +34,7 @@ set-syntax
 seti-syntax
 seti-ui
 sort-lines
+split-diff
 synced-sidebar
 tablr
 toggle-quotes
