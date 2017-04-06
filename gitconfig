@@ -21,15 +21,17 @@
 [core]
   editor = vim
 [diff]
-  tool = twdiff
+  tool = icdiff
 [push]
   default = simple
 [merge]
   tool = opendiff
 [help]
   autocorrect = 1
-[difftool "twdiff"]
-  cmd = twdiff --wait \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [filter "media"]
   required = true
   clean = git media clean %f
