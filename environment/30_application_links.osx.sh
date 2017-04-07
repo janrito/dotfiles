@@ -1,3 +1,6 @@
+# only run if interactive
+[[ $- == *i* ]] || return 1
+
 # OSX-only stuff. Abort if not OSX.
 [[ "$OSTYPE" =~ ^darwin ]] || return 1
 

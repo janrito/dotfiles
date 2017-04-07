@@ -1,3 +1,6 @@
+# only run if interactive
+[[ $- == *i* ]] || return 1
+
 # virtualenvwrapper
 if [[ "$(type -P virtualenvwrapper.sh)" ]]; then
     export WORKON_HOME=$HOME/.virtualenvs

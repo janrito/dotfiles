@@ -1,3 +1,6 @@
+# only run if interactive
+[[ $- == *i* ]] || return 1
+
 # powerline
 
 export POWERLINE_BINDINGS=$(_find_powerline_bindings)
