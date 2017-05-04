@@ -29,12 +29,20 @@
   "language-babel":
     autoIndentJSX: true
   linter: {}
-  "linter-flake8": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-flake8":
+    projectConfigFile: [
+      "setup.cfg"
+    ]
+  "linter-ui-default": {}
   minimap: {}
   "one-light-ui": {}
   "spell-check": {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
   welcome:
     showOnStartup: false
 ".css.source":
