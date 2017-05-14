@@ -12,6 +12,9 @@ export PYTHONPATH=/usr/local/lib/python
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
 
+# Perl local modules
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+
 # Haskell
 export HASKELLPATH=~/.cabal/bin
 
