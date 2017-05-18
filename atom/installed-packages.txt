@@ -35,7 +35,6 @@ seti-syntax
 seti-ui
 sort-lines
 split-diff
-synced-sidebar
 tablr
 toggle-quotes
 wordcount
