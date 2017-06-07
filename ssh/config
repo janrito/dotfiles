@@ -44,6 +44,10 @@ Host *
   Protocol 2,1
   Compression no
 
+  # agent
+  UseKeychain yes
+  AddKeysToAgent yes
+
   IdentityFile ~/.ssh/id_rsa
 
   # SOCKS Tunnel
