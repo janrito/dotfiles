@@ -7,9 +7,9 @@
         create: true
         path: preferences/sublimetext3/
         force: true
-    '~/Library/Application Support/Mou':
+    '~/Library/Application Support/MacDown':
         create: true
-        path: preferences/Mou/
+        path: preferences/MacDown/
         force: true
     '~/Library/Application Support/TaskPaper/Themes':
         create: true
