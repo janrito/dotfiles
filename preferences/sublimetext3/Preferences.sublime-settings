@@ -31,6 +31,8 @@
 		"JavaScript",
 		"Python",
 		"RestructuredText",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-html-tidy",
 		"Vintage"
 	],
 	"indent_guide_options":
