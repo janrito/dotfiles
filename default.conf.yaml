@@ -13,7 +13,7 @@
         force: true
     ~/.ssh/config:
         create: true
-        path: ssh/config
+        path: ssh/config.plain
         force: true
 - shell:
   -

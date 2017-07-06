@@ -1,0 +1,4 @@
+Host *
+  # agent
+  UseKeychain yes
+  AddKeysToAgent yes
