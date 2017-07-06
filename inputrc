@@ -1,6 +1,25 @@
+# Make Page Up and Down intelligently go through history
 "\e[5~": history-search-backward
 "\e[6~": history-search-forward
 
-## enable Alt-arrows 
-"\e[1;3D": backward-word ### Alt left
-"\e[1;3C": forward-word ### Alt right
+## Enable Alt-arrows word hopping
+"\e[1;3D": backward-word # Alt left
+"\e[1;3C": forward-word # Alt right
+
+# Make Tab autocomplete case insensitive
+set completion-ignore-case on
+
+# Enable ambiguous autocomplete
+set show-all-if-ambiguous on
+
+# Add forward-slash to links to directories
+set mark-symlinked-directories on
+
+# Autocomplete mid-statement
+set skip-completed-text on
+
+# Allow UTF-8 input and output
+set input-meta on
+set output-meta on
+set convert-meta off
+
