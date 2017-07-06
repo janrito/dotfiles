@@ -3,6 +3,10 @@
     - ~/Library/Application Support/
     - ~/Library/Application Support/TaskPaper/
 - link:
+    ~/.ssh/config:
+        create: true
+        path: ssh/config
+        force: true
     '~/Library/Application Support/Sublime Text 3/Packages/User':
         create: true
         path: preferences/sublimetext3/
