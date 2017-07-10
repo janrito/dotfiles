@@ -9,6 +9,10 @@ if [[ "$(type -P rbenv)" ]]; then
      eval "$(rbenv init -)"
 fi
 
+# Perl local modules
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+
+
 # Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR
