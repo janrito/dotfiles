@@ -13,7 +13,7 @@ function apm_install_all() {
     apm install --packages-file ~/.dotfiles/atom/installed-packages.txt
 }
 
-function apm_diff() {\
+function apm_diff() {
     apm list --installed --bare | grep '^[^@]\+' -o | sort -f | diff - ~/.dotfiles/atom/installed-packages.txt
 }
 
