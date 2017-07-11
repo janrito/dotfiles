@@ -25,6 +25,6 @@ function apm_commit() {
 function spf13_update() {
     cd $HOME/.spf13-vim-3/
     git pull
-    vim +BundleInstall! +BundleClean +qa
+    vim +BundleInstall! +BundleClean +q
     cd -
 }
