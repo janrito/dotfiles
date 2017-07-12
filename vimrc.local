@@ -6,6 +6,14 @@ filetype plugin on       " may already be in your .vimrc
 let g:pencil#wrapModeDefault = 'soft'   " or 'hard'
 let NERDTreeQuitOnOpen=0
 
+set nofoldenable                " disable code folding
+let g:DisableAutoPHPFolding = 1 " disable PIV's folding
+
+"syntastic"
+
+let g:syntastic_mode_map = { 'mode': 'passive' }
+let g:syntastic_python_checkers = ['flake8']
+
 " Add support for 'paste mode', which allows you to mass paste text without it
 " getting munged.
 set pastetoggle=<F2>
