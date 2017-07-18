@@ -8,6 +8,7 @@ export HOMEPATH=~/.bin
 
 # Python
 export PYTHONPATH=/usr/local/lib/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
