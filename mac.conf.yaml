@@ -11,6 +11,10 @@
         create: true
         path: preferences/sublimetext3/
         force: true
+    '~/Library/Application Support/BetterTouchTool/bttdata2':
+        create: true
+        path: preferences/bettertouchtool/preferences.export
+        force: true
     '~/Library/Application Support/MacDown':
         create: true
         path: preferences/MacDown/
