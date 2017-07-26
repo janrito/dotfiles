@@ -44,4 +44,5 @@ complete -cf sudo
 #bash completion for password store
 if [[ -e /etc/bash_completion.d/password-store ]]; then
     source /etc/bash_completion.d/password-store
+    export PASSWORD_STORE_GPG_OPTS="armor"
 fi

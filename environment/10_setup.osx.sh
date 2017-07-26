@@ -52,4 +52,5 @@ export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
 #bash completion for password store
 if [[ -e /usr/local/etc/bash_completion.d/password-store ]]; then
     source /usr/local/etc/bash_completion.d/password-store
+    export PASSWORD_STORE_GPG_OPTS="armor"
 fi
