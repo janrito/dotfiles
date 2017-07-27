@@ -48,6 +48,3 @@ export TEXPATH=/usr/texbin
 
 # Export local path
 export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
-
-# pass should output ascii armoured instead of binary files
-export PASSWORD_STORE_GPG_OPTS="armor"

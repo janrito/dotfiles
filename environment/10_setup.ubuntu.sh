@@ -41,9 +41,6 @@ fi
 # sudo tab completion
 complete -cf sudo
 
-# pass should output ascii armoured instead of binary files
-export PASSWORD_STORE_GPG_OPTS="armor"
-
 # setup bash completion
 if [[ -e /etc/bash_completion ]]; then
     source /etc/bash_completion
