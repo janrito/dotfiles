@@ -41,8 +41,10 @@ fi
 # sudo tab completion
 complete -cf sudo
 
-#bash completion for password store
-if [[ -e /etc/bash_completion.d/password-store ]]; then
-    source /etc/bash_completion.d/password-store
-    export PASSWORD_STORE_GPG_OPTS="armor"
+# pass should output ascii armoured instead of binary files
+export PASSWORD_STORE_GPG_OPTS="armor"
+
+# setup bash completion
+if [[ -e /etc/bash_completion ]]; then
+    source /etc/bash_completion
 fi
