@@ -1,4 +1,0 @@
-- shell:
-  -
-    command: git submodule update --remote
-    description: "Updating submodules to master"
