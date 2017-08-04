@@ -28,3 +28,5 @@ function spf13_update() {
     vim +BundleInstall! +BundleClean +q
     cd -
 }
+
+alias lss="exa -bghHliS --git"
