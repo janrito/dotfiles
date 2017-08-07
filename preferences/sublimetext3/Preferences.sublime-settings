@@ -9,15 +9,16 @@
 	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
-		".svn",
+		".AppleDouble",
 		".git",
 		".hg",
-		"CVS",
+		".svn",
 		"_build",
-		"site",
-		".AppleDouble"
+		"CVS",
+		"node_modules",
+		"site"
 	],
-	"font_face": "Fira Code",
+	"font_face": "Iosevka",
 	"font_options":
 	[
 		"subpixel_antialias"
