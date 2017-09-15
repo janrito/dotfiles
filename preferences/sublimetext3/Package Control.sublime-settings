@@ -6,6 +6,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Abacus",
 		"Alignment",
 		"AlignTab",
@@ -16,6 +17,7 @@
 		"AutoPEP8",
 		"ayu",
 		"Babel",
+		"Boxy Theme",
 		"BracketHighlighter",
 		"CodeComplice",
 		"Color Highlighter",
