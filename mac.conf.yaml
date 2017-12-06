@@ -3,6 +3,10 @@
     - ~/Library/Application Support/
     - ~/Library/Application Support/TaskPaper/
 - link:
+    '~/iCloud':
+        create: true
+        path: '~/Library/Mobile Documents/com~apple~CloudDocs'
+        force: true
     ~/.ssh/config:
         create: true
         path: ssh/config
