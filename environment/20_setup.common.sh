@@ -20,6 +20,10 @@ export CLICOLOR
 # pass should output ascii armoured instead of binary files
 export PASSWORD_STORE_GPG_OPTS="--armor"
 
+# gopass bash completion
 if [[ "$(type -P gopass)" ]]; then
     source <(gopass completion bash)
 fi
+
+# gpg
+export GPG_TTY=$(tty)
