@@ -17,8 +17,9 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 CLICOLOR=True
 export CLICOLOR
 
-# pass should output ascii armoured instead of binary files
+# pass & gopass should output ascii armoured instead of binary files
 export PASSWORD_STORE_GPG_OPTS="--armor"
+export GOPASS_GPG_OPTS=PASSWORD_STORE_GPG_OPTS
 
 # gopass bash completion
 if [[ "$(type -P gopass)" ]]; then
