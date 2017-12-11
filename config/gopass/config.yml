@@ -5,7 +5,7 @@ root:
   cliptimeout: 45
   noconfirm: false
   nopager: false
-  path: /Users/alejandro/.password-store
+  path: ~/.password-store
   safecontent: true
   usesymbols: false
   nocolor: false
