@@ -30,10 +30,11 @@ export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 export RUBYPATH=$HOME/.rbenv/bin
 
 # GO
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/.gocode/
 
 # PATH
-export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:${GOPATH//://bin:}/bin:$PATH
+export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
 
 if [[ -e $HOME/.pyenv/bin/pyenv ]]; then
     export PYENV_ROOT="$HOME/.pyenv"
