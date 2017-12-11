@@ -1,0 +1,13 @@
+root:
+  askformore: false
+  autoimport: true
+  autosync: false
+  cliptimeout: 45
+  noconfirm: false
+  nopager: false
+  path: /Users/alejandro/.password-store
+  safecontent: true
+  usesymbols: false
+  nocolor: false
+mounts: {}
+version: 1.6.2

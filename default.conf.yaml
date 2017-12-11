@@ -1,4 +1,4 @@
-- clean: ['~', '~/.bin', '~/.ssh']
+- clean: ['~', '~/.bin', '~/.ssh', '~/.config']
 - shell:
   -
     command: mkdir -p ~/.bin
@@ -35,6 +35,9 @@
     ~/.config/matplotlib:
         create: true
         path: config/matplotlib
+    ~/.config/gopass:
+        create: true
+        path: config/gopass
     ~/.config/mpv:
         create: true
         path: config/mpv
