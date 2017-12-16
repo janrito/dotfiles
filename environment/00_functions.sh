@@ -19,3 +19,43 @@ function _find_powerline_bindings() {
     echo ${_powerline_location[1]}'/'$_bindings_subdir
   fi
 }
+
+
+# remove path duplicates
+# http://www.commandlinefu.com/commands/view/8606/speed-up-builds-and-scripts-remove-duplicate-entries-in-path.-users-scripts-are-oftern-bad-pathapathpath-type-of-thing-cause-diplicate.
+
+# join arguments
+function glu() {
+  local IFS="$1"
+  shift && echo "$*"
+}
+
+# remove duplicates
+function repath() {
+  _E=`echo "${@//:/$'\n'}" | awk '!x[$0]++'`
+  glu ":" $_E
+}
+
+# pretty print path
+function path() {
+  echo "${PATH//:/$'\n'}"
+}
+
+
+## session tests
+
+function is_interactive() {
+  # true if session is interactive
+  [[ $- == *i* ]] || return 1
+}
+
+function is_osx() {
+  # return true if running in OSX
+  [[ "$OSTYPE" =~ ^darwin ]] || return 1
+}
+
+function is_debian() {
+  # return true if session is in Ubuntu, Debian or Raspbian
+  _LINUX_OS="$(cat /etc/issue 2> /dev/null)"
+  [[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
+}
