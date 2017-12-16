@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function reload_config() {
-  source ~/.bash_profile
+  source ~/.dotfiles/bash_profile
 }
 
 function _find_powerline_bindings() {
