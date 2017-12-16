@@ -19,7 +19,7 @@ export CLICOLOR
 
 # pass & gopass should output ascii armoured instead of binary files
 export PASSWORD_STORE_GPG_OPTS="--armor"
-export GOPASS_GPG_OPTS=PASSWORD_STORE_GPG_OPTS
+export GOPASS_GPG_OPTS=$PASSWORD_STORE_GPG_OPTS
 
 # gopass bash completion
 if [[ "$(type -P gopass)" ]]; then
