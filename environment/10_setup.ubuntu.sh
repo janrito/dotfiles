@@ -1,7 +1,4 @@
-# Ubuntu or Debian only stuff. Abort if not Ubuntu.
-_LINUX_OS="$(cat /etc/issue 2> /dev/null)"
-[[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
-
+is_debian || return 1
 
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login

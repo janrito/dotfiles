@@ -1,8 +1,4 @@
-# only run if interactive
-[[ $- == *i* ]] || return 1
-
-# Ubuntu only stuff. Abort if not Ubuntu.
-[[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]] || return 1
+is_interactive && is_debian || return 1
 
 # link subl utilty
 if [[ -e /opt/sublime_text/sublime_text ]]; then

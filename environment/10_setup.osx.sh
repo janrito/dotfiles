@@ -1,6 +1,4 @@
-# OSX-only stuff. Abort if not OSX.
-[[ "$OSTYPE" =~ ^darwin ]] || return 1
-
+is_osx || return 1
 
 # Paths in home directory
 export HOMEPATH=~/.bin

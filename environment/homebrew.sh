@@ -1,6 +1,4 @@
-# OSX-only stuff. Abort if not OSX.
-[[ "$OSTYPE" =~ ^darwin ]] || return 1
-
+is_osx || return 1
 
 # Homebrew bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

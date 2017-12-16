@@ -1,5 +1,4 @@
-# only run if interactive
-[[ $- == *i* ]] || return 1
+is_interactive || return 1
 
 # virtualenvwrapper
 if [[ "$(type -P virtualenvwrapper.sh)" ]]; then
