@@ -10,5 +10,5 @@ if [[ -e "${POWERLINE_BINDINGS}/bash/powerline.sh" ]]
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
-    . "${POWERLINE_BINDINGS}/bash/powerline.sh"
+    source "${POWERLINE_BINDINGS}/bash/powerline.sh"
 fi
