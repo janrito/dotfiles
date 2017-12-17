@@ -3,11 +3,11 @@ root:
   autoimport: true
   autosync: false
   cliptimeout: 45
-  noconfirm: false
+  noconfirm: true
   nopager: false
   path: ~/.password-store
   safecontent: true
   usesymbols: false
   nocolor: false
 mounts: {}
-version: 1.6.2
+version: 1.6.5
