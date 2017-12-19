@@ -46,3 +46,8 @@ complete -cf sudo
 if [[ -f /etc/bash_completion ]]; then
     source /etc/bash_completion
 fi
+
+# gopass bash completion
+if [[ "$(type -P gopass)" ]]; then
+    source <(gopass completion bash)
+fi
