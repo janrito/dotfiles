@@ -33,7 +33,7 @@ export GOPATH=$HOME/.gocode/
 # PATH
 export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
 
-if [[ -e $HOME/.pyenv/bin/pyenv ]]; then
+if [[ -f $HOME/.pyenv/bin/pyenv ]]; then
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
@@ -43,6 +43,6 @@ fi
 complete -cf sudo
 
 # setup bash completion
-if [[ -e /etc/bash_completion ]]; then
+if [[ -f /etc/bash_completion ]]; then
     source /etc/bash_completion
 fi
