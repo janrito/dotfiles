@@ -17,7 +17,6 @@
 		".svn",
 		"_build",
 		"CVS",
-		"node_modules",
 		"site"
 	],
 	"font_face": "Iosevka",
