@@ -14,9 +14,9 @@ export RUBYPATH=$HOME/.rbenv/bin
 # Haskell
 export HASKELLPATH=~/.cabal/bin
 
-# Node.js
-export NODE_PATH=/usr/local/lib/node_modules
-export NODE_BINS=/usr/local/share/npm/bin:$NODE_PATH
+# NVM (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
