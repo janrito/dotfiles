@@ -15,8 +15,10 @@ export RUBYPATH=$HOME/.rbenv/bin
 export HASKELLPATH=~/.cabal/bin
 
 # NVM (Node Version Manager)
-export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+if [[ -f /usr/local/opt/nvm/nvm.sh ]]; then
+  export NVM_DIR="$HOME/.nvm"
+  source "/usr/local/opt/nvm/nvm.sh"
+fi
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
@@ -35,7 +37,7 @@ fi
 export MMDS_PATH=/usr/local/Cellar/multimarkdown/4.5.3/Support
 
 # Homebrew
-export BREWPATH=$NODE_BINS:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
+export BREWPATH=$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
 
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
