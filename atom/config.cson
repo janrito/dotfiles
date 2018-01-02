@@ -1,6 +1,4 @@
 "*":
-  Hydrogen:
-    kernelspec: "{\"kernelspecs\":{\"pyspark\":{\"resource_dir\":\"/Volumes/Data/Users/alegiaco/.ipython/kernels/pyspark\",\"spec\":{\"language\":\"python\",\"display_name\":\"pyspark\",\"env\":{\"SPARK_HOME\":\"/usr/local/Cellar/apache-spark/1.6.1/libexec/\",\"PYSPARK_PYTHON\":\"/usr/local/bin/python2.7\",\"PYSPARK_SUBMIT_ARGS\":\"--master local[*] pyspark-shell\"},\"argv\":[\"python\",\"-m\",\"IPython.kernel\",\"--profile=pyspark\",\"-f\",\"{connection_file}\"]}},\"python2\":{\"resource_dir\":\"/usr/local/lib/python2.7/site-packages/ipykernel/resources\",\"spec\":{\"language\":\"python\",\"display_name\":\"Python 2\",\"env\":{},\"argv\":[\"/usr/local/opt/python/bin/python2.7\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"]}},\"python3\":{\"resource_dir\":\"/Volumes/Data/Users/alegiaco/.ipython/kernels/python3\",\"spec\":{\"language\":\"python3\",\"display_name\":\"Python 3\",\"env\":{},\"argv\":[\"python3\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"]}}}}"
   "atom-beautify":
     css:
       indent_size: 2
@@ -18,6 +16,7 @@
   core:
     disabledPackages: [
       "language-python"
+      "language-gfm"
     ]
     telemetryConsent: "no"
   editor:
@@ -26,6 +25,8 @@
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
+  "git-blame":
+    columnWidth: 418
   "language-babel":
     autoIndentJSX: true
   linter: {}
@@ -33,7 +34,8 @@
     projectConfigFile: [
       "setup.cfg"
     ]
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 69
   minimap: {}
   "one-light-ui": {}
   "spell-check": {}

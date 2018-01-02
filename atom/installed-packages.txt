@@ -9,9 +9,9 @@ git-plus
 git-time-machine
 highlight-selected
 Hive
-Hydrogen
 intentions
 language-babel
+language-markdown
 language-r
 language-restructuredtext
 language-tmux
