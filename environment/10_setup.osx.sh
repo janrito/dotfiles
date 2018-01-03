@@ -20,6 +20,9 @@ if [[ -f /usr/local/opt/nvm/nvm.sh ]]; then
   source "/usr/local/opt/nvm/nvm.sh"
 fi
 
+# GO
+export GOPATH=$HOME/.gocode
+
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
 
@@ -37,7 +40,7 @@ fi
 export MMDS_PATH=/usr/local/Cellar/multimarkdown/4.5.3/Support
 
 # Homebrew
-export BREWPATH=$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
+export BREWPATH=$GOPATH/bin:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
 
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
