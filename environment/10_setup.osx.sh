@@ -4,9 +4,9 @@ is_osx || return 1
 export HOMEPATH=~/.bin
 
 
-# Python
-export PYTHONPATH=/usr/local/lib/python
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+# Python 2
+export PYTHON2PATH="/usr/local/opt/python@2/bin"
+export VIRTUALENVWRAPPER_PYTHON=$PYTHON2PATH/python2
 
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
@@ -40,7 +40,7 @@ fi
 export MMDS_PATH=/usr/local/Cellar/multimarkdown/4.5.3/Support
 
 # Homebrew
-export BREWPATH=$GOPATH/bin:$RUBYPATH:$MMDS_PATH:/usr/local/sbin:/usr/local/bin
+export BREWPATH=$GOPATH/bin:$RUBYPATH:$MMDS_PATH:$PYTHON2PATH:/usr/local/sbin:/usr/local/bin
 
 # Homebrew Cask
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
