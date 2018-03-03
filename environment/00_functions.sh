@@ -5,8 +5,9 @@ function reload_config() {
 }
 
 function _find_powerline_bindings() {
-  # grabs location from pip2, which that looks like this:
-  # Location: /usr/local/lib/python2.7/site-packages
+  # grabs location from pip, which that looks like this:
+  # Location: /usr/local/lib/python3.6/site-packages in osx
+  # or /usr/local/lib/python2.7/dist-packages/ in debian
   # if that is where powerline is installed
   # and turns it into an array – split on the space
   local _bindings_subdir='powerline/bindings'
