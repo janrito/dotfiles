@@ -11,13 +11,13 @@ function _find_powerline_bindings() {
   # if that is where powerline is installed
   # and turns it into an array – split on the space
   local _bindings_subdir='powerline/bindings'
-  local _homebrew_site_packages='/usr/local/lib/python3.6/site-packages/'
-  local _debian_site_packages='/usr/local/lib/python2.7/dist-packages/'
+  local _homebrew_site_packages='/usr/local/lib/python3.6/site-packages'
+  local _debian_site_packages='/usr/local/lib/python2.7/dist-packages'
   if [[ -d "${_homebrew_site_packages}/${_bindings_subdir}" ]]; then echo "${_homebrew_site_packages}/${_bindings_subdir}"
   elif [[ -d "${_debian_site_packages}/${_bindings_subdir}" ]]; then echo "${_debian_site_packages}/${_bindings_subdir}"
   else
     local _powerline_location=($(pip show powerline-status | grep "^Location: .*$" -o))
-    echo ${_powerline_location[1]}'/'$_bindings_subdir
+    echo "${_powerline_location[1]}/$_bindings_subdir"
   fi
 }
 
