@@ -50,8 +50,6 @@
 		"cwd:divider":               { "fg": "gray7", "bg": "gray4", "attrs": [] },
 		"virtualenv":                { "fg": "white", "bg": "darkcyan", "attrs": [] },
 		"attached_clients":          { "fg": "gray8", "bg": "gray0", "attrs": [] },
-
-
 		"gitstatus":                 { "fg": "gray8",           "bg": "gray2", "attrs": [] },
 	    "gitstatus_branch":          { "fg": "gray8",           "bg": "gray2", "attrs": [] },
 	    "gitstatus_branch_clean":    { "fg": "green",           "bg": "gray2", "attrs": [] },
