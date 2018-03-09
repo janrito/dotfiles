@@ -10,4 +10,8 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Ayu Dark",
+    "files.exclude": {
+        "*.pyc": true, 
+    },
 }
