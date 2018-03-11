@@ -12,6 +12,8 @@
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Ayu Dark",
     "files.exclude": {
-        "*.pyc": true, 
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
     },
 }
