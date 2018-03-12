@@ -60,3 +60,21 @@ function is_debian() {
   _LINUX_OS="$(cat /etc/issue 2> /dev/null)"
   [[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
 }
+
+## based on https://github.com/kennethreitz/dotfiles/blob/master/.aliases
+function battery() {
+  pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';'
+  pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f3 -d';'
+}
+
+function ss() {
+  open -a ScreenSaverEngine
+}
+
+function lock() {
+  /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+}
+
+function pyc() {
+  find . -name "*.pyc" -delete
+}
