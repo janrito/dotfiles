@@ -15,5 +15,32 @@
         "**/*.pyc": {
             "when": "$(basename).py"
         },
+        "**/*.ipynb_checkpoints": true,
     },
+    
+    "editor.rulers": [
+        80,
+        100
+    ],
+    // python
+    
+    // Comma delimited list of modules preloaded to speed up Auto Complete (e.g. add Numpy, Pandas, etc, items slow to load when autocompleting).
+    "python.autoComplete.preloadModules": ["pandas", "numpy", "scipy", "sklearn"],
+    
+    // Whether to lint Python files using flake8
+    "python.linting.flake8Enabled": true,
+    
+    // Whether to lint Python files using pylint.
+    "python.linting.pylintEnabled": true,
+
+    // Folders to look into for virtual environments.
+    "python.venvFolders": [
+        ".env",
+        "envs",
+        ".pyenv",
+        ".direnv"
+    ],
+
+    // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
+    "python.venvPath": "~/.virtualenvs",
 }
