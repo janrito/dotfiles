@@ -1,10 +1,10 @@
 #!/bin/bash
 
-function reload_config() {
+reload_config() {
   source ~/.dotfiles/bash_profile
 }
 
-function _find_powerline_bindings() {
+_find_powerline_bindings() {
   # grabs location from pip, which that looks like this:
   # Location: /usr/local/lib/python3.6/site-packages in osx
   # or /usr/local/lib/python2.7/dist-packages/ in debian
@@ -26,55 +26,55 @@ function _find_powerline_bindings() {
 # http://www.commandlinefu.com/commands/view/8606/speed-up-builds-and-scripts-remove-duplicate-entries-in-path.-users-scripts-are-oftern-bad-pathapathpath-type-of-thing-cause-diplicate.
 
 # join arguments
-function glu() {
+glu() {
   local IFS="$1"
   shift && echo "$*"
 }
 
 # remove duplicates
-function repath() {
+repath() {
   _E=`echo "${@//:/$'\n'}" | awk '!x[$0]++'`
   glu ":" $_E
 }
 
 # pretty print path
-function path() {
+path() {
   echo "${PATH//:/$'\n'}"
 }
 
 
 ## session tests
 
-function is_interactive() {
+is_interactive() {
   # true if session is interactive
   [[ $- == *i* ]] || return 1
 }
 
-function is_osx() {
+is_osx() {
   # return true if running in OSX
   [[ "$OSTYPE" =~ ^darwin ]] || return 1
 }
 
-function is_debian() {
+is_debian() {
   # return true if session is in Ubuntu, Debian or Raspbian
   _LINUX_OS="$(cat /etc/issue 2> /dev/null)"
   [[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
 }
 
 ## based on https://github.com/kennethreitz/dotfiles/blob/master/.aliases
-function battery() {
+battery() {
   pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';'
   pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f3 -d';'
 }
 
-function ss() {
+ss() {
   open -a ScreenSaverEngine
 }
 
-function lock() {
+lock() {
   /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 }
 
-function pyc() {
+pyc() {
   find . -name "*.pyc" -delete
 }

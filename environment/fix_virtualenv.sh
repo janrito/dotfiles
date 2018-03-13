@@ -1,13 +1,13 @@
 # based on this
 # https://gist.github.com/tevino/1a557a0c200d61d4e4fb
 
-function fix_virtualenv() {
+fix_virtualenv() {
     local VIRTUALENV VIRTUALENV_ROOT PYTHON args
     args=()
     PYTHON="python"
     VIRTUALENV=$(which virtualenv)
 
-    function usage() {
+    usage() {
         if [ ! -z $ ]; then
             echo "${1}"
         fi
