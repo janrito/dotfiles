@@ -4,24 +4,6 @@ reload_config() {
   source ~/.dotfiles/bash_profile
 }
 
-_find_powerline_bindings() {
-  # grabs location from pip, which that looks like this:
-  # Location: /usr/local/lib/python3.6/site-packages in osx
-  # or /usr/local/lib/python2.7/dist-packages/ in debian
-  # if that is where powerline is installed
-  # and turns it into an array – split on the space
-  local _bindings_subdir='powerline/bindings'
-  local _homebrew_site_packages='/usr/local/lib/python3.6/site-packages'
-  local _debian_site_packages='/usr/local/lib/python2.7/dist-packages'
-  if [[ -d "${_homebrew_site_packages}/${_bindings_subdir}" ]]; then echo "${_homebrew_site_packages}/${_bindings_subdir}"
-  elif [[ -d "${_debian_site_packages}/${_bindings_subdir}" ]]; then echo "${_debian_site_packages}/${_bindings_subdir}"
-  else
-    local _powerline_location=($(pip show powerline-status | grep "^Location: .*$" -o))
-    echo "${_powerline_location[1]}/$_bindings_subdir"
-  fi
-}
-
-
 # remove path duplicates
 # http://www.commandlinefu.com/commands/view/8606/speed-up-builds-and-scripts-remove-duplicate-entries-in-path.-users-scripts-are-oftern-bad-pathapathpath-type-of-thing-cause-diplicate.
 

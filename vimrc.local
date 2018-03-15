@@ -26,11 +26,6 @@ augroup pencil
     autocmd FileType text call pencil#init({'wrap': 'soft'})
 augroup END
 
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-
-
 " local customizations in ~/.vimrc.local.local
 let $LOCALFILE=expand("~/.vimrc.local.local")
 if filereadable($LOCALFILE)

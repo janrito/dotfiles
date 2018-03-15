@@ -1,5 +1,0 @@
-{
-	"groups": {
-		"stack_depth": { "fg": "atelierlakeside:base04", "bg": "atelierlakeside:base01", "attrs": ["bold"] }
-	}
-}
