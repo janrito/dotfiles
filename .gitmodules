@@ -7,3 +7,6 @@
 [submodule "vendor/rmate"]
 	path = vendor/rmate
 	url = https://github.com/aurora/rmate
+[submodule "vendor/bash_it"]
+	path = vendor/bash_it
+	url = git@github.com:Bash-it/bash-it.git
