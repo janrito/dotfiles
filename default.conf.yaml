@@ -41,9 +41,6 @@
     ~/.config/mpv:
         create: true
         path: config/mpv
-    ~/.config/powerline:
-        create: true
-        path: config/powerline
     ~/.jupyter/jupyter_notebook_config.py:
         create: true
         path: jupyter/jupyter_notebook_config.py
