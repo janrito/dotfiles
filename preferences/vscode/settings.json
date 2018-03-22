@@ -10,7 +10,7 @@
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Base16 Brush Trees Light",
+    "workbench.colorTheme": "Ayu Dark",
     "files.exclude": {
         "**/*.pyc": {
             "when": "$(basename).py"
