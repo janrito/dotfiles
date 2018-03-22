@@ -44,5 +44,5 @@
     ],
     // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
     "python.venvPath": "~/.virtualenvs",
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "autopep8",
 }
