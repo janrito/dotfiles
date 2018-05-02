@@ -53,13 +53,8 @@ fix_virtualenv() {
         usage "${VIRTUALENV_ROOT}/bin not a directory"
         return 0
     fi
-    if [ ! -L "${VIRTUALENV_ROOT}/.Python" ]; then
-        usage "${VIRTUALENV_ROOT}/.Python symlink not found!"
-        return 0
-    fi
-
-    if [ ! -e "${VIRTUALENV_ROOT}/bin/python" ]; then
-        usage "${VIRTUALENV_ROOT}/bin/python not found!"
+    if [ ! -L "${VIRTUALENV_ROOT}/bin/python" ]; then
+        usage "${VIRTUALENV_ROOT}/bin/python not found or is not a link!"
         return 0
     fi
     if [ ! -e "${VIRTUALENV_ROOT}/bin/pip" ]; then
@@ -70,6 +65,11 @@ fix_virtualenv() {
         usage "${VIRTUALENV_ROOT}/bin/activate not found!"
         return 0
     fi
+    if [ ! -d "${VIRTUALENV_ROOT}/site-packages" ]; then
+        usage "${VIRTUALENV_ROOT}/site-packages not a directory"
+        return 0
+    fi
+
 
     echo "♻️  Removing old symbolic links......"
     find "$VIRTUALENV_ROOT" -type l -delete -print
