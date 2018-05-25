@@ -52,48 +52,25 @@
         "caption": "-"
       },
       {
-        "caption": "Writer Pro",
-        "id": "side-bar-files-open-with-writer-pro",
+        "caption": "iA Writer",
+        "id": "side-bar-files-open-with-ia-writer",
         "command": "side_bar_files_open_with",
         "args": {
           "paths": [],
-          "application": "Writer Pro.app",
+          "application": "iA Writer.app",
           "extensions": "markdown|mmd|md|txt"
         }
       },
       {
-        "caption": "Multimarkdown Composer",
-        "id": "side-bar-files-open-with-multimarkdown-composer",
+        "caption": "MacDown",
+        "id": "side-bar-files-open-with-macdown",
         "command": "side_bar_files_open_with",
         "args": {
           "paths": [],
-          "application": "Multimarkdown Composer 2.app",
+          "application": "MacDown.app",
           "extensions": "markdown|mmd|md|txt"
         }
       },
-      {
-        "caption": "Mou",
-        "id": "side-bar-files-open-with-mou",
-        "command": "side_bar_files_open_with",
-        "args": {
-          "paths": [],
-          "application": "Mou.app",
-          "extensions": "markdown|mmd|md|txt"
-        }
-      },
-      {
-        "caption": "-"
-      },
-      {
-        "caption": "Oxygen",
-        "id": "side-bar-files-open-with-oxygen",
-        "command": "side_bar_files_open_with",
-        "args": {
-          "paths": [],
-          "application": "Oxygen XML Editor.app",
-          "extensions": "xml|xsl|xmap|svg|html"
-        }
-      }
     ]
   }
 ]
