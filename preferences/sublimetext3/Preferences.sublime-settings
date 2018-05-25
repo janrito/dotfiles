@@ -17,7 +17,8 @@
 		".svn",
 		"_build",
 		"CVS",
-		"site"
+		"site",
+		".env"
 	],
 	"font_face": "Iosevka",
 	"font_options":
@@ -29,10 +30,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Git",
 		"JavaScript",
 		"Python",
-		"RestructuredText",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-html-tidy",
 		"Vintage"
