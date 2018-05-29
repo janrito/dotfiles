@@ -1,12 +1,15 @@
 root:
   askformore: false
+  autoclip: false
   autoimport: true
   autosync: false
   cliptimeout: 45
+  editrecipients: false
+  nocolor: false
   noconfirm: true
   nopager: false
-  path: ~/.password-store
+  path: gpgcli-gitcli-fs+file://~/.password-store
   safecontent: true
   usesymbols: false
-  nocolor: false
+  notifications: false
 mounts: {}
