@@ -484,25 +484,27 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 168 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 306 620 392 0 0 1280 800 </string>
+	<string>3338 345 620 392 3008 56 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>400 182 599 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1472 1175 796 473 0 0 3008 1692 </string>
+	<string>1472 1088 796 486 0 0 3008 1692 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-1200 306 592 584 -1280 112 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2 720 2110 950 0 0 3008 1670 </string>
+	<string>0 310 570 452 0 0 3008 1670 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 725 2110 945 0 0 3008 1670 </string>
+	<string>0 743 2110 927 0 0 3008 1670 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 721 2114 949 0 0 3008 1670 </string>
+	<string>0 27 2999 1665 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>344 -82 2110 927 0 0 3008 1670 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Allow Title Reporting</key>
 			<false/>
@@ -1336,6 +1338,8 @@
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Allow Title Reporting</key>
 			<false/>
@@ -2184,6 +2188,10 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>1</integer>
+	<key>NoSyncNewWindowOrTabFromTmuxOpensTmux</key>
+	<true/>
+	<key>NoSyncNewWindowOrTabFromTmuxOpensTmux_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -2256,7 +2264,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-14T12:29:49Z</date>
+	<date>2018-06-07T23:51:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2321,6 +2329,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6beta4</string>
+	<string>3.2.0beta3</string>
 </dict>
 </plist>
