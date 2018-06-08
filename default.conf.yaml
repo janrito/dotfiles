@@ -30,8 +30,10 @@
     ~/.tm_properties: tm_properties
     ~/.tmux.conf: tmux.conf
     ~/.tmuxp: tmuxp
-    ~/.vimrc.bundles.local: vimrc.bundles.local
-    ~/.vimrc.local: vimrc.local
+    ~/.SpaceVim.d:
+        create: true
+        path: SpaceVim.d/
+        force: true
     ~/.config/matplotlib:
         create: true
         path: config/matplotlib
