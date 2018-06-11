@@ -1,5 +1,0 @@
-UnBundle 'amirh/HTML-AutoCloseTag'
-
-Bundle 'reedes/vim-pencil'
-Bundle 'chriskempson/base16-vim'
-Bundle 'andviro/flake8-vim'

@@ -43,3 +43,7 @@ name = "colorscheme"
 [[custom_plugins]]
 name = 'chriskempson/base16-vim'
 merged = 0
+
+[[customizations]]
+name = "nvie/vim-flake8"
+merged = 0

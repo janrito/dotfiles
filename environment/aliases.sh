@@ -17,12 +17,9 @@ apm_commit() {
     apm list --installed --bare | grep '^[^@]\+' -o  | sort -f > ~/.dotfiles/atom/installed-packages.txt
 }
 
-## spf13
-spf13_update() {
-    cd $HOME/.spf13-vim-3/
-    git pull
-    vim +BundleInstall! +BundleClean +q
-    cd -
+## spacevim
+spacevim_update() {
+    vim "+SPUpdate" "+qall"
 }
 
 ## other
