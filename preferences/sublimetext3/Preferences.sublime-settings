@@ -1,4 +1,16 @@
 {
+	"added_words":
+	[
+		"deserialisation",
+		"deserialise",
+		"deserialised",
+		"deserialiser",
+		"serialisation",
+		"serialise",
+		"serialised",
+		"serialiser",
+
+	],
 	"auto_complete": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",

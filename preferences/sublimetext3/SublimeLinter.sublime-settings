@@ -1,6 +1,5 @@
 // SublimeLinter Settings - User
 {
-    "gutter_theme": "Packages/Boxy Theme/extras/SublimeLinter/Boxy.gutter-theme",
     "linters": {
         "pylint": {
             "disable": true
@@ -10,6 +9,11 @@
         },
         "pyflakes": {
             "disable": true
+        },
+        "flake8": {
+            "disable": false,
+            "selector": "source.python"
         }
-    }
+    },
+    "statusbar.messages_template": "{linter}: {message}"
 }
