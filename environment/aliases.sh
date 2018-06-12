@@ -17,10 +17,5 @@ apm_commit() {
     apm list --installed --bare | grep '^[^@]\+' -o  | sort -f > ~/.dotfiles/atom/installed-packages.txt
 }
 
-## spacevim
-spacevim_update() {
-    vim "+SPUpdate" "+qall"
-}
-
 ## other
 alias lss="exa -bghHliS --git"
