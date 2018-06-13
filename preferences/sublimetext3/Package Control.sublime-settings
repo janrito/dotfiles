@@ -39,8 +39,6 @@
 		"MagicPython",
 		"MarkdownEditing",
 		"MarkdownPreview",
-		"Markmon real-time markdown preview",
-		"Material Theme",
 		"Monokai Extended",
 		"Package Control",
 		"Paste as Column",
@@ -56,7 +54,6 @@
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
-		"Siteleaf Liquid Syntax",
 		"SmartMarkdown",
 		"Spark",
 		"SqlBeautifier",
@@ -72,15 +69,10 @@
 		"SublimeLinter-ruby",
 		"SublimeLinter-xmllint",
 		"SyncedSideBar",
-		"Themr",
 		"ToggleQuotes",
 		"TOML",
 		"URLEncode",
 		"VCS Gutter",
 		"Wrap Plus"
-	],
-	"repositories":
-	[
-		"https://github.com/bobthecow/sublime-sane-snippets"
 	]
 }
