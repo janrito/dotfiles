@@ -21,7 +21,7 @@ VIRTUALENV_THEME_PROMPT_SUFFIX=''
 
 
 function prompt_command() {
-    PS1="\n${cyan}\h:${reset_color}${orange}$(virtualenv_prompt)${reset_color} ${white}\w${SCM_PROMPT_COLOR}$(scm_prompt_info)${normal}${reset_color}\n→ "
+    PS1="\n${cyan}\u${reset_color} at ${purple}\h in ${white}\w${reset_color}${orange}$(virtualenv_prompt)${reset_color}${SCM_PROMPT_COLOR}$(scm_prompt_info)${normal}${reset_color}\n→ "
 }
 
 safe_append_prompt_command prompt_command
