@@ -18,10 +18,12 @@ SCM_GIT_STASH_CHAR_SUFFIX=""
 VIRTUALENV_THEME_PROMPT_PREFIX=" ⦽ "
 VIRTUALENV_THEME_PROMPT_SUFFIX=''
 
+italic_white="\[\e[37;3m\]"
+
 
 
 function prompt_command() {
-    PS1="\n${cyan}\h:${reset_color}${orange}$(virtualenv_prompt)${reset_color} ${white}\w${SCM_PROMPT_COLOR}$(scm_prompt_info)${normal}${reset_color}\n→ "
+    PS1="\n${cyan}\u${reset_color} ${italic_white}at${normal} ${purple}\h${reset_color} ${italic_white}in${normal} \w${orange}$(virtualenv_prompt)${reset_color}${SCM_PROMPT_COLOR}$(scm_prompt_info)${normal}${reset_color}\n→ "
 }
 
 safe_append_prompt_command prompt_command
