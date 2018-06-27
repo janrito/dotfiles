@@ -485,24 +485,58 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>2497 110 445 103 0 0 3008 1670 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 168 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>3338 345 620 392 3008 56 1280 778 </string>
+	<string>330 289 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>400 182 599 502 0 0 2560 1417 </string>
+	<string>138 64 606 469 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>281 260 796 486 0 0 1280 800 </string>
+	<string>281 255 796 486 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-1200 306 592 584 -1280 112 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 778 0 0 1280 800 </string>
+	<string>0 23 3008 1647 0 0 3008 1670 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1280 778 0 0 1280 778 </string>
+	<string>0 0 1280 778 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>9 23 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 11</key>
+	<string>9 3 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 12</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 13</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 14</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 15</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 16</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 17</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 18</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 19</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 27 2999 1665 0 0 3008 1692 </string>
+	<string>0 45 2999 1647 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>344 -82 2110 927 0 0 3008 1670 </string>
+	<string>9 0 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>9 45 2999 1647 0 0 3008 1692 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1316,13 +1350,17 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm-256color</string>
+			<string>xterm-256color-italic</string>
 			<key>Thin Strokes</key>
 			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
+			<key>Unicode Normalization</key>
+			<integer>0</integer>
+			<key>Unicode Version</key>
+			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -2153,7 +2191,7 @@
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
-			<string>xterm-256color</string>
+			<string>xterm-256color-italic</string>
 			<key>Thin Strokes</key>
 			<integer>1</integer>
 			<key>Transparency</key>
@@ -2214,6 +2252,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>2</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -2255,6 +2295,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/alejandro/.dotfiles/preferences//iterm2/</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2274,7 +2316,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-12T15:35:53Z</date>
+	<date>2018-06-27T12:05:01Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2291,6 +2333,8 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -2339,6 +2383,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0beta3</string>
+	<string>3.2.0beta5</string>
 </dict>
 </plist>
