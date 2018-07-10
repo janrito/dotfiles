@@ -6,6 +6,7 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
+    ~/.tigrc: tigrc
     ~/.inputrc: inputrc
     ~/.bash_profile:
         create: true

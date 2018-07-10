@@ -1,0 +1,2 @@
+# see changes in commit message editor
+bind status C   !git commit -v
