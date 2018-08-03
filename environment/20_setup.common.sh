@@ -1,5 +1,9 @@
-# Set Editor Editor to vim
-export EDITOR='vim'
+# Set Editor Editor to neovim if available, vim otherwise
+if [[ "$(type -P nvim)" ]]; then
+    export EDITOR='nvim'
+else
+    export EDITOR='vim'
+fi
 
 # Default Pager
 export PAGER="/usr/bin/less -isM"
