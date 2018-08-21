@@ -19,7 +19,7 @@
   autosetuprebase = always
   rebase = true
 [core]
-  editor = vim
+  editor = nvim
 [diff]
   tool = icdiff
 [push]

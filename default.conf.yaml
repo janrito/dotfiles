@@ -1,4 +1,11 @@
-- clean: ['~', '~/.bin', '~/.ssh', '~/.config']
+- clean:
+    - '~'
+    - ~/.bin
+    - ~/.ssh
+    - ~/.config
+    - ~/.local/bin
+    - ~/.jupyter
+    - ~/.tmux/plugins
 - shell:
   -
     command: mkdir -p ~/.bin

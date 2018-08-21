@@ -1,7 +1,7 @@
 is_osx || return 1
 
 # Paths in home directory
-export HOMEPATH=~/.bin
+export HOMEPATH=~/.bin:~/.local/bin
 
 
 # Python 2
