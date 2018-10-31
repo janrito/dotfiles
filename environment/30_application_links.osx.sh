@@ -5,3 +5,7 @@ if [[ -e "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ]]; th
     ln -sfn "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $HOME/.bin/subl
 fi
 
+if [[ -e "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" ]]; then
+    ln -sfn "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" $HOME/.bin/smerge
+fi
+
