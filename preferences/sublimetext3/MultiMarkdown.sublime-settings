@@ -1,7 +1,7 @@
 {
 	"auto_match_enabled": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
+	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor.tmTheme",
 	"draw_centered": true,
 	"draw_white_space": "all",
 	"enable_table_editor": true,
@@ -9,8 +9,11 @@
 	[
 		"mmd",
 		"md",
-		"txt"
+		"txt",
+		"markdown"
 	],
+	"font_face": "iA Writer Quattro",
+	"font_size": 12,
 	"highlight_line": true,
 	"line_padding_top": 5,
 	"rulers":
@@ -21,5 +24,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true,
-	"wrap_width": 88
+	"wrap_width": 90
 }
