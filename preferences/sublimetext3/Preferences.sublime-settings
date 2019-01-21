@@ -8,7 +8,12 @@
 		"serialisation",
 		"serialise",
 		"serialised",
-		"serialiser"
+		"serialiser",
+		"serialisers",
+		"curation",
+		"curations",
+		"trainingset",
+		"metadata"
 	],
 	"auto_complete": true,
 	"bold_folder_labels": true,
@@ -29,7 +34,8 @@
 		"_build",
 		"CVS",
 		"site",
-		".env"
+		".env",
+		".venv"
 	],
 	"font_face": "Iosevka",
 	"font_options":
@@ -43,6 +49,7 @@
 	[
 		"JavaScript",
 		"Python",
+		"RestructuredText",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-html-tidy",
 		"Vintage"
