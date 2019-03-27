@@ -19,7 +19,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "all",
@@ -35,7 +35,8 @@
 		"CVS",
 		"site",
 		".env",
-		".venv"
+		".venv",
+		"node_modules"
 	],
 	"font_face": "Iosevka",
 	"font_options":
