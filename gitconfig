@@ -46,7 +46,7 @@
 	process = git-lfs filter-process
 	required = true
 [credential]
-  helper = osxkeychain
+	helper = "!gopass git-credential $@"
 
 # Allow local customizations in the .gitconfig_local file
 [include]
