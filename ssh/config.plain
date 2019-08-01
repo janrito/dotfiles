@@ -21,7 +21,10 @@ Host *.amazonaws.com aws
   StrictHostKeyChecking no
 
   # SOCKS Tunnel
-  DynamicForward localhost:54321
+  DynamicForward localhost:8123
+
+  # don't use controlmaster
+  ControlMaster no
 
 Host bitbucket.org
   ControlMaster no
