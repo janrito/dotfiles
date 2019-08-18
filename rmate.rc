@@ -1,2 +1,0 @@
-host = localhost # auto  # prefer host from SSH_CONNECTION over localhost
-port = 52698

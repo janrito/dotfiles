@@ -34,7 +34,6 @@
 - link:
     ~/.atom: atom
     ~/.psqlrc: psqlrc
-    ~/.rmate.rc: rmate.rc
     ~/.tm_properties: tm_properties
     ~/.tmux.conf: tmux.conf
     ~/.tmuxp: tmuxp
@@ -61,8 +60,4 @@
     ~/.config/sublime-text-3/Packages/User:
         create: true
         path: preferences/sublimetext3/
-        force: true
-    ~/.bin/rmate:
-        create: true
-        path: vendor/rmate/rmate
         force: true
