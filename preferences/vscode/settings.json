@@ -1,51 +1,39 @@
 {
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     // Controls the font family.
     "editor.fontFamily": "Iosevka, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
     "editor.renderWhitespace": "all",
-    "sublimeTextKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Base16 One Light",
     "files.exclude": {
         "**/*.pyc": {
             "when": "$(basename).py"
         },
-        "**/*.ipynb_checkpoints": true,
+        "**/*.ipynb_checkpoints": true
     },
     // When enabled, will trim trailing whitespace when saving a file.
     "files.trimTrailingWhitespace": true,
-    "editor.rulers": [
-        80,
-        100
-    ],
-    // python
-    // Comma delimited list of modules preloaded to speed up Auto Complete (e.g. add Numpy, Pandas, etc, items slow to load when autocompleting).
-    "python.autoComplete.preloadModules": [
-        "pandas",
-        "numpy",
-        "scipy",
-        "sklearn"
-    ],
+    "editor.rulers": [72, 80, 100, 150],
     // Whether to lint Python files using flake8
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
     // Whether to lint Python files using pylint.
     "python.linting.pylintEnabled": false,
     // Folders to look into for virtual environments.
-    "python.venvFolders": [
-        ".env",
-        "envs",
-        ".pyenv",
-        ".direnv"
-    ],
+    "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
     // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
     "python.venvPath": "~/.virtualenvs",
-    "python.formatting.provider": "autopep8",
+    "python.formatting.provider": "none",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
+    // A list of languages IDs to disable this extension on
+    "prettier.disableLanguages": [
+        "vue",
+        "markdown"
+    ]
 }
