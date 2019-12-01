@@ -27,8 +27,8 @@ export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 export RUBYPATH=$HOME/.rbenv/bin
 
 # Node
-if [[ -f $HOME/.npm-global ]]; then
-    NPM_PATH=./npm-global/bin
+if [[ -e $HOME/.npm-global ]]; then
+    NPM_PATH=$HOME/.npm-global/bin
     export PATH="$NPM_PATH:$PATH"
 fi
 
