@@ -26,18 +26,18 @@ export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
 
+# Node
+if [[ -f $HOME/.npm-global ]]; then
+    NPM_PATH=./npm-global/bin
+    export PATH="$NPM_PATH:$PATH"
+fi
+
 # GO
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/.gocode/
 
 # PATH
 export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
-
-if [[ -f $HOME/.pyenv/bin/pyenv ]]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
-fi
 
 # sudo tab completion
 complete -cf sudo
