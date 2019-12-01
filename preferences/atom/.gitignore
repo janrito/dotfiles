@@ -1,0 +1,15 @@
+storage
+compile-cache
+dev
+packages
+blob-store
+.npm
+.node-gyp
+.apm
+.atom-socket-secret*
+
+# packages
+github.cson
+package-deps-state.json
+split-diff/*
+git-time-machine/*

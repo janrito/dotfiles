@@ -13,7 +13,13 @@
 		"curation",
 		"curations",
 		"trainingset",
-		"metadata"
+		"metadata",
+		"iterable",
+		"tokeniser",
+		"serialisable",
+		"tokenisation",
+		"resample",
+		"Tokenisable"
 	],
 	"auto_complete": true,
 	"bold_folder_labels": true,

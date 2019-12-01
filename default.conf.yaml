@@ -32,7 +32,7 @@
     command: git submodule update --init --recursive
     description: "Installing submodules"
 - link:
-    ~/.atom: atom
+    ~/.atom: preferences/atom
     ~/.psqlrc: psqlrc
     ~/.tm_properties: tm_properties
     ~/.tmux.conf: tmux.conf

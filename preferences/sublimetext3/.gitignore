@@ -5,3 +5,4 @@
 *.*-ca-bundle
 *.ca-certs
 linters/*
+Color Highlighter/*

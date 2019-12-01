@@ -65,10 +65,6 @@ fix_virtualenv() {
         usage "${VIRTUALENV_ROOT}/bin/activate not found!"
         return 0
     fi
-    if [ ! -d "${VIRTUALENV_ROOT}/site-packages" ]; then
-        usage "${VIRTUALENV_ROOT}/site-packages not a directory"
-        return 0
-    fi
 
 
     echo "♻️  Removing old symbolic links......"

@@ -29,7 +29,6 @@ minimap
 multi-cursor
 pigments
 python-autopep8
-rst-preview
 set-syntax
 seti-syntax
 seti-ui

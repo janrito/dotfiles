@@ -36,6 +36,7 @@
     ]
   "linter-ui-default":
     panelHeight: 69
+    showPanel: true
   minimap: {}
   "one-light-ui": {}
   "spell-check": {}
