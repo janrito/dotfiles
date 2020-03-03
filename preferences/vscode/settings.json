@@ -35,5 +35,8 @@
     "prettier.disableLanguages": [
         "vue",
         "markdown"
-    ]
+    ],
+    "editor.minimap.enabled": false,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true
 }
