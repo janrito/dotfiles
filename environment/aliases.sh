@@ -18,4 +18,4 @@ apm_commit() {
 }
 
 ## other
-alias lss="exa -bghHliS --git"
+alias lss="exa --binary --group --header --links --long --inode --blocks --git"
