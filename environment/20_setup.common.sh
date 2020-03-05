@@ -27,6 +27,8 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 # Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+export LS_COLORS="${LS_COLORS}:di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 
 # pass & gopass should output ascii armoured instead of binary files
 export PASSWORD_STORE_GPG_OPTS="--armor"
