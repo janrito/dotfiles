@@ -5,6 +5,8 @@
     - ~/Library/Application Support/BetterTouchTool/
     - ~/Library/Application Support/TaskPaper/
 - link:
+    ~/.sleep: sleep.sh
+    ~/.wakeup: wakeup.sh
     '~/iCloud':
         create: true
         path: '~/Library/Mobile Documents/com~apple~CloudDocs'
