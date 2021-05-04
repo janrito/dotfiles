@@ -1,27 +1,16 @@
-#!/bin/bash
+#!/bin/sh
 
 reload_config() {
-  source ~/.dotfiles/bash_profile
+  source ~/.dotfiles/profile
 }
-
-# remove path duplicates
-# http://www.commandlinefu.com/commands/view/8606/speed-up-builds-and-scripts-remove-duplicate-entries-in-path.-users-scripts-are-oftern-bad-pathapathpath-type-of-thing-cause-diplicate.
-
-# join arguments
-glu() {
-  local IFS="$1"
-  shift && echo "$*"
-}
-
-# remove duplicates
+# remove duplicates from path
 repath() {
-  _E=`echo "${@//:/$'\n'}" | awk '!x[$0]++'`
-  glu ":" $_E
+  echo -n $1 | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}'
 }
 
 # pretty print path
 path() {
-  echo "${PATH//:/$'\n'}"
+  echo $PATH | awk 'BEGIN{RS=":"}{$1=$1}1'
 }
 
 
@@ -35,6 +24,12 @@ is_interactive() {
 is_osx() {
   # return true if running in OSX
   [[ "$OSTYPE" =~ ^darwin ]] || return 1
+}
+
+is_arm() {
+  # return true if running on arm64
+  local UNAME_MACHINE="$(/usr/bin/uname -m)"
+  [[ "$UNAME_MACHINE" == "arm64" ]] || return 1
 }
 
 is_debian() {
