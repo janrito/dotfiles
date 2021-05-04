@@ -1,5 +1,11 @@
 is_osx || return 1
 
+# homebrew on arm
+if is_arm; then
+  HOMEBREW_PREFIX="/opt/homebrew"
+  eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+fi
+
 # Paths in home directory
 export HOMEPATH=~/.bin:~/.local/bin
 
