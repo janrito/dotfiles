@@ -4,6 +4,7 @@
 function src() {
   local file
   if [[ "$1" ]]; then
+    echo "$1"
     source "$HOME/.dotfiles/environment/$1.sh"
   else
     for file in ~/.dotfiles/environment/*; do

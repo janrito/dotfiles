@@ -17,7 +17,11 @@
     ~/.inputrc: inputrc
     ~/.bash_profile:
         create: true
-        path: bash_profile
+        path: profile
+        force: true
+    ~/.zprofile:
+        create: true
+        path: profile
         force: true
     ~/.ssh/config:
         create: true
