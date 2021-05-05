@@ -40,12 +40,13 @@ is_debian() {
 }
 
 is_bash() {
-  [[ $SHELL == "-bash" ]] || return 1
+  [[ $0 =~ bash ]] || return 1
 }
 
 is_zsh() {
-  [[ $SHELL == "-zsh" ]] || return 1
+  [[ $0 =~ zsh ]] || return 1
 }
+
 ## based on https://github.com/kennethreitz/dotfiles/blob/master/.aliases
 battery() {
   pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';'
