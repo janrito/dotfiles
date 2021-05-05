@@ -1,5 +1,5 @@
 # Set Editor Editor to neovim if available, vim otherwise
-if [[ "$(type -P nvim)" ]]; then
+if command -v nvim &> /dev/null; then
     export EDITOR='nvim'
 else
     export EDITOR='vim'
@@ -9,7 +9,7 @@ fi
 export PAGER="/usr/bin/less -isM"
 
 #rbenv
-if [[ "$(type -P rbenv)" ]]; then
+if command -v rbenv &> /dev/null; then
      eval "$(rbenv init -)"
 fi
 

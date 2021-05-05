@@ -48,6 +48,6 @@ if [[ -f /etc/bash_completion ]]; then
 fi
 
 # gopass bash completion
-if [[ "$(type -P gopass)" ]]; then
+if command -v gopass &> /dev/null;; then
     source <(gopass completion bash)
 fi
