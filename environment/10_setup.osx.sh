@@ -28,13 +28,6 @@ fi
 # GO
 export GOPATH=$HOME/.gocode
 
-# Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home"
-
-# Mutlimarkdown support
-
-export MMDS_PATH=/usr/local/Cellar/multimarkdown/4.5.3/Support
-
 # Homebrew
 export BREWPATH=$GOPATH/bin:$RUBYPATH:$MMDS_PATH:$PYTHON2PATH:/usr/local/sbin:/usr/local/bin
 
