@@ -1,3 +1,5 @@
+is_bash || return 1
+
 # Path to the bash it configuration
 export BASH_IT="${HOME}/.dotfiles/vendor/bash_it"
 
