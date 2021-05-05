@@ -48,6 +48,7 @@ Host *
   Compression no
 
   IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_ed25519
 
   # SOCKS Tunnel
   DynamicForward localhost:65000
