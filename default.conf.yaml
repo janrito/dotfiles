@@ -15,12 +15,11 @@
     ~/.hgrc: hgrc
     ~/.tigrc: tigrc
     ~/.inputrc: inputrc
-    ~/.zshrc: zshrc
     ~/.bash_profile:
         create: true
         path: profile
         force: true
-    ~/.zprofile:
+    ~/.zshrc:
         create: true
         path: profile
         force: true
