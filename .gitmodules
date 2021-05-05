@@ -7,3 +7,6 @@
 [submodule "vendor/bash_it"]
 	path = vendor/bash_it
 	url = git@github.com:Bash-it/bash-it.git
+[submodule "vendor/ohmyzsh"]
+	path = vendor/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
