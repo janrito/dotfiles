@@ -15,6 +15,7 @@
     ~/.hgrc: hgrc
     ~/.tigrc: tigrc
     ~/.inputrc: inputrc
+    ~/.zshrc: zshrc
     ~/.bash_profile:
         create: true
         path: profile
