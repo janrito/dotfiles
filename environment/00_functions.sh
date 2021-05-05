@@ -7,7 +7,7 @@ reload_config() {
 # remove duplicates from path
 # based on https://www.linuxjournal.com/content/removing-duplicate-path-entries
 repath() {
-  echo -n $1 | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}'
+  echo -n $1 | awk -v RS=: -v len=0 '!($0 in a) {a[$0]; len++; printf("%s%s", len > 1 ? ":" : "", $0)}'
 }
 
 # pretty print path
