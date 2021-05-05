@@ -29,7 +29,7 @@
         force: true
 - shell:
   -
-    command: mkdir -p ~/.ssh/cm
+    command: mkdir -p /tmp/cm
     description: "Create ssh controlmasters directory"
 - shell:
   -
