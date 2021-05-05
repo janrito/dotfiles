@@ -21,8 +21,9 @@ if [[ -f $HOME/.pyenv/bin/pyenv ]]; then
 fi
 
 # Perl local modules
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
-
+if [[ -f $HOME/perl5/lib/perl5 ]]; then
+    eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+fi
 
 # Set colors in Command line to true
 CLICOLOR=True
