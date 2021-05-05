@@ -40,11 +40,13 @@ is_debian() {
 }
 
 is_bash() {
-  [[ $0 =~ bash ]] || return 1
+  local _SHELL="$(ps -p$$ -ocommand=)"
+  [[ $_SHELL =~ .*bash$ ]] || return 1
 }
 
 is_zsh() {
-  [[ $0 =~ zsh ]] || return 1
+  local _SHELL="$(ps -p$$ -ocommand=)"
+  [[ $_SHELL =~ .*zsh$ ]] || return 1
 }
 
 ## based on https://github.com/kennethreitz/dotfiles/blob/master/.aliases
