@@ -3,7 +3,9 @@
 reload_config() {
   source ~/.dotfiles/profile
 }
+
 # remove duplicates from path
+# based on https://www.linuxjournal.com/content/removing-duplicate-path-entries
 repath() {
   echo -n $1 | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", length(a) > 1 ? ":" : "", $0)}'
 }
@@ -15,7 +17,6 @@ path() {
 
 
 ## session tests
-
 is_interactive() {
   # true if session is interactive
   [[ $- == *i* ]] || return 1
@@ -34,10 +35,17 @@ is_arm() {
 
 is_debian() {
   # return true if session is in Ubuntu, Debian or Raspbian
-  _LINUX_OS="$(cat /etc/issue 2> /dev/null)"
+  local _LINUX_OS="$(cat /etc/issue 2> /dev/null)"
   [[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
 }
 
+is_bash() {
+  [[ $SHELL == "-bash" ]] || return 1
+}
+
+is_zsh() {
+  [[ $SHELL == "-zsh" ]] || return 1
+}
 ## based on https://github.com/kennethreitz/dotfiles/blob/master/.aliases
 battery() {
   pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';'
