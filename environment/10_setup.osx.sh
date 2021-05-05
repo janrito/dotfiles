@@ -23,7 +23,7 @@ fi
 export GOPATH=$HOME/.gocode
 
 # Homebrew
-export BREWPATH=$GOPATH/bin:$RUBYPATH:$MMDS_PATH:$PYTHON2PATH:/usr/local/sbin:/usr/local/bin
+export BREWPATH=$GOPATH/bin:$RUBYPATH:$PYTHON2PATH:/usr/local/sbin:/usr/local/bin
 
 # MacTex
 export TEXPATH=/usr/texbin
