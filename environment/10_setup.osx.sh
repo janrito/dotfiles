@@ -4,7 +4,7 @@ is_osx || return 1
 export HOMEPATH=~/.bin:~/.local/bin
 
 # Python 2
-export PYTHON2PATH="/usr/local/opt/python@2/bin"
+export PYTHON2PATH="$(brew --prefix)/opt/python@2/bin"
 export VIRTUALENVWRAPPER_PYTHON=$PYTHON2PATH/python2
 
 # Ruby
@@ -14,9 +14,9 @@ export RUBYPATH=$HOME/.rbenv/bin
 export HASKELLPATH=~/.cabal/bin
 
 # NVM (Node Version Manager)
-if [[ -f /usr/local/opt/nvm/nvm.sh ]]; then
+if [[ -f "$(brew --prefix)/opt/nvm/nvm.sh" ]]; then
   export NVM_DIR="$HOME/.nvm"
-  source "/usr/local/opt/nvm/nvm.sh"
+  source "$(brew --prefix)/opt/nvm/nvm.sh"
 fi
 
 # GO
