@@ -15,6 +15,9 @@ if is_bash; then
     # homebrew installed bash 4
     source $(brew --prefix)/share/bash-completion/bash_completion
   fi
+elif is_zsh; then
+  # Homebrew zsh completion
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
 # generic colourizer
