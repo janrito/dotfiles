@@ -11,7 +11,7 @@ is_debian || return 1
 #umask 022
 
 # if running bash
-if [ -n "$BASH_VERSION" ]; then
+if is_bash; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
   . "$HOME/.bashrc"
