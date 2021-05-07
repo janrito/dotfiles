@@ -1,67 +1,64 @@
 - clean:
-    - '~'
-    - ~/.bin
-    - ~/.ssh
-    - ~/.config
-    - ~/.local/bin
-    - ~/.jupyter
-    - ~/.tmux/plugins
+      - '~'
+      - ~/.bin
+      - ~/.ssh
+      - ~/.config
+      - ~/.local/bin
+      - ~/.jupyter
+      - ~/.tmux/plugins
 - shell:
-  -
-    command: mkdir -p ~/.bin
-    description: "Create local bin directory if necessary"
+      - command: mkdir -p ~/.bin
+        description: 'Create local bin directory if necessary'
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.hgrc: hgrc
-    ~/.tigrc: tigrc
-    ~/.inputrc: inputrc
-    ~/.bash_profile:
-        create: true
-        path: profile
-        force: true
-    ~/.zshrc:
-        create: true
-        path: profile
-        force: true
-    ~/.ssh/config:
-        create: true
-        path: ssh/config.plain
-        force: true
+      ~/.gitconfig: gitconfig
+      ~/.hgrc: hgrc
+      ~/.tigrc: tigrc
+      ~/.inputrc: inputrc
+      ~/.bash_profile:
+          create: true
+          path: profile
+          force: true
+      ~/.zshrc:
+          create: true
+          path: profile
+          force: true
+      ~/.ssh/config:
+          create: true
+          path: ssh/config.plain
+          force: true
 - shell:
-  -
-    command: mkdir -p /tmp/cm
-    description: "Create ssh controlmasters directory"
+      - command: mkdir -p /tmp/cm
+        description: 'Create ssh controlmasters directory'
 - shell:
-  -
-    command: git submodule update --init --recursive
-    description: "Installing submodules"
+      - command: git submodule update --init --recursive
+        description: 'Installing submodules'
 - link:
-    ~/.atom: preferences/atom
-    ~/.psqlrc: psqlrc
-    ~/.tm_properties: tm_properties
-    ~/.tmux.conf: tmux.conf
-    ~/.tmuxp: tmuxp
-    ~/.SpaceVim.d:
-        create: true
-        path: SpaceVim.d/
-        force: true
-    ~/.config/matplotlib:
-        create: true
-        path: config/matplotlib
-    ~/.config/gopass:
-        create: true
-        path: config/gopass
-    ~/.config/mpv:
-        create: true
-        path: config/mpv
-    ~/.jupyter/jupyter_notebook_config.py:
-        create: true
-        path: jupyter/jupyter_notebook_config.py
-    ~/.tmux/plugins/tpm:
-        create: true
-        path: vendor/tpm
-        force: true
-    ~/.config/sublime-text-3/Packages/User:
-        create: true
-        path: preferences/sublimetext3/
-        force: true
+      ~/.atom: preferences/atom
+      ~/.psqlrc: psqlrc
+      ~/.tm_properties: tm_properties
+      ~/.tmux.conf: tmux.conf
+      ~/.tmuxp: tmuxp
+      ~/.SpaceVim.d:
+          create: true
+          path: SpaceVim.d/
+          force: true
+      ~/.config/matplotlib:
+          create: true
+          path: config/matplotlib
+      ~/.config/gopass:
+          create: true
+          path: config/gopass
+      ~/.config/mpv:
+          create: true
+          path: config/mpv
+      ~/.jupyter/jupyter_notebook_config.py:
+          create: true
+          path: jupyter/jupyter_notebook_config.py
+      ~/.tmux/plugins/tpm:
+          create: true
+          path: vendor/tpm
+          force: true
+      ~/.config/sublime-text-3/Packages/User:
+          create: true
+          path: preferences/sublimetext3/
+          force: true

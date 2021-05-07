@@ -1,37 +1,37 @@
 - clean:
-    - ~/Library/Mobile Documents/
-    - ~/Library/Application Support/Sublime Text 3/Packages/
-    - ~/Library/Application Support/
-    - ~/Library/Application Support/BetterTouchTool/
-    - ~/Library/Application Support/TaskPaper/
+      - ~/Library/Mobile Documents/
+      - ~/Library/Application Support/Sublime Text 3/Packages/
+      - ~/Library/Application Support/
+      - ~/Library/Application Support/BetterTouchTool/
+      - ~/Library/Application Support/TaskPaper/
 - link:
-    ~/.sleep: sleep.sh
-    ~/.wakeup: wakeup.sh
-    '~/iCloud':
-        create: true
-        path: '~/Library/Mobile Documents/com~apple~CloudDocs'
-        force: true
-    ~/.ssh/config:
-        create: true
-        path: ssh/config
-        force: true
-    '~/Library/Application Support/Sublime Text 3/Packages/User':
-        create: true
-        path: preferences/sublimetext3/
-        force: true
-    '~/Library/Application Support/Code/User':
-        create: true
-        path: preferences/vscode/
-        force: true
-    '~/Library/Application Support/BetterTouchTool/bttdata2':
-        create: true
-        path: preferences/bettertouchtool/preferences.export
-        force: true
-    '~/Library/Application Support/MacDown':
-        create: true
-        path: preferences/MacDown/
-        force: true
-    '~/Library/Application Support/TaskPaper/Themes':
-        create: true
-        path: preferences/TaskPaperThemes/
-        force: true
+      ~/.sleep: sleep.sh
+      ~/.wakeup: wakeup.sh
+      '~/iCloud':
+          create: true
+          path: '~/Library/Mobile Documents/com~apple~CloudDocs'
+          force: true
+      ~/.ssh/config:
+          create: true
+          path: ssh/config
+          force: true
+      '~/Library/Application Support/Sublime Text 3/Packages/User':
+          create: true
+          path: preferences/sublimetext3/
+          force: true
+      '~/Library/Application Support/Code/User':
+          create: true
+          path: preferences/vscode/
+          force: true
+      '~/Library/Application Support/BetterTouchTool/bttdata2':
+          create: true
+          path: preferences/bettertouchtool/preferences.export
+          force: true
+      '~/Library/Application Support/MacDown':
+          create: true
+          path: preferences/MacDown/
+          force: true
+      '~/Library/Application Support/TaskPaper/Themes':
+          create: true
+          path: preferences/TaskPaperThemes/
+          force: true
