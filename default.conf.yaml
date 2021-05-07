@@ -35,7 +35,6 @@
 - link:
       ~/.atom: preferences/atom
       ~/.psqlrc: psqlrc
-      ~/.tm_properties: tm_properties
       ~/.tmux.conf: tmux.conf
       ~/.tmuxp: tmuxp
       ~/.SpaceVim.d:
