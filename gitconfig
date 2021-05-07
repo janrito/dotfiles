@@ -31,7 +31,7 @@
 [difftool]
   prompt = false
 [difftool "icdiff"]
-  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+  cmd = icdiff --line-numbers $LOCAL $REMOTE
 [filter "media"]
   required = true
   clean = git media clean %f
