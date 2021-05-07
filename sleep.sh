@@ -1,2 +1,2 @@
 set -e
-/usr/local/bin/blueutil --power 0
+$(brew --prefix)/bin/blueutil --power 0
