@@ -39,12 +39,15 @@ export GOPATH=$HOME/.gocode/
 # PATH
 export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
 
-# sudo tab completion
-complete -cf sudo
 
-# setup bash completion
-if [[ -f /etc/bash_completion ]]; then
-    source /etc/bash_completion
+if is_bash; then
+    # sudo tab completion
+    complete -cf sudo
+
+    # setup bash completion
+    if [[ -f /etc/bash_completion ]]; then
+        source /etc/bash_completion
+    fi
 fi
 
 # gopass bash completion
