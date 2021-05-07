@@ -1,9 +1,11 @@
-ZSH_THEME_GIT_PROMPT_PREFIX=" $fg[green]"
-ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color"
-ZSH_THEME_GIT_PROMPT_DIRTY="$fg_bold[red] ⦿$reset_color"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="$fg_bold[green] ?$reset_color"
-ZSH_THEME_GIT_PROMPT_CLEAN="$fg_bold[green] ⦾$reset_color"
-ZSH_THEME_GIT_PROMPT_STASHED=" ≗ "
+autoload -Uz colors &&   colors
+
+ZSH_THEME_GIT_PROMPT_PREFIX="${fg[green]}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="${reset_color}"
+ZSH_THEME_GIT_PROMPT_DIRTY="${fg_bold[red]} ⦿${reset_color}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="${fg_bold[green]} ?${reset_color}"
+ZSH_THEME_GIT_PROMPT_CLEAN="${fg_bold[green]} ⦾${reset_color}"
+ZSH_THEME_GIT_PROMPT_STASHED=" ≗"
 
 italic=$'\e[3m'
 
@@ -17,7 +19,12 @@ virtualenv_info() {
 
 meta_info() {
     if [[ -n "$(virtualenv_info)$(git_prompt_info)" ]]; then
-        printf '%s%s' "$(virtualenv_info)" "$(git_prompt_info)"
+        if [[ -n $(virtualenv_info) ]]
+        then
+            printf '%s %s' "$(virtualenv_info)" "$(git_prompt_info)$(git_prompt_status)"
+        else
+            printf '%s' "$(git_prompt_info)$(git_prompt_status)"
+        fi
     fi
 }
 
