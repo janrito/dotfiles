@@ -7,7 +7,6 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"Abacus",
 		"Advanced CSV",
 		"Alignment",
 		"AlignTab",
@@ -42,7 +41,6 @@
 		"Monokai Extended",
 		"NimLime",
 		"Package Control",
-		"Paste as Column",
 		"PgSQL",
 		"Pretty JSON",
 		"Python Fix Imports",
@@ -56,7 +54,6 @@
 		"SCSS",
 		"SideBarEnhancements",
 		"SmartMarkdown",
-		"Spark",
 		"SqlBeautifier",
 		"sublack",
 		"SublimeLinter",
