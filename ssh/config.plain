@@ -38,7 +38,7 @@ host 127.0.0.1
 
 Host *
   ControlMaster auto
-  ControlPath /tmp/cm/ssh_cm_%h_%C
+  ControlPath /tmp/ssh_cm_%h_%C
   ControlPersist 4h
   TCPKeepAlive no
   ServerAliveInterval 60
