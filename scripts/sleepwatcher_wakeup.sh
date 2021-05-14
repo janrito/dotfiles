@@ -1,4 +1,7 @@
-set -e
+# needs path configuration
+source ~/.dotfiles/profile
+
+# turn bluetooth on
 $(brew --prefix)/bin/blueutil --power 1
 
 # connect to headphones

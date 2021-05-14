@@ -5,8 +5,6 @@
       - ~/Library/Application Support/BetterTouchTool/
       - ~/Library/Application Support/TaskPaper/
 - link:
-      ~/.sleep: sleep.sh
-      ~/.wakeup: wakeup.sh
       '~/iCloud':
           create: true
           path: '~/Library/Mobile Documents/com~apple~CloudDocs'
@@ -40,3 +38,21 @@
 - link:
       ~/.bin/subl: '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
       ~/.bin/smerge: '/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge'
+
+- clean:
+      - /opt/homebrew/opt/sleepwatcher/
+      - /usr/local/opt/sleepwatcher/
+- defaults:
+      link:
+          ignore-missing: true
+- link:
+      ~/.sleep: scripts/sleepwatcher_sleep.sh
+      ~/.wakeup: scripts/sleepwatcher_wakeup.sh
+      ~/.displaysleep: scripts/sleepwatcher_displaysleep.sh
+      ~/.displaywakeup: scripts/sleepwatcher_displaywakeup.sh
+      ? /opt/homebrew/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility.plist
+      : path: services/de.bernhard-baehr.sleepwatcher-20compatibility.plist
+        if: '[ "$(brew --prefix)" = "/opt/homebrew" ]'
+      ? /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility.plist
+      : path: services/de.bernhard-baehr.sleepwatcher-20compatibility.plist
+        if: '[ "$(brew --prefix)" = "/usr/local" ]'
