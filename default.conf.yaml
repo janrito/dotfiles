@@ -6,13 +6,11 @@
       - ~/.local/bin
       - ~/.jupyter
       - ~/.tmux/plugins
-- shell:
-      - command: mkdir -p ~/.bin
-        description: 'Create local bin directory if necessary'
+- create:
+      - ~/.bin
 - link:
       ~/.gitconfig: gitconfig
       ~/.hgrc: hgrc
-      ~/.tigrc: tigrc
       ~/.inputrc: inputrc
       ~/.bash_profile:
           create: true
@@ -26,14 +24,8 @@
           create: true
           path: ssh/config.plain
           force: true
-- shell:
-      - command: mkdir -p /tmp/cm
-        description: 'Create ssh controlmasters directory'
-- shell:
-      - command: git submodule update --init --recursive
-        description: 'Installing submodules'
 - link:
-      ~/.atom: preferences/atom
+      ~/.tigrc: tigrc
       ~/.psqlrc: psqlrc
       ~/.tmux.conf: tmux.conf
       ~/.tmuxp: tmuxp
