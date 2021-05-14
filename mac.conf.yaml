@@ -35,3 +35,8 @@
           create: true
           path: preferences/TaskPaperThemes/
           force: true
+- clean:
+      - ~/.bin/
+- link:
+      ~/.bin/subl: '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+      ~/.bin/smerge: '/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge'
