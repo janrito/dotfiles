@@ -8,8 +8,8 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
 # Make Page Up and Down intelligently go through history
-bindkey "^[^[[A" history-search-backward
-bindkey "^[^[[B" history-search-forward
+bindkey "^[[5~" history-search-backward
+bindkey "^[[6~" history-search-forward
 
 ## Enable Alt-arrows word hopping
 bindkey "^[b" backward-word # Alt left
