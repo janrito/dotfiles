@@ -38,5 +38,9 @@
     ],
     "editor.minimap.enabled": false,
     "prettier.tabWidth": 4,
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
