@@ -20,6 +20,7 @@
       ~/.bash_profile: profile
       ~/.zshrc: profile
       ~/.ssh/config: ssh/config.plain
+      ~/.editorconfig: editorconfig
 - defaults:
       link:
           force: false
