@@ -27,7 +27,7 @@
     "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
     // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
     "python.venvPath": "~/.virtualenvs",
-    "python.formatting.provider": "none",
+    "python.formatting.provider": "black",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
@@ -53,6 +53,11 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "npm.enableRunFromFolder": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
