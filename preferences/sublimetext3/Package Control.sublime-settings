@@ -34,7 +34,6 @@
 		"Jinja2",
 		"JsFormat",
 		"JSONComma",
-		"LESS",
 		"MagicPython",
 		"MarkdownEditing",
 		"MarkdownPreview",
@@ -72,6 +71,6 @@
 		"TOML",
 		"URLEncode",
 		"VCS Gutter",
-		"Wrap Plus"
-	]
+		"Wrap Plus",
+	],
 }

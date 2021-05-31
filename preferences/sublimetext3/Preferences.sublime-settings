@@ -47,9 +47,10 @@
 	"font_face": "Iosevka",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antialias",
+		"ss05"
 	],
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -59,7 +60,7 @@
 		"RestructuredText",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-html-tidy",
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -77,5 +78,5 @@
 	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true
+	"use_tab_stops": true,
 }
