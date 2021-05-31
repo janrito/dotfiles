@@ -1,41 +1,40 @@
 - clean:
-      - '~'
-      - ~/.bin
-      - ~/.ssh
-      - ~/.config
-      - ~/.local/bin
-      - ~/.jupyter
-      - ~/.tmux/plugins
+    - "~"
+    - ~/.bin
+    - ~/.ssh
+    - ~/.config
+    - ~/.local/bin
+    - ~/.jupyter
+    - ~/.tmux/plugins
 - create:
-      - ~/.bin
-      - ~/.ssh
-      - ~/.config
+    - ~/.bin
+    - ~/.ssh
+    - ~/.config
 - defaults:
-      link:
-          force: true
+    link:
+      force: true
 - link:
-      ~/.gitconfig: gitconfig
-      ~/.hgrc: hgrc
-      ~/.inputrc: inputrc
-      ~/.bash_profile: profile
-      ~/.zshrc: profile
-      ~/.ssh/config: ssh/config.plain
-      ~/.editorconfig: editorconfig
+    ~/.gitconfig: gitconfig
+    ~/.hgrc: hgrc
+    ~/.inputrc: inputrc
+    ~/.bash_profile: profile
+    ~/.zshrc: profile
+    ~/.ssh/config: ssh/config.plain
 - defaults:
-      link:
-          force: false
+    link:
+      force: false
 - link:
-      ~/.tigrc: tigrc
-      ~/.psqlrc: psqlrc
-      ~/.tmux.conf: tmux.conf
-      ~/.tmuxp: tmuxp
-      ~/.SpaceVim.d: SpaceVim.d/
-      ~/.config/matplotlib: config/matplotlib
-      ~/.config/gopass: config/gopass
-      ~/.config/mpv: config/mpv
-      ~/.jupyter/jupyter_notebook_config.py:
-          create: true
-          path: jupyter/jupyter_notebook_config.py
-      ~/.tmux/plugins/tpm:
-          create: true
-          path: vendor/tpm
+    ~/.tigrc: tigrc
+    ~/.psqlrc: psqlrc
+    ~/.tmux.conf: tmux.conf
+    ~/.tmuxp: tmuxp
+    ~/.SpaceVim.d: SpaceVim.d/
+    ~/.config/matplotlib: config/matplotlib
+    ~/.config/gopass: config/gopass
+    ~/.config/mpv: config/mpv
+    ~/.jupyter/jupyter_notebook_config.py:
+      create: true
+      path: jupyter/jupyter_notebook_config.py
+    ~/.tmux/plugins/tpm:
+      create: true
+      path: vendor/tpm
