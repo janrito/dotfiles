@@ -47,6 +47,7 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "workbench.colorTheme": "One Dark Pro",
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
