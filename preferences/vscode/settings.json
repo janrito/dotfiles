@@ -39,8 +39,20 @@
     "editor.minimap.enabled": false,
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
-    "workbench.colorTheme": "One Dark Pro",
+    "window.closeWhenEmpty": true,
+    "editor.detectIndentation": true,
+    "editor.showFoldingControls": "always",
+    "editor.find.seedSearchStringFromSelection": true,
+    "editor.useTabStops": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "npm.enableRunFromFolder": true,
 }
