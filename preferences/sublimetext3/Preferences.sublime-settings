@@ -47,15 +47,17 @@
 	"font_face": "Iosevka Light",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antialias",
+		"ss05"
 	],
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"JavaScript",
 		"Python",
+		"RestructuredText",
 		"Vintage",
 	],
 	"indent_guide_options":
