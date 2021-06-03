@@ -51,6 +51,8 @@ if is_bash; then
 fi
 
 # gopass bash completion
-if command -v gopass &> /dev/null; then
-    source <(gopass completion bash)
+if is_bash; then
+    if command -v gopass &> /dev/null; then
+        source <(gopass completion bash)
+    fi
 fi
