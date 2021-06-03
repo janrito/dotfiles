@@ -20,9 +20,6 @@ fi
 
 export HOMEPATH=~/.bin:~/.local/bin
 
-# TEXLIVE_PATH
-export TEXLIVE_PATH=/usr/local/texlive/2013/bin/x86_64-linux
-
 # Ruby
 export RUBYPATH=$HOME/.rbenv/bin
 
@@ -37,7 +34,7 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/.gocode/
 
 # PATH
-export PATH=$HOMEPATH:$RUBYPATH:$TEXLIVE_PATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
+export PATH=$HOMEPATH:$RUBYPATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
 
 
 if is_bash; then
