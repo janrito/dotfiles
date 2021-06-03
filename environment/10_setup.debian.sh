@@ -45,10 +45,8 @@ if is_bash; then
     if [[ -f /etc/bash_completion ]]; then
         source /etc/bash_completion
     fi
-fi
 
-# gopass bash completion
-if is_bash; then
+    # gopass bash completion
     if command -v gopass &> /dev/null; then
         source <(gopass completion bash)
     fi
