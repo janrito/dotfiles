@@ -60,16 +60,6 @@
           "application": "iA Writer.app",
           "extensions": "markdown|mmd|md|txt"
         }
-      },
-      {
-        "caption": "MacDown",
-        "id": "side-bar-files-open-with-macdown",
-        "command": "side_bar_files_open_with",
-        "args": {
-          "paths": [],
-          "application": "MacDown.app",
-          "extensions": "markdown|mmd|md|txt"
-        }
       }
     ]
   }
