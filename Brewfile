@@ -12,6 +12,7 @@ brew "openblas"
 brew "cython"
 brew "scipy"
 brew "numpy"
+brew "pipx"
 
 # utils
 brew "gopass"
@@ -19,6 +20,7 @@ brew "blueutil"
 brew "sleepwatcher"
 brew "pinentry-mac"
 brew "wget"
+brew "rsync"
 
 # dev
 brew "git"
@@ -28,11 +30,12 @@ brew "node"
 brew "nvm"
 brew "subversion"
 brew "tig"
+brew "mtr"
 
 # cask utils
 cask "alfred"
 cask "dropbox"
-cask "firefox"
+cask "firefox-beta"
 cask "itsycal"
 cask "spotify"
 
