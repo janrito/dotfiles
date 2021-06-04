@@ -16,6 +16,9 @@ indent_size = 4
 [*.{xml,htm,html,tmTheme}]
 indent_size = 4
 
+[*.{json,sublime-settings}]
+indent_size = 2
+
 [*.{yml,yaml}]
 indent_size = 2
 
