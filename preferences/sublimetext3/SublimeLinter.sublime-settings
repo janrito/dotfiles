@@ -1,19 +1,19 @@
 // SublimeLinter Settings - User
 {
-    "linters": {
-        "pylint": {
-            "disable": true
-        },
-        "pycodestyle": {
-            "disable": true
-        },
-        "pyflakes": {
-            "disable": true
-        },
-        "flake8": {
-            "disable": false,
-            "selector": "source.python"
-        }
+  "linters": {
+    "pylint": {
+      "disable": true
     },
-    "statusbar.messages_template": "{linter}: {message}"
+    "pycodestyle": {
+      "disable": true
+    },
+    "pyflakes": {
+      "disable": true
+    },
+    "flake8": {
+      "disable": false,
+      "selector": "source.python"
+    }
+  },
+  "statusbar.messages_template": "{linter}: {message}"
 }

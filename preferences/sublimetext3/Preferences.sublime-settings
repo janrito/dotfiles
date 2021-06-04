@@ -1,80 +1,80 @@
 {
-	"added_words":
-	[
-		"deserialisation",
-		"deserialise",
-		"deserialised",
-		"deserialiser",
-		"serialisation",
-		"serialise",
-		"serialised",
-		"serialiser",
-		"serialisers",
-		"curation",
-		"curations",
-		"trainingset",
-		"metadata",
-		"iterable",
-		"tokeniser",
-		"serialisable",
-		"tokenisation",
-		"resample",
-		"Tokenisable"
-	],
-	"auto_complete": true,
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
-	"detect_indentation": true,
-	"dictionary": "Packages/Language - English/en_GB.dic",
-	"draw_white_space": "all",
-	"fade_fold_buttons": false,
-	"find_selected_text": true,
-	"folder_exclude_patterns":
-	[
-		".AppleDouble",
-		".git",
-		".hg",
-		".svn",
-		"_build",
-		"CVS",
-		"site",
-		".env",
-		".venv",
-		"node_modules"
-	],
-	"font_face": "Iosevka Light",
-	"font_options":
-	[
-		"subpixel_antialias",
-		"ss05"
-	],
-	"font_size": 13,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"JavaScript",
-		"Python",
-		"RestructuredText",
-		"Vintage",
-	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
-	"rulers":
-	[
-		72,
-		80,
-		100,
-		150
-	],
-	"show_encoding": true,
-	"theme": "ayu-dark.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true,
+  "added_words":
+  [
+    "deserialisation",
+    "deserialise",
+    "deserialised",
+    "deserialiser",
+    "serialisation",
+    "serialise",
+    "serialised",
+    "serialiser",
+    "serialisers",
+    "curation",
+    "curations",
+    "trainingset",
+    "metadata",
+    "iterable",
+    "tokeniser",
+    "serialisable",
+    "tokenisation",
+    "resample",
+    "Tokenisable"
+  ],
+  "auto_complete": true,
+  "bold_folder_labels": true,
+  "caret_style": "phase",
+  "close_windows_when_empty": true,
+  "color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
+  "detect_indentation": true,
+  "dictionary": "Packages/Language - English/en_GB.dic",
+  "draw_white_space": "all",
+  "fade_fold_buttons": false,
+  "find_selected_text": true,
+  "folder_exclude_patterns":
+  [
+    ".AppleDouble",
+    ".git",
+    ".hg",
+    ".svn",
+    "_build",
+    "CVS",
+    "site",
+    ".env",
+    ".venv",
+    "node_modules"
+  ],
+  "font_face": "Iosevka Light",
+  "font_options":
+  [
+    "subpixel_antialias",
+    "ss05"
+  ],
+  "font_size": 13,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "JavaScript",
+    "Python",
+    "RestructuredText",
+    "Vintage",
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "rulers":
+  [
+    72,
+    80,
+    100,
+    150
+  ],
+  "show_encoding": true,
+  "theme": "ayu-dark.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "use_tab_stops": true,
 }

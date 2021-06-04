@@ -70,7 +70,7 @@
           "application": "MacDown.app",
           "extensions": "markdown|mmd|md|txt"
         }
-      },
+      }
     ]
   }
 ]

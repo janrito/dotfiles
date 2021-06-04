@@ -13,7 +13,10 @@ indent_size = 4
 [*.bash]
 indent_size = 4
 
-[*.yml,*.yaml]
+[*.{xml,htm,html,tmTheme}]
+indent_size = 4
+
+[*.{yml,yaml}]
 indent_size = 2
 
 [*.md]

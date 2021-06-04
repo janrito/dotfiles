@@ -1,9 +1,9 @@
 {
   // Outline? (solid|outline|underline|none)
-  "quote_style" : "underline",
-  "curly_style" : "underline",
-  "round_style" : "underline",
+  "quote_style": "underline",
+  "curly_style": "underline",
+  "round_style": "underline",
   "square_style": "underline",
-  "angle_style" : "outunderlineline",
-  "tag_style"   : "outline"
+  "angle_style": "outunderlineline",
+  "tag_style": "outline"
 }

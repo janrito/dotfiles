@@ -1,11 +1,3 @@
 {
-  "extensions":
-  [
-    "xml",
-    "xmap",
-    "xsd",
-    "xslt",
-    "svg",
-    "zcml"
-  ]
+  "extensions": ["xml", "xmap", "xsd", "xslt", "svg", "zcml"]
 }

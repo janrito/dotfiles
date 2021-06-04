@@ -1,7 +1,3 @@
 {
-	"extensions":
-	[
-		"html",
-		"jinja2"
-	]
+  "extensions": ["html", "jinja2"]
 }
