@@ -22,6 +22,7 @@ brew "sleepwatcher"
 brew "pinentry-mac"
 brew "wget"
 brew "rsync"
+brew "watch"
 
 # dev
 brew "git"
