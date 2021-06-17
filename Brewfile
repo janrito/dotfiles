@@ -40,6 +40,7 @@ cask "dropbox"
 cask "firefox-beta"
 cask "itsycal"
 cask "spotify"
+cask "gpg-suite"
 
 # cask comms
 cask "signal"
