@@ -45,6 +45,7 @@ cask "gpg-suite"
 # cask comms
 cask "signal"
 cask "slack"
+cask "twobird"
 cask "zoom"
 
 # cask dev
@@ -65,7 +66,6 @@ cask "font-source-sans-pro"
 cask "font-source-serif-pro"
 
 # mas utils
-mas "Edison Mail", id: 1489591003
 mas "Magnet", id: 441258766
 mas "iA Writer", id: 775737590
 
