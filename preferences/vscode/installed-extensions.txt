@@ -1,8 +1,0 @@
-donjayamanne.githistory
-eamodio.gitlens
-esbenp.prettier-vscode
-golf1052.base16-generator
-magicstack.MagicPython
-ms-python.python
-ms-vscode.sublime-keybindings
-teabyii.ayu
