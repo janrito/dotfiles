@@ -51,7 +51,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
-  "npm.enableRunFromFolder": true
+  "npm.enableRunFromFolder": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "python.insidersChannel": "weekly",
+  "notebook.lineNumbers": "on",
+  "jupyter.themeMatplotlibPlots": true,
+  "jupyter.askForKernelRestart": false
 }
