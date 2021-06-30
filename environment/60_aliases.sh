@@ -7,3 +7,6 @@ wd() {
 
 # other
 alias lss="exa --binary --group --header --links --long --inode --blocks --git"
+
+# code insiders short
+alias ci="code-insiders"
