@@ -13,6 +13,7 @@ brew "openblas"
 brew "cython"
 brew "scipy"
 brew "numpy"
+brew "apache-arrow"
 brew "pipx"
 
 # utils
@@ -23,6 +24,7 @@ brew "pinentry-mac"
 brew "wget"
 brew "rsync"
 brew "watch"
+brew "gdrive"
 
 # dev
 brew "git"
@@ -45,6 +47,7 @@ cask "gpg-suite"
 # cask comms
 cask "signal"
 cask "slack"
+cask "discord"
 cask "twobird"
 cask "zoom"
 
@@ -54,6 +57,7 @@ cask "sublime-merge"
 cask "sublime-text"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "visual-studio-code-insiders"
 cask "insomnia"
 
 # cask fonts
