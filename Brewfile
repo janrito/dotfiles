@@ -25,6 +25,7 @@ brew "wget"
 brew "rsync"
 brew "watch"
 brew "gdrive"
+brew "coreutils"
 
 # dev
 brew "git"
