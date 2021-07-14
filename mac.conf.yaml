@@ -34,9 +34,9 @@
     ~/.wakeup: scripts/sleepwatcher_wakeup.sh
     ~/.displaysleep: scripts/sleepwatcher_displaysleep.sh
     ~/.displaywakeup: scripts/sleepwatcher_displaywakeup.sh
-    ? /opt/homebrew/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility.plist
-    : path: services/de.bernhard-baehr.sleepwatcher-20compatibility.plist
+    /opt/homebrew/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility.plist:
+      path: services/de.bernhard-baehr.sleepwatcher-20compatibility.plist
       if: '[ "$(brew --prefix)" = "/opt/homebrew" ]'
-    ? /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility.plist
-    : path: services/de.bernhard-baehr.sleepwatcher-20compatibility.plist
+    /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility.plist:
+      path: services/de.bernhard-baehr.sleepwatcher-20compatibility.plist
       if: '[ "$(brew --prefix)" = "/usr/local" ]'
