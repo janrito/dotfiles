@@ -9,9 +9,9 @@ Run this to install
 ```
 
 On a mac
+
 ```
 ./install mac
 ```
-
 
 [dotbot]: https://github.com/anishathalye/dotbot
