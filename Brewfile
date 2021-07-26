@@ -9,7 +9,10 @@ brew "mas"
 
 # python & numerical computing packages
 brew "python"
+brew "gcc"
+brew "cmake"
 brew "openblas"
+brew "libomp"
 brew "cython"
 brew "scipy"
 brew "numpy"
