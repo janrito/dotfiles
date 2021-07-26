@@ -11,7 +11,7 @@
 # set spacevim theme. by default colorscheme layer is not loaded,
 # if you want to use more colorscheme, please load the colorscheme
 # layer
-colorscheme = "one"
+colorscheme = "onedark"
 colorscheme_bg = "dark"
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors
@@ -25,6 +25,9 @@ guifont = "Iosevka Nerd Font 11"
 buffer_index_type = 4
 enable_tabline_filetype_icon = true
 enable_statusline_display_mode = true
+
+# disable plugins
+disabled_plugins = ["onedark.vim"]
 
 # Enable autocomplete layer
 [[layers]]
@@ -41,7 +44,7 @@ default_height = 30
 name = "colorscheme"
 
 [[custom_plugins]]
-name = 'chriskempson/base16-vim'
+name = 'navarasu/onedark.nvim'
 merged = 0
 
 [[customizations]]
