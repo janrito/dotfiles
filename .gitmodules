@@ -10,3 +10,6 @@
 [submodule "vendor/ohmyzsh"]
 	path = vendor/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "vendor/conda-zsh-completion"]
+	path = vendor/conda-zsh-completion
+	url = git@github.com:esc/conda-zsh-completion.git

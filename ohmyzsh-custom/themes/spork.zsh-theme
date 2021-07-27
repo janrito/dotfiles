@@ -13,18 +13,28 @@ prompt_char() {
     printf '%s ' "→"
 }
 
-virtualenv_info() {
-    [ $VIRTUAL_ENV ] && printf  '%s' "${fg[yellow]}⦽ $(basename $VIRTUAL_ENV)${reset_color}"
+conda_env_info() {
+    [ $CONDA_PREFIX ] || return 1;
+    local conda_env_name="$(basename $CONDA_PREFIX)"
+    [[ $conda_env_name != "base" ]] && printf  '%s' "${fg[yellow]}⧳ ${conda_env_name}${reset_color}"
+}
+
+virtual_env_info() {
+    [ $VIRTUAL_ENV ] && printf  '%s' "${fg[yellow]}⧲ $(basename $VIRTUAL_ENV)${reset_color}"
 }
 
 meta_info() {
-    if [[ -n "$(virtualenv_info)$(git_prompt_info)" ]]; then
-        if [[ -n $(virtualenv_info) ]]
-        then
-            printf '%s %s' "$(virtualenv_info)" "$(git_prompt_info)$(git_prompt_status)"
-        else
-            printf '%s' "$(git_prompt_info)$(git_prompt_status)"
+    if [[ -n "$(conda_env_info)$(virtual_env_info)$(git_prompt_info)" ]]; then
+        if [[ -n $(conda_env_info) ]]; then
+            printf '%s ' "$(conda_env_info)"
         fi
+
+        if [[ -n $(virtual_env_info) ]]; then
+            printf '%s ' "$(virtual_env_info)"
+        fi
+
+        printf '%s' "$(git_prompt_info)$(git_prompt_status)"
+
     fi
 }
 
