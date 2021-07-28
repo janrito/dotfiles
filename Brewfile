@@ -29,6 +29,7 @@ brew "rsync"
 brew "watch"
 brew "gdrive"
 brew "coreutils"
+brew "mpv"
 
 # dev
 brew "git"
@@ -54,6 +55,7 @@ cask "slack"
 cask "discord"
 cask "twobird"
 cask "zoom"
+cask "element"
 
 # cask dev
 cask "docker"
@@ -73,6 +75,7 @@ cask "font-open-sans"
 cask "font-source-code-pro"
 cask "font-source-sans-pro"
 cask "font-source-serif-pro"
+cask "font-input"
 
 # mas utils
 mas "Magnet", id: 441258766
