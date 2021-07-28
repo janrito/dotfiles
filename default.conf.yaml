@@ -4,7 +4,6 @@
     - ~/.ssh
     - ~/.config
     - ~/.local/bin
-    - ~/.jupyter
     - ~/.tmux/plugins
 - create:
     - ~/.bin
@@ -33,9 +32,9 @@
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv
-    ~/.jupyter/jupyter_notebook_config.py:
+    ~/.jupyter:
       create: true
-      path: jupyter/jupyter_notebook_config.py
+      path: jupyter/
     ~/.tmux/plugins/tpm:
       create: true
       path: vendor/tpm
