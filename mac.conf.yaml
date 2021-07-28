@@ -1,3 +1,5 @@
+- brewfile:
+    - Brewfile
 - clean:
     - ~/Library/Mobile Documents/
     - ~/Library/Application Support/Sublime Text 3/Packages/

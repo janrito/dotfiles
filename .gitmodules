@@ -1,5 +1,5 @@
 [submodule "dotbot"]
-	path = dotbot
+	path = vendor/dotbot
 	url = https://github.com/anishathalye/dotbot
 [submodule "vendor/tpm"]
 	path = vendor/tpm
@@ -13,3 +13,6 @@
 [submodule "vendor/conda-zsh-completion"]
 	path = vendor/conda-zsh-completion
 	url = git@github.com:esc/conda-zsh-completion.git
+[submodule "vendor/dotbot-brew"]
+	path = vendor/dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git
