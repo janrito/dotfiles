@@ -1,3 +1,5 @@
+# pyright: reportUndefinedVariable=false
+
 # # Configuration file for jupyter-server.
 
 # ------------------------------------------------------------------------------
