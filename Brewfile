@@ -40,6 +40,7 @@ brew "nvm"
 brew "subversion"
 brew "tig"
 brew "mtr"
+brew "awscli"
 
 # cask utils
 cask "alfred"
