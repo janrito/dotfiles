@@ -34,6 +34,7 @@ brew "mpv"
 # dev
 brew "git"
 brew "htop"
+brew "ctop"
 brew "neovim"
 brew "node"
 brew "nvm"
@@ -41,6 +42,8 @@ brew "subversion"
 brew "tig"
 brew "mtr"
 brew "awscli"
+brew "jq"
+brew "exa"
 
 # cask utils
 cask "alfred"
@@ -49,6 +52,8 @@ cask "firefox-beta"
 cask "itsycal"
 cask "spotify"
 cask "gpg-suite"
+cask "lastpass"
+cask "caffeine"
 
 # cask comms
 cask "signal"
@@ -57,6 +62,7 @@ cask "discord"
 cask "twobird"
 cask "zoom"
 cask "element"
+cask "obs"
 
 # cask dev
 cask "docker"
