@@ -33,6 +33,8 @@ brew "mpv"
 
 # dev
 brew "git"
+brew "libgit2"
+brew "dvc"
 brew "htop"
 brew "ctop"
 brew "neovim"
