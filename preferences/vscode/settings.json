@@ -1,6 +1,4 @@
 {
-  "editor.fontSize": 13,
-  // Controls the font family.
   "editor.fontFamily": "Iosevka, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
@@ -22,10 +20,14 @@
   // Whether to lint Python files using flake8
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
-  // Whether to lint Python files using pylint.
-  "python.linting.pylintEnabled": false,
   // Folders to look into for virtual environments.
-  "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
+  "python.venvFolders": [
+    ".env",
+    "envs",
+    ".pyenv",
+    ".direnv",
+    ".venv"
+  ],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
   "gitlens.advanced.messages": {
@@ -43,7 +45,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "One Dark Pro",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -60,6 +61,29 @@
   },
   "python.insidersChannel": "weekly",
   "notebook.lineNumbers": "on",
+  "telemetry.enableTelemetry": false,
+  "python.linting.pylintEnabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "cSpell.userWords": [
+    "ngram",
+    "noqa"
+  ],
+  "cSpell.language": "en-GB",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": false
+  },
+  "theme-by-language.themes": {
+  "*ipynb": "Quiet Light",
+  },
+  "jupyter.ignoreVscodeTheme": true,
   "jupyter.themeMatplotlibPlots": true,
-  "jupyter.askForKernelRestart": false
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.minimap.renderCharacters": false,
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "explorer.confirmDelete": false,
+  "jupyter.askForKernelRestart": false,
+  "editor.fontSize": 13
 }
