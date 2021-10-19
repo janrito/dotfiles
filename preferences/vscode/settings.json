@@ -73,7 +73,7 @@
     "*": true,
     "yaml": true,
     "plaintext": true,
-    "markdown": false
+    "markdown": true
   },
   "theme-by-language.themes": {
   "*ipynb": "Quiet Light",
@@ -85,5 +85,6 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   "explorer.confirmDelete": false,
   "jupyter.askForKernelRestart": false,
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "telemetry.telemetryLevel": "off"
 }
