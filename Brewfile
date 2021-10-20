@@ -49,7 +49,8 @@ brew "exa"
 
 # cask utils
 cask "alfred"
-cask "iterm2-beta"
+# cask "iterm2-beta" # current 3.5beta2 is broken
+cask "iterm2"
 cask "dropbox"
 cask "firefox-beta"
 cask "itsycal"
