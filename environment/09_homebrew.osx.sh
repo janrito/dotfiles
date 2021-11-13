@@ -3,8 +3,10 @@ is_osx || return 1
 # homebrew on arm
 if is_arm; then
   HOMEBREW_PREFIX="/opt/homebrew"
-  eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+else
+  HOMEBREW_PREFIX="/usr/local"
 fi
+eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 
 if is_bash; then
   # Homebrew bash completion
