@@ -19,4 +19,4 @@ export GOPATH=$HOME/.gocode
 export BREWPATH=$GOPATH/bin:$RUBYPATH
 
 # Export local path
-export PATH=$HOMEPATH:$BREWPATH:$TEXPATH:$PATH
+export PATH=$HOMEPATH:$BREWPATH:$PATH
