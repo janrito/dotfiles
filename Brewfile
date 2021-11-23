@@ -46,6 +46,7 @@ brew "mtr"
 brew "awscli"
 brew "jq"
 brew "exa"
+brew "figlet"
 
 # cask utils
 cask "alfred"
