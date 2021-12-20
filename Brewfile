@@ -50,8 +50,7 @@ brew "figlet"
 
 # cask utils
 cask "alfred"
-# cask "iterm2-beta" # current 3.5beta2 is broken
-cask "iterm2"
+cask "iterm2-beta"
 cask "dropbox"
 cask "firefox-beta"
 cask "itsycal"
