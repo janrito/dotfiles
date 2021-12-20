@@ -59,6 +59,7 @@ cask "spotify"
 cask "gpg-suite"
 cask "lastpass"
 cask "caffeine"
+cask "appcleaner"
 
 # cask comms
 cask "signal"
