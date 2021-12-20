@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # needs path configuration
 source ~/.dotfiles/profile
 

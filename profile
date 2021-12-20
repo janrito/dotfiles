@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # inspired by https://github.com/cowboy/dotfiles/blob/master/link/.bashrc
 
 # Source all files in ~/.dotfiles/environment/
@@ -13,4 +15,4 @@ function src() {
   fi
 }
 
-src
+src "$@"

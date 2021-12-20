@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Set Editor Editor to neovim if available, vim otherwise
 if command -v nvim &> /dev/null; then
     export EDITOR='nvim'
@@ -22,7 +24,7 @@ fi
 
 # Perl local modules
 if [[ -f $HOME/perl5/lib/perl5 ]]; then
-    eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+    eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
 fi
 
 # Set colors in Command line to true
@@ -42,4 +44,5 @@ export PASSWORD_STORE_GPG_OPTS="--armor"
 export GOPASS_GPG_OPTS=$PASSWORD_STORE_GPG_OPTS
 
 # gpg
-export GPG_TTY=$(tty)
+export GPG_TTY
+GPG_TTY=$(tty)

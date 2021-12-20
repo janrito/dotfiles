@@ -1,3 +1,5 @@
+#!/bin/bash
+
 is_bash || return 1
 
 # Path to the bash it configuration

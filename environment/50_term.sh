@@ -1,3 +1,5 @@
+#!/bin/bash
+
 is_interactive || return 1
 
 REPORTED_TERM=`infocmp -1 | grep 'sitm=\\\\E\[3m,\\|ritm=\\\\E\\[23m,' | wc -l | tr -d '[:space:]'`

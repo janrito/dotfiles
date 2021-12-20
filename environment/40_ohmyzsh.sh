@@ -1,3 +1,5 @@
+#!/bin/bash
+
 is_zsh || return 1
 
 # If you come from bash you might have to change your $PATH.

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 is_debian || return 1
 
 # ~/.profile: executed by the command interpreter for login shells.
@@ -12,10 +14,10 @@ is_debian || return 1
 
 # if running bash
 if is_bash; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-  . "$HOME/.bashrc"
-    fi
+  # include .bashrc if it exists
+  if [ -f "$HOME/.bashrc" ]; then
+    source "$HOME/.bashrc"
+  fi
 fi
 
 export HOMEPATH=~/.bin:~/.local/bin
@@ -25,8 +27,8 @@ export RUBYPATH=$HOME/.rbenv/bin
 
 # Node
 if [[ -e $HOME/.npm-global ]]; then
-    NPM_PATH=$HOME/.npm-global/bin
-    export PATH="$NPM_PATH:$PATH"
+  NPM_PATH=$HOME/.npm-global/bin
+  export PATH="$NPM_PATH:$PATH"
 fi
 
 # GO
@@ -38,16 +40,16 @@ export PATH=$HOMEPATH:$RUBYPATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
 
 
 if is_bash; then
-    # sudo tab completion
-    complete -cf sudo
+  # sudo tab completion
+  complete -cf sudo
 
-    # setup bash completion
-    if [[ -f /etc/bash_completion ]]; then
-        source /etc/bash_completion
-    fi
+  # setup bash completion
+  if [[ -f /etc/bash_completion ]]; then
+    source /etc/bash_completion
+  fi
 
-    # gopass bash completion
-    if command -v gopass &> /dev/null; then
-        source <(gopass completion bash)
-    fi
+  # gopass bash completion
+  if command -v gopass &> /dev/null; then
+    source <(gopass completion bash)
+  fi
 fi

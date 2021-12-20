@@ -1,3 +1,5 @@
+#!/bin/bash
+
 is_osx || return 1
 
 # homebrew on arm
@@ -10,19 +12,14 @@ eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 
 if is_bash; then
   # Homebrew bash completion
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  if [ -f "$HOMEBREW_PREFIX/etc/bash_completion" ]; then
     # default os-x bash 3
-    source $(brew --prefix)/etc/bash_completion
-  elif [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+    source "$HOMEBREW_PREFIX/etc/bash_completion"
+  elif [ -f "$HOMEBREW_PREFIX/share/bash-completion/bash_completion" ]; then
     # homebrew installed bash 4
-    source $(brew --prefix)/share/bash-completion/bash_completion
+    source "$HOMEBREW_PREFIX/share/bash-completion/bash_completion"
   fi
 elif is_zsh; then
   # Homebrew zsh completion
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
-# generic colourizer
-if [ -f $(brew --prefix)/etc/grc.bashrc ]; then
-  source $(brew --prefix)/etc/grc.bashrc
+  FPATH=$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH
 fi

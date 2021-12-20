@@ -1,3 +1,5 @@
+#!/bin/bash
+
 is_osx || return 1
 
 # Paths in home directory
