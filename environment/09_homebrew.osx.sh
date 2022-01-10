@@ -8,7 +8,10 @@ if is_arm; then
 else
   HOMEBREW_PREFIX="/usr/local"
 fi
-eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+
+if [ -f "${HOMEBREW_PREFIX}/bin/brew" ]; then
+  eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+fi
 
 if is_bash; then
   # Homebrew bash completion
