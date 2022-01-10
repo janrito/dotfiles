@@ -3,10 +3,10 @@
 is_osx || return 1
 
 # Paths in home directory
-export HOMEPATH=~/.bin:~/.local/bin
+PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
 
 # Ruby
-export RUBYPATH=$HOME/.rbenv/bin
+PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
 
 # NVM (Node Version Manager)
 if [[ -f "$(brew --prefix)/opt/nvm/nvm.sh" ]]; then
@@ -16,9 +16,6 @@ fi
 
 # GO
 export GOPATH=$HOME/.gocode
+PATH="${PATH:+$GOPATH/bin:${PATH}}"
 
-# Homebrew
-export BREWPATH=$GOPATH/bin:$RUBYPATH
 
-# Export local path
-export PATH=$HOMEPATH:$BREWPATH:$PATH

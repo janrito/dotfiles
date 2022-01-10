@@ -20,23 +20,22 @@ if is_bash; then
   fi
 fi
 
-export HOMEPATH=~/.bin:~/.local/bin
+# Paths in home directory
+PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
 
 # Ruby
-export RUBYPATH=$HOME/.rbenv/bin
+PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
 
 # Node
 if [[ -e $HOME/.npm-global ]]; then
   NPM_PATH=$HOME/.npm-global/bin
-  export PATH="$NPM_PATH:$PATH"
+  PATH="${PATH:+$NPM_PATH:${PATH}}"
 fi
 
 # GO
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/.gocode/
-
-# PATH
-export PATH=$HOMEPATH:$RUBYPATH:$GOROOT/bin:${GOPATH//://bin:}/bin:$PATH
+PATH="${PATH:+$GOPATH/bin:$GOROOT/bin:${PATH}}"
 
 
 if is_bash; then
