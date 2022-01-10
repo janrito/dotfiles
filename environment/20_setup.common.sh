@@ -2,9 +2,9 @@
 
 # Set Editor Editor to neovim if available, vim otherwise
 if command -v nvim &> /dev/null; then
-    export EDITOR='nvim'
+  export EDITOR='nvim'
 else
-    export EDITOR='vim'
+  export EDITOR='vim'
 fi
 
 # Default Pager
@@ -12,19 +12,19 @@ export PAGER="/usr/bin/less -isM"
 
 #rbenv
 if command -v rbenv &> /dev/null; then
-     eval "$(rbenv init -)"
+   eval "$(rbenv init -)"
 fi
 
 # pyenv
 if [[ -f $HOME/.pyenv/bin/pyenv ]]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
 fi
 
 # Perl local modules
 if [[ -f $HOME/perl5/lib/perl5 ]]; then
-    eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
+  eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
 fi
 
 # Set colors in Command line to true
