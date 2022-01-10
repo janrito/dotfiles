@@ -20,8 +20,9 @@
   rebase = true
 [core]
   editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [diff]
-  tool = icdiff
+  tool = diff-so-fancy
 [push]
   default = simple
 [merge]
@@ -30,8 +31,6 @@
   autocorrect = 1
 [difftool]
   prompt = false
-[difftool "icdiff"]
-  cmd = icdiff --line-numbers $LOCAL $REMOTE
 [filter "media"]
   required = true
   clean = git media clean %f
@@ -55,3 +54,20 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

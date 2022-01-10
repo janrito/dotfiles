@@ -48,6 +48,7 @@ brew "awscli"
 brew "shellcheck"
 brew "jq"
 brew "exa"
+brew "diff-so-fancy"
 brew "figlet"
 
 # cask utils
