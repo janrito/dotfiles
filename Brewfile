@@ -49,6 +49,7 @@ brew "shellcheck"
 brew "jq"
 brew "exa"
 brew "fzf"
+brew "bat"
 brew "diff-so-fancy"
 brew "figlet"
 
