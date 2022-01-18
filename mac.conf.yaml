@@ -34,3 +34,6 @@
 - link:
     ~/.sleep: scripts/sleepwatcher_sleep.sh
     ~/.wakeup: scripts/sleepwatcher_wakeup.sh
+    ~/.idle: scripts/sleepwatcher_idle.sh
+    ~/.idleresume: scripts/sleepwatcher_idleresume.sh
+    ~/.resume: scripts/sleepwatcher_resume.sh

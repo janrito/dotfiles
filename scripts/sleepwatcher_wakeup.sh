@@ -3,6 +3,8 @@
 # needs path configuration
 source ~/.dotfiles/profile
 
+echo "SLEEPWATCHER $(date +%Y-%m-%dT%H:%M:%S%z): wakeup"
+
 # turn bluetooth on
 "$(brew --prefix)/bin/blueutil" --power 1
 

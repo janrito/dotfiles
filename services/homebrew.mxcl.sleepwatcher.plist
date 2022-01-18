@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>KeepAlive</key>
+    <true/>
+    <key>Label</key>
+    <string>homebrew.mxcl.sleepwatcher</string>
+    <key>StandardErrorPath</key>
+    <string>/opt/homebrew/var/log/sleepwatcher/error.log</string>
+    <key>StandardOutPath</key>
+    <string>/opt/homebrew/var/log/sleepwatcher/output.log</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/opt/homebrew/opt/sleepwatcher/sbin/sleepwatcher</string>
+      <string>--verbose</string>
+      <string>--sleep</string>
+      <string>/Users/alejandrogiacometti/.sleep</string>
+      <string>--wakeup</string>
+      <string>/Users/alejandrogiacometti/.wakeup</string>
+      <string>--timeout</string>
+      <string>200</string>
+      <string>--idle</string>
+      <string>/Users/alejandrogiacometti/.idle</string>
+      <string>--idleresume</string>
+      <string>/Users/alejandrogiacometti/.idleresume</string>
+      <string>--break</string>
+      <string>200</string>
+      <string>--resume</string>
+      <string>/Users/alejandrogiacometti/.resume</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
