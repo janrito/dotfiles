@@ -18,6 +18,7 @@ brew "scipy"
 brew "numpy"
 brew "apache-arrow"
 brew "pipx"
+brew "rust"
 
 # utils
 brew "gopass"
