@@ -9,12 +9,11 @@ DOTBOT_DIR="vendor/dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-DOTBOT_BREW_DIR="vendor/dotbot-brew"
 
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
-    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${BASEDIR}/${DOTBOT_BREW_DIR}" -c "${conf}${CONFIG_SUFFIX}"
+for conf in ${DEFAULT_CONFIG_PREFIX} "${@}"; do
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${conf}${CONFIG_SUFFIX}"
 done
