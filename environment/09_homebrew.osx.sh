@@ -26,3 +26,6 @@ elif is_zsh; then
   # Homebrew zsh completion
   FPATH=$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH
 fi
+
+# default homebrew bundle file
+export HOMEBREW_BUNDLE_FILE="${HOME}/.brewfile/Brewfile"

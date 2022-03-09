@@ -9,6 +9,7 @@
 - link:
     "~/iCloud": "~/Library/Mobile Documents/com~apple~CloudDocs"
     ~/.ssh/config: ssh/config
+    ~/.config/brewfile/Brewfile: brewfile/Brewfile
     "~/Library/Application Support/Sublime Text 3/Packages/User": preferences/sublimetext3/
     "~/Library/Application Support/Code/User": preferences/vscode/
 - clean:

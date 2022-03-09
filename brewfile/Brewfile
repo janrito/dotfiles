@@ -8,6 +8,7 @@ tap "homebrew/services"
 brew "mas"
 
 # dev, python & numerical computing packages
+brew "act"
 brew "apache-arrow"
 brew "cmake"
 brew "cython"
@@ -64,6 +65,7 @@ cask "iterm2-beta"
 cask "itsycal"
 cask "lastpass"
 cask "spotify"
+cask "textbuddy"
 
 # cask comms
 cask "discord"
