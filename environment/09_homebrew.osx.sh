@@ -28,4 +28,4 @@ elif is_zsh; then
 fi
 
 # default homebrew bundle file
-export HOMEBREW_BUNDLE_FILE="${HOME}/.brewfile/Brewfile"
+export HOMEBREW_BUNDLE_FILE="${HOME}/.config/brewfile/Brewfile"
