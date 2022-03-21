@@ -27,7 +27,7 @@ enable_tabline_filetype_icon = true
 enable_statusline_display_mode = true
 
 # disable plugins
-disabled_plugins = ["onedark.vim"]
+# disabled_plugins = ["onedark.vim"]
 
 # Enable autocomplete layer
 [[layers]]
