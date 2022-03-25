@@ -24,7 +24,6 @@
   editor = nvim
   pager = delta
 [diff]
-  # tool = diff-so-fancy
   colorMoved = default
 [push]
   default = simple
