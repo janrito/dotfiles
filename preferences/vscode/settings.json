@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Iosevka, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Iosevka Nerd Font, Iosevka, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
   "editor.renderWhitespace": "all",
@@ -21,13 +21,7 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
   // Folders to look into for virtual environments.
-  "python.venvFolders": [
-    ".env",
-    "envs",
-    ".pyenv",
-    ".direnv",
-    ".venv"
-  ],
+  "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
   "gitlens.advanced.messages": {
@@ -63,15 +57,11 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "python.insidersChannel": "weekly",
   "notebook.lineNumbers": "on",
   "telemetry.enableTelemetry": false,
   "python.linting.pylintEnabled": false,
   "editor.inlineSuggest.enabled": true,
-  "cSpell.userWords": [
-    "ngram",
-    "noqa"
-  ],
+  "cSpell.userWords": ["noqa"],
   "cSpell.language": "en-GB",
   "github.copilot.enable": {
     "*": true,
@@ -79,10 +69,6 @@
     "plaintext": true,
     "markdown": true
   },
-  "theme-by-language.themes": {
-  "*ipynb": "Quiet Light",
-  },
-  "jupyter.ignoreVscodeTheme": true,
   "jupyter.themeMatplotlibPlots": true,
   "workbench.colorTheme": "One Dark Pro",
   "editor.minimap.renderCharacters": false,
@@ -90,5 +76,6 @@
   "explorer.confirmDelete": false,
   "jupyter.askForKernelRestart": false,
   "editor.fontSize": 13,
-  "telemetry.telemetryLevel": "off"
+  "telemetry.telemetryLevel": "off",
+  "jupyter.jupyterServerType": "local"
 }
