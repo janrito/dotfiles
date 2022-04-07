@@ -18,6 +18,8 @@
 	<false/>
 	<key>AutoHideTmuxClientSession</key>
 	<true/>
+	<key>BadgeFont</key>
+	<string>Iosevka</string>
 	<key>CheckTestRelease</key>
 	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
@@ -1291,6 +1293,8 @@
 			<string></string>
 			<key>Show Status Bar</key>
 			<true/>
+			<key>Show Timestamps</key>
+			<integer>2</integer>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
@@ -1415,8 +1419,12 @@
 				<dict>
 					<key>algorithm</key>
 					<integer>0</integer>
+					<key>auto-rainbow style</key>
+					<integer>0</integer>
 					<key>font</key>
-					<string>Iosevka-Light 12</string>
+					<string>IosevkaNerdFontComplete-Light 11</string>
+					<key>remove empty components</key>
+					<false/>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1438,21 +1446,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.63</real>
+									<real>0.63590967655181885</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.64143353700637817</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.86000317335128784</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1467,26 +1479,32 @@
 								<integer>1</integer>
 								<key>base: priority</key>
 								<real>5</real>
+								<key>path</key>
+								<string>hostname</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.63</real>
+									<real>0.64672034978866577</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.76905232667922974</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.87785321474075317</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1508,21 +1526,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.63</real>
+									<real>0.65999585390090942</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.89810562133789062</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.89964801073074341</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1548,21 +1570,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.63</real>
+									<real>0.65714061260223389</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.89602220058441162</real>
 									<key>Red Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.79352080821990967</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1586,21 +1612,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.63</real>
+									<real>0.65464502573013306</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.8927837610244751</real>
 									<key>Red Component</key>
-									<real>0.63</real>
+									<real>0.69119709730148315</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1622,21 +1652,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.76940757036209106</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.89269894361495972</real>
 									<key>Red Component</key>
-									<real>0.63</real>
+									<real>0.68831473588943481</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1654,21 +1688,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.89999999999999991</real>
+									<real>0.89086443185806274</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.89269673824310303</real>
 									<key>Red Component</key>
-									<real>0.63</real>
+									<real>0.68831759691238403</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1688,21 +1726,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.88773804903030396</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.76500000000000012</real>
+									<real>0.76769518852233887</real>
 									<key>Red Component</key>
-									<real>0.63</real>
+									<real>0.65813320875167847</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1722,21 +1764,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.88052242994308472</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.63758963346481323</real>
 									<key>Red Component</key>
-									<real>0.63</real>
+									<real>0.63140970468521118</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1756,21 +1802,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.88172715902328491</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.63471543788909912</real>
 									<key>Red Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.73579543828964233</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1792,21 +1842,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.88381552696228027</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.64092326164245605</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.85143959522247314</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -1830,21 +1884,25 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.76881879568099976</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.6414305567741394</real>
 									<key>Red Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.86000508069992065</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
 								<key>font</key>
-								<string>Iosevka-Light 12</string>
+								<string>IosevkaNerdFontComplete-Light 11</string>
+								<key>remove empty components</key>
+								<false/>
 							</dict>
 						</dict>
 					</dict>
@@ -3244,6 +3302,8 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SavePasteHistory</key>
+	<false/>
+	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>Show Toolbelt</key>
 	<false/>
