@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/sh
 is_bash || return 1
 
 # Path to the bash it configuration
@@ -52,4 +51,4 @@ export SCM_CHECK=true
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Load Bash It
-source "$BASH_IT"/bash_it.sh
+. "$BASH_IT/bash_it.sh"

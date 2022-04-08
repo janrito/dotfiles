@@ -1,9 +1,8 @@
-#!/bin/bash
-
+#!/bin/sh
 is_zsh || return 1
 
 # kill line
-bindkey \^K kill-line
+bindkey ^K kill-line
 
 # home and end keys
 bindkey "^[[H" beginning-of-line

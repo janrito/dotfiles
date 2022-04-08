@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 is_debian || return 1
 
@@ -16,7 +16,9 @@ is_debian || return 1
 if is_bash; then
   # include .bashrc if it exists
   if [ -f "$HOME/.bashrc" ]; then
-    source "$HOME/.bashrc"
+    # we can ignore this because we are checking it exists
+    # shellcheck disable=SC1091
+    . "$HOME/.bashrc"
   fi
 fi
 
@@ -27,28 +29,35 @@ PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
 PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
 
 # Node
-if [[ -e $HOME/.npm-global ]]; then
-  NPM_PATH=$HOME/.npm-global/bin
+if [ -e "$HOME/.npm-global" ]; then
+  NPM_PATH="$HOME/.npm-global/bin"
   PATH="${PATH:+$NPM_PATH:${PATH}}"
+  unset NPM_PATH
 fi
 
 # GO
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/.gocode/
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/.gocode/"
 PATH="${PATH:+$GOPATH/bin:$GOROOT/bin:${PATH}}"
-
+unset GOROOT
 
 if is_bash; then
   # sudo tab completion
+  # we can safely ignore this because we know we are in bash
+  # shellcheck disable=SC3044
   complete -cf sudo
 
   # setup bash completion
-  if [[ -f /etc/bash_completion ]]; then
-    source /etc/bash_completion
+  if [ -f "/etc/bash_completion" ]; then
+    # we can ignore this because we are checking it exists
+    # shellcheck disable=SC1091
+    . "/etc/bash_completion"
   fi
 
   # gopass bash completion
-  if command -v gopass &> /dev/null; then
-    source <(gopass completion bash)
+  if command -v gopass > /dev/null 2>&1; then
+    # we can safely ignore this because we know we are in bash
+    # shellcheck disable=SC3001,SC1090
+    . <(gopass completion bash)
   fi
 fi

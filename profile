@@ -1,19 +1,31 @@
-#!/bin/bash
+#!/bin/sh
 
-# inspired by https://github.com/cowboy/dotfiles/blob/master/link/.bashrc
+ENV_DEBUG=${ENV_DEBUG:-false}
+
+_debug() {
+  case "$ENV_DEBUG" in
+    1|true|TRUE)
+      printf "%b" "$@"
+      printf "%b" "\n"
+      ;;
+    *) ;;
+  esac
+}
 
 # Source all files in ~/.dotfiles/environment/
-function src() {
-  local file
-  if [[ "$1" ]]; then
+src() {
+  if [ "$1" ]; then
     echo "$1"
     # shellcheck source=environment/00_functions.sh
-    source "$HOME/.dotfiles/environment/$1.sh"
+    . "$HOME/.dotfiles/environment/$1.sh"
   else
-    for file in ~/.dotfiles/environment/*; do
+    for env_source_file in "$HOME/.dotfiles/environment/"*
+    do
+      _debug ". $env_source_file"
       # shellcheck source=environment/00_functions.sh
-      source "$file"
+      . "$env_source_file"
     done
+
   fi
 }
 
