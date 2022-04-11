@@ -3,7 +3,7 @@
 reload_config() {
   if [ -f "${HOME}/.dotfiles/profile" ]; then
     _debug "Reloading profile"
-    # shellcheck source=./../.dotfiles/profile
+    # shellcheck source=./../profile
     . "$HOME/.dotfiles/profile"
   fi
 }

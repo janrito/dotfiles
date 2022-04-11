@@ -1,0 +1,4 @@
+ source-path=SCRIPTDIR
+ source-path=/usr/local/
+ source-path=/opt/homebrew/
+ external-sources=true

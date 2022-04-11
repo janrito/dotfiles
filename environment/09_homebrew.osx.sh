@@ -17,12 +17,12 @@ if is_bash; then
   if [ -f "$HOMEBREW_PREFIX/etc/bash_completion" ]; then
     # default os-x bash 3
     # we can ignore this because we are checking it exists
-    # shellcheck disable=SC1091
+    # shellcheck source=etc/bash_completion disable=SC1091
     . "$HOMEBREW_PREFIX/etc/bash_completion"
   elif [ -f "$HOMEBREW_PREFIX/share/bash-completion/bash_completion" ]; then
     # homebrew installed bash 4
     # we can ignore this because we are checking it exists
-    # shellcheck disable=SC1091
+    # shellcheck source=share/bash-completion/bash_completion disable=SC1091
     . "$HOMEBREW_PREFIX/share/bash-completion/bash_completion"
   fi
 elif is_zsh; then
