@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/sh
 is_osx || return 1
 
 # homebrew on arm
@@ -17,10 +16,14 @@ if is_bash; then
   # Homebrew bash completion
   if [ -f "$HOMEBREW_PREFIX/etc/bash_completion" ]; then
     # default os-x bash 3
-    source "$HOMEBREW_PREFIX/etc/bash_completion"
+    # we can ignore this because we are checking it exists
+    # shellcheck disable=SC1091
+    . "$HOMEBREW_PREFIX/etc/bash_completion"
   elif [ -f "$HOMEBREW_PREFIX/share/bash-completion/bash_completion" ]; then
     # homebrew installed bash 4
-    source "$HOMEBREW_PREFIX/share/bash-completion/bash_completion"
+    # we can ignore this because we are checking it exists
+    # shellcheck disable=SC1091
+    . "$HOMEBREW_PREFIX/share/bash-completion/bash_completion"
   fi
 elif is_zsh; then
   # Homebrew zsh completion

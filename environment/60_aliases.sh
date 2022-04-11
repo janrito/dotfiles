@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # word diff
 wd() {

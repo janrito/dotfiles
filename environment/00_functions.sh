@@ -1,13 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 
 reload_config() {
-  source "${HOME}/.dotfiles/profile"
+  if [ -f "${HOME}/.dotfiles/profile" ]; then
+    _debug "Reloading profile"
+    # shellcheck source=./../.dotfiles/profile
+    . "$HOME/.dotfiles/profile"
+  fi
 }
 
 # remove duplicates from path
 # based on https://www.linuxjournal.com/content/removing-duplicate-path-entries
 repath() {
-  echo -n "$1" | awk -v RS=: -v len=0 '!($0 in a) {a[$0]; len++; printf("%s%s", len > 1 ? ":" : "", $0)}'
+  printf "%b" "$1" | awk -v RS=: -v len=0 '!($0 in a) {a[$0]; len++; printf("%s%s", len > 1 ? ":" : "", $0)}'
 }
 
 # pretty print path
@@ -19,38 +23,65 @@ path() {
 ## session tests
 is_interactive() {
   # true if session is interactive
-  [[ $- == *i* ]] || return 1
+  case $- in
+    *i*)
+      _debug "is_interactive"
+      return 0
+    ;;
+    *) return 1 ;;
+  esac
 }
 
 is_osx() {
   # return true if running in OSX
-  [[ "$OSTYPE" =~ ^darwin ]] || return 1
+  case "$(uname)" in
+    Darwin)
+      _debug "is_osx"
+      return 0
+    ;;
+    *) return 1 ;;
+  esac
 }
 
 is_arm() {
   # return true if running on arm64
-  local UNAME_MACHINE
-  UNAME_MACHINE="$(/usr/bin/uname -m)"
-  [[ "$UNAME_MACHINE" == "arm64" ]] || return 1
+  case "$(/usr/bin/uname -m)" in
+    arm64)
+      _debug "is_arm"
+      return 0
+    ;;
+    *) return 1 ;;
+  esac
 }
 
 is_debian() {
   # return true if session is in Ubuntu, Debian or Raspbian
-  local _LINUX_OS
-  _LINUX_OS="$(cat /etc/issue 2> /dev/null)"
-  [[ $_LINUX_OS =~ Ubuntu || $_LINUX_OS =~ Debian || $_LINUX_OS =~ Raspbian ]] || return 1
+  case "$(cat /etc/issue 2> /dev/null)" in
+    *Ubuntu*|*Debian*|*Raspbian*)
+      _debug "is_debian"
+      return 0
+    ;;
+    *) return 1 ;;
+  esac
 }
-
 is_bash() {
-  local _SHELL
-  _SHELL="$(ps -p$$ -ocommand=)"
-  [[ $_SHELL =~ .*bash$ ]] || return 1
+  case "$(ps -p$$ -ocommand=)" in
+    *bash)
+      _debug "is_bash"
+      return 0
+    ;;
+    *) return 1 ;;
+  esac
 }
 
 is_zsh() {
-  local _SHELL
-  _SHELL="$(ps -p$$ -ocommand=)"
-  [[ $_SHELL =~ .*zsh$ ]] || return 1
+  case "$(ps -p$$ -ocommand=)" in
+    *zsh)
+      _debug "is_zsh"
+      return 0
+    ;;
+    *) return 1 ;;
+  esac
 }
 
 ## based on https://github.com/kennethreitz/dotfiles/blob/master/.aliases

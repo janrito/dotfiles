@@ -1,5 +1,5 @@
-#!/bin/bash
-
+#!/bin/sh
+# shellcheck disable=SC2034 # ignore unused or unexported variables in this file
 is_zsh || return 1
 
 # If you come from bash you might have to change your $PATH.
@@ -74,9 +74,12 @@ ZSH_CUSTOM="${HOME}/.dotfiles/ohmyzsh-custom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# shellcheck disable=SC3030 # ignore this because we know we are in zsh
 plugins=(git conda-zsh-completion)
 
-source $ZSH/oh-my-zsh.sh
+# we can ignore SC1094 because we know it's zsh
+# shellcheck source=./vendor/ohmyzsh/oh-my-zsh.sh disable=SC1094
+. "$ZSH/oh-my-zsh.sh"
 
 # User configuration
 

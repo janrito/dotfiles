@@ -1,9 +1,11 @@
-#!/bin/bash
+#!/bin/sh
 
 # Set Editor Editor to neovim if available, vim otherwise
-if command -v nvim &> /dev/null; then
+if command -v nvim > /dev/null 2>&1; then
+  _debug "setting editor to nvim"
   export EDITOR='nvim'
 else
+  _debug "setting editor to vim"
   export EDITOR='vim'
 fi
 
@@ -11,19 +13,22 @@ fi
 export PAGER="/usr/bin/less -isM"
 
 #rbenv
-if command -v rbenv &> /dev/null; then
+if command -v rbenv > /dev/null 2>&1; then
+  _debug "rbenv init"
    eval "$(rbenv init -)"
 fi
 
 # pyenv
-if [[ -f $HOME/.pyenv/bin/pyenv ]]; then
+if [ -f "$HOME/.pyenv/bin/pyenv" ]; then
+  _debug "pyenv init"
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 fi
 
 # Perl local modules
-if [[ -f $HOME/perl5/lib/perl5 ]]; then
+if [ -f "$HOME/perl5/lib/perl5" ]; then
+  _debug "perl5 init"
   eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
 fi
 
