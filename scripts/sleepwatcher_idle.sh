@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 # needs path configuration
-# shellcheck source=profile
-source "$HOME/.dotfiles/profile"
+# shellcheck source=./../profile
+. "$HOME/.dotfiles/profile"
 
 echo "SLEEPWATCHER $(date +%Y-%m-%dT%H:%M:%S%z): idle"
 

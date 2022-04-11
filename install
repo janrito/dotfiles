@@ -1,13 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -e
 
-DEFAULT_CONFIG_PREFIX="default"
-CONFIG_SUFFIX=".conf.yaml"
+BASEDIR="$HOME/.dotfiles"
+DOTBOT_BIN="bin/dotbot"
 DOTBOT_DIR="vendor/dotbot"
 
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DEFAULT_CONFIG_PREFIX="default"
+CONFIG_SUFFIX=".conf.yaml"
 
 
 cd "${BASEDIR}"

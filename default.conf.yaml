@@ -15,8 +15,6 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
-    ~/.inputrc: inputrc
-    ~/.bash_profile: profile
     ~/.zshrc: profile
     ~/.ssh/config: ssh/config.plain
 - defaults:

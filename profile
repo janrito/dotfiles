@@ -5,7 +5,7 @@ ENV_DEBUG=${ENV_DEBUG:-false}
 _debug() {
   case "$ENV_DEBUG" in
     1|true|TRUE)
-      printf "%b" "$( date -Iseconds ) DEBUG "
+      printf "%b" "$( date +%Y-%m-%dT%H:%M:%S%z ) DEBUG "
       printf "%b" "$@"
       printf "%b" "\n"
       ;;

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 is_osx || return 1
 
@@ -9,7 +9,7 @@ PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
 PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
 
 # NVM (Node Version Manager)
-if [[ -f "$(brew --prefix)/opt/nvm/nvm.sh" ]]; then
+if [ -f "$(brew --prefix)/opt/nvm/nvm.sh" ]; then
   export NVM_DIR="$HOME/.nvm"
     _debug "NVM init"
     # we can ignore this becasuse we are checking it exists
@@ -20,24 +20,17 @@ fi
 
 # GO
 _debug "GO init"
-export GOPATH=$HOME/.gocode
+export GOPATH="$HOME/.gocode"
 PATH="${PATH:+$GOPATH/bin:${PATH}}"
 
 
 # Setup fzf
-if [[ -d "$(brew --prefix)/opt/fzf" ]]; then
+if [ -d "$(brew --prefix)/opt/fzf" ]; then
   _debug "fzf init"
   FZF_HOME="$(brew --prefix)/opt/fzf"
   PATH="${PATH:+$FZF_HOME/bin${PATH}}"
 
-  if is_bash; then
-    if is_interactive; then
-      # shellcheck source=opt/fzf/shell/completion.bash
-      . "$FZF_HOME/shell/completion.bash" 2> /dev/null
-    fi
-    # shellcheck source=opt/fzf/shell/key-bindings.bash
-    . "$FZF_HOME/shell/key-bindings.bash"
-  elif is_zsh; then
+  if is_zsh; then
     if is_interactive; then
       # we can ignore SC1094 because we know it's zsh
       # shellcheck source=opt/fzf/shell/completion.zsh disable=SC1094
@@ -47,5 +40,4 @@ if [[ -d "$(brew --prefix)/opt/fzf" ]]; then
     # shellcheck source=opt/fzf/shell/key-bindings.zsh disable=SC1094
     . "$FZF_HOME/shell/key-bindings.zsh"
   fi
-
 fi

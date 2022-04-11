@@ -4,15 +4,9 @@
 [submodule "vendor/tpm"]
 	path = vendor/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "vendor/bash_it"]
-	path = vendor/bash_it
-	url = git@github.com:Bash-it/bash-it.git
 [submodule "vendor/ohmyzsh"]
 	path = vendor/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "vendor/conda-zsh-completion"]
 	path = vendor/conda-zsh-completion
 	url = git@github.com:esc/conda-zsh-completion.git
-[submodule "vendor/dotbot-brew"]
-	path = vendor/dotbot-brew
-	url = https://github.com/d12frosted/dotbot-brew.git
