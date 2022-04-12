@@ -16,6 +16,7 @@
     ~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
     ~/.zshrc: profile
+    ~/.zimrc: zimrc
     ~/.ssh/config: ssh/config.plain
 - defaults:
     link:
