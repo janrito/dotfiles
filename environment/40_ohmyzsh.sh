@@ -1,7 +1,8 @@
 #!/bin/sh
 # shellcheck disable=SC2034 # ignore unused or unexported variables in this file
 is_zsh || return 1
-
+return 1
+_debug "shouldn't reach here"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
