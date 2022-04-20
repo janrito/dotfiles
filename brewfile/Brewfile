@@ -102,6 +102,7 @@ cask "font-source-serif-pro"
 # mas utils
 mas "iA Writer", id: 775737590
 mas "Magnet", id: 441258766
+mas "LanguageTool", id: 1534275760
 
 # mas apple
 mas "Keynote", id: 409183694
