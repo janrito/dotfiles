@@ -5,23 +5,23 @@ ENV_DEBUG=${ENV_DEBUG:-false}
 _debug() {
   # Utility to print debug messages
   case "$ENV_DEBUG" in
-    1|true|TRUE)
-      printf "%b" "$( date +%Y-%m-%dT%H:%M:%S%z ) DEBUG "
-      printf "%b" "$@"
-      printf "%b" "\n"
-      ;;
-    *) ;;
+  1 | true | TRUE)
+    printf "%b" "$(date +%Y-%m-%dT%H:%M:%S%z) DEBUG "
+    printf "%b" "$@"
+    printf "%b" "\n"
+    ;;
+  *) ;;
   esac
 }
 
 src() {
   # Utility to import configuration files
   if [ "$1" ]; then
-   source_file="$HOME/.dotfiles/environment/$1.sh"
-   _debug "Importing $source_file"
-   if [ -f "$source_file" ]; then
+    source_file="$HOME/.dotfiles/environment/$1.sh"
+    _debug "Importing $source_file"
+    if [ -f "$source_file" ]; then
       # shellcheck source=./environment/functions.sh
-     . "$source_file"
+      . "$source_file"
     else
       echo "ERROR: $source_file does not exist"
     fi
@@ -42,8 +42,7 @@ src "aliases"
 
 # Find and import local configuration files
 # Anything in environment/*.local.sh will be imported here
-for local_env_source_file in $(find_local_config)
-do
+for local_env_source_file in $(find_local_config); do
   src "${local_env_source_file%.sh}"
 done
 
