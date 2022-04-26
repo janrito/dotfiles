@@ -30,11 +30,11 @@ src() {
 
 src "functions"
 src "homebrew.osx"
+src "zimfw"
 src "setup.debian"
 src "setup.osx"
 src "setup.common"
 src "conda.osx"
-src "zimfw"
 src "starship"
 src "term"
 src "zsh_keys"
