@@ -16,10 +16,10 @@ fi
 # Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
 if [ -z "$(find "${ZIM_HOME}/init.zsh" -newer "${ZDOTDIR:-${HOME}}/.zimrc")" ]; then
   set -- "init" "-q"
-  # shellcheck source=./../../../../.zim/zimfw.zsh
+  # shellcheck source=./../../.zim/zimfw.zsh disable=SC1094 # ignore this because we know it's zsh
   . "${ZIM_HOME}/zimfw.zsh"
   set --
 fi
 # Initialize modules.
-# shellcheck source=./../../.zim/init.zsh
+# shellcheck source=./../../.zim/init.zsh disable=SC1094 # ignore this because we know it's zsh
 . "${ZIM_HOME}/init.zsh"
