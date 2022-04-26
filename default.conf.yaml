@@ -18,6 +18,7 @@
     ~/.zshrc: profile
     ~/.zimrc: zimrc
     ~/.ssh/config: ssh/config.plain
+    ~/.config/starship.toml: starship.toml
 - defaults:
     link:
       force: false
