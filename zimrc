@@ -1,5 +1,7 @@
-# Spaceship
-zmodule spaceship-prompt/spaceship-prompt --name spaceship
+# ZIMFW configure
+
+# asciiship as fallback
+zmodule asciiship
 
 # Completion
 
@@ -8,6 +10,7 @@ zmodule zsh-users/zsh-completions --fpath src
 # Enables and configures smart and extensive tab completion.
 # completion must be sourced after all modules that add completion definitions.
 zmodule completion
+zmodule git-info
 
 # Modules that must be initialized last
 
