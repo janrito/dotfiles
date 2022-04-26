@@ -45,4 +45,6 @@ do
   . "$local_env_source_file"
 done
 
-src "99_path_remove_duplicates"
+# Remove duplicates from path
+REPATHED_PATH=$(repath "$PATH")
+export PATH="$REPATHED_PATH"
