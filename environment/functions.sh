@@ -20,71 +20,71 @@ path() {
 }
 
 find_local_config() {
-  find "$HOME/.dotfiles/environment" -name '*.local.sh'  -type f -print0 \
-    | xargs -0 -n 1 -I @ sh -c "basename @"  | sort
+  find "$HOME/.dotfiles/environment" -name '*.local.sh' -type f -print0 |
+    xargs -0 -n 1 -I @ sh -c "basename @" | sort
 }
 
 ## session tests
 is_interactive() {
   # true if session is interactive
   case $- in
-    *i*)
-      _debug "is_interactive"
-      return 0
+  *i*)
+    _debug "is_interactive"
+    return 0
     ;;
-    *) return 1 ;;
+  *) return 1 ;;
   esac
 }
 
 is_osx() {
   # return true if running in OSX
   case "$(uname)" in
-    Darwin)
-      _debug "is_osx"
-      return 0
+  Darwin)
+    _debug "is_osx"
+    return 0
     ;;
-    *) return 1 ;;
+  *) return 1 ;;
   esac
 }
 
 is_arm() {
   # return true if running on arm64
   case "$(/usr/bin/uname -m)" in
-    arm64)
-      _debug "is_arm"
-      return 0
+  arm64)
+    _debug "is_arm"
+    return 0
     ;;
-    *) return 1 ;;
+  *) return 1 ;;
   esac
 }
 
 is_debian() {
   # return true if session is in Ubuntu, Debian or Raspbian
-  case "$(cat /etc/issue 2> /dev/null)" in
-    *Ubuntu*|*Debian*|*Raspbian*)
-      _debug "is_debian"
-      return 0
+  case "$(cat /etc/issue 2>/dev/null)" in
+  *Ubuntu* | *Debian* | *Raspbian*)
+    _debug "is_debian"
+    return 0
     ;;
-    *) return 1 ;;
+  *) return 1 ;;
   esac
 }
 is_bash() {
   case "$(ps -p$$ -ocommand=)" in
-    *bash)
-      _debug "is_bash"
-      return 0
+  *bash)
+    _debug "is_bash"
+    return 0
     ;;
-    *) return 1 ;;
+  *) return 1 ;;
   esac
 }
 
 is_zsh() {
   case "$(ps -p$$ -ocommand=)" in
-    *zsh)
-      _debug "is_zsh"
-      return 0
+  *zsh)
+    _debug "is_zsh"
+    return 0
     ;;
-    *) return 1 ;;
+  *) return 1 ;;
   esac
 }
 

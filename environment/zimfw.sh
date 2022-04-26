@@ -10,7 +10,7 @@ ZIM_HOME="${ZDOTDIR:-${HOME}}/.zim"
 if [ ! -e "${ZIM_HOME}/zimfw.zsh" ]; then
   _debug "Downloading zimfw plugin manager."
   curl -fsSL --create-dirs -o "${ZIM_HOME}/zimfw.zsh" \
-      "https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh"
+    "https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh"
 fi
 
 # Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.

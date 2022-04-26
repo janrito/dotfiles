@@ -14,4 +14,4 @@ bindkey "^[[6~" history-search-forward
 
 ## Enable Alt-arrows word hopping
 bindkey "^[b" backward-word # Alt left
-bindkey "^[f" forward-word # Alt right
+bindkey "^[f" forward-word  # Alt right

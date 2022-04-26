@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set Editor Editor to neovim if available, vim otherwise
-if command -v nvim > /dev/null 2>&1; then
+if command -v nvim >/dev/null 2>&1; then
   _debug "setting editor to nvim"
   export EDITOR='nvim'
 else
@@ -13,9 +13,9 @@ fi
 export PAGER="/usr/bin/less -isM"
 
 #rbenv
-if command -v rbenv > /dev/null 2>&1; then
+if command -v rbenv >/dev/null 2>&1; then
   _debug "rbenv init"
-   eval "$(rbenv init -)"
+  eval "$(rbenv init -)"
 fi
 
 # pyenv
