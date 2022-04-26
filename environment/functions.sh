@@ -21,7 +21,7 @@ path() {
 
 find_local_config() {
   find "$HOME/.dotfiles/environment" -name '*.local.sh' -type f -print0 |
-    xargs -0 -n 1 -I @ sh -c "basename @" | sort
+    xargs -0 -I @ sh -c "basename @" | sort
 }
 
 ## session tests
