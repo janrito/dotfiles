@@ -8,16 +8,6 @@ PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
 # Ruby
 PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
 
-# NVM (Node Version Manager)
-if [ -f "$(brew --prefix)/opt/nvm/nvm.sh" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  _debug "NVM init"
-  # we can ignore this becasuse we are checking it exists
-  # shellcheck source=opt/nvm/nvm.sh
-  . "$(brew --prefix)/opt/nvm/nvm.sh"
-  unset NVM_DIR
-fi
-
 # GO
 _debug "GO init"
 export GOPATH="$HOME/.gocode"
