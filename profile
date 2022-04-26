@@ -40,10 +40,11 @@ src "term"
 src "zsh_keys"
 src "aliases"
 
-for local_env_source_file in "$HOME/.dotfiles/environment/999"*
+# Find and import local configuration files
+# Anything in environment/*.local.sh will be imported here
+for local_env_source_file in $(find_local_config)
 do
-  # shellcheck source=./environment/00_functions.sh
-  . "$local_env_source_file"
+  src "${local_env_source_file%.sh}"
 done
 
 # Remove duplicates from path
