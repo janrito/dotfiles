@@ -14,7 +14,7 @@ trim_trailing_whitespace = true
 indent_size = 4
 
 [*.sh]
-indent_size = 4
+indent_size = 2
 
 [*.{xml,htm,html,tmTheme}]
 indent_size = 4

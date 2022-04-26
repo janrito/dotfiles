@@ -2,7 +2,10 @@
 .AppleDouble
 
 # specific ignores
-Brewfile.lock.json
 /preferences/sublimetext3/Preferences.sublime-settings.0.bak
 /preferences/sublimetext3/oscrypto-ca-bundle.crt
 /preferences/vscode/workspaceStorage
+
+
+# vscode config
+.vscode
