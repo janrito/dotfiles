@@ -2,6 +2,8 @@
 
 # asciiship as fallback
 zmodule asciiship
+zmodule ellie/atuin
+
 
 # Completion
 
