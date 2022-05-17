@@ -16,7 +16,9 @@
   "python.formatting.provider": "black",
   // When enabled, will trim trailing whitespace when saving a file.
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [72, 80, 100, 150],
+  "editor.rulers": [
+
+  80, 88, 120, 150],
   // Whether to lint Python files using flake8
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
@@ -24,6 +26,10 @@
   "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
+  "python.sortImports.args": [
+    "--settings-path",
+    "${workspaceFolder}"
+  ],
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -49,6 +55,11 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80
   },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -69,7 +80,6 @@
     "plaintext": true,
     "markdown": true
   },
-  "jupyter.themeMatplotlibPlots": true,
   "workbench.colorTheme": "One Dark Pro",
   "editor.minimap.renderCharacters": false,
   "workbench.preferredDarkColorTheme": "One Dark Pro",
