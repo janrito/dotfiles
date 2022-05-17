@@ -12,6 +12,11 @@ fi
 # Default Pager
 export PAGER="/usr/bin/less -isM"
 
+if command -v mcfly >/dev/null 2>&1; then
+  _debug "mcfly init"
+  eval "$(mcfly init zsh)"
+fi
+
 #rbenv
 if command -v rbenv >/dev/null 2>&1; then
   _debug "rbenv init"
