@@ -23,4 +23,3 @@ unset GOROOT
 
 # Snap
 PATH="${PATH:+/snap/bin:${PATH}}"
-
