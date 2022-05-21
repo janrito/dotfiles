@@ -12,6 +12,10 @@ bindkey "^[[F" end-of-line
 bindkey "^[[5~" history-search-backward
 bindkey "^[[6~" history-search-forward
 
+# history search
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 ## Enable Alt-arrows word hopping
 bindkey "^[b" backward-word # Alt left
 bindkey "^[f" forward-word  # Alt right
