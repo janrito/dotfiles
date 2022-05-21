@@ -17,6 +17,10 @@ fi
 
 # GO
 export GOROOT="/usr/local/go"
-export GOPATH="$HOME/.gocode/"
+export GOPATH="$HOME/.gocode"
 PATH="${PATH:+$GOPATH/bin:$GOROOT/bin:${PATH}}"
 unset GOROOT
+
+# Snap
+PATH="${PATH:+/snap/bin:${PATH}}"
+
