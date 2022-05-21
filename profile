@@ -30,6 +30,7 @@ src() {
 
 src "functions"
 src "homebrew.osx"
+src "zsh_keys"
 src "zimfw"
 src "setup.debian"
 src "setup.osx"
@@ -37,7 +38,6 @@ src "setup.common"
 src "conda.osx"
 src "starship"
 src "term"
-src "zsh_keys"
 src "aliases"
 
 # Find and import local configuration files
