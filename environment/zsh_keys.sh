@@ -13,8 +13,15 @@ bindkey "^[[5~" history-search-backward
 bindkey "^[[6~" history-search-forward
 
 # history search
-bindkey -v
-bindkey '^R' history-incremental-search-backward
+case "$(bindkey '^R')" in
+*history*)
+  _debug "search is bound"
+  ;;
+*)
+  _debug "binding vanilla history search"
+  bindkey '^R' history-incremental-search-backward
+  ;;
+esac
 
 ## Enable Alt-arrows word hopping
 bindkey "^[b" backward-word # Alt left
