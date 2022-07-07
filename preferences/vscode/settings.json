@@ -16,9 +16,7 @@
   "python.formatting.provider": "black",
   // When enabled, will trim trailing whitespace when saving a file.
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [
-
-  80, 88, 120, 150],
+  "editor.rulers": [80, 88, 120, 150],
   // Whether to lint Python files using flake8
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
@@ -26,10 +24,7 @@
   "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
-  "python.sortImports.args": [
-    "--settings-path",
-    "${workspaceFolder}"
-  ],
+  "python.sortImports.args": ["--settings-path", "${workspaceFolder}"],
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
