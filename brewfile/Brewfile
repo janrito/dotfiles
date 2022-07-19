@@ -99,7 +99,7 @@ cask "zoom"
 # cask dev
 cask "docker"
 cask "insomnia"
-cask "miniforge"
+cask "mambaforge"
 cask "sublime-merge"
 cask "sublime-text"
 cask "the-unarchiver"
