@@ -16,3 +16,7 @@ else
   fi
 fi
 unset __conda_setup
+
+if [ -f "${HOMEBREW_PREFIX}/Caskroom/mambaforge/base/etc/profile.d/mamba.sh" ]; then
+  . "${HOMEBREW_PREFIX}/Caskroom/mambaforge/base/etc/profile.d/mamba.sh"
+fi
