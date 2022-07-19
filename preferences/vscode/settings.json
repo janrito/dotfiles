@@ -82,5 +82,6 @@
   "jupyter.askForKernelRestart": false,
   "editor.fontSize": 13,
   "telemetry.telemetryLevel": "off",
-  "jupyter.jupyterServerType": "local"
+  "jupyter.jupyterServerType": "local",
+  "jupyter.diagnostics.reservedPythonNames.enabled": false
 }
