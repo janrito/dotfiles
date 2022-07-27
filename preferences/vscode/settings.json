@@ -83,5 +83,8 @@
   "editor.fontSize": 13,
   "telemetry.telemetryLevel": "off",
   "jupyter.jupyterServerType": "local",
-  "jupyter.diagnostics.reservedPythonNames.enabled": false
+  "jupyter.diagnostics.reservedPythonNames.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
