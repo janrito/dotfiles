@@ -9,3 +9,6 @@
 
 # vscode config
 .vscode
+
+# local mods
+gitconfig.local
