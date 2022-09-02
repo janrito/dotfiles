@@ -52,14 +52,13 @@
   required = true
 
 [pull]
-    rebase = false
+  rebase = false
 [init]
-    defaultBranch = main
+  defaultBranch = main
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 [color]
-    ui = true
-
+  ui = true
 
 # Allow local customizations in the .gitconfig_local file
 [include]
