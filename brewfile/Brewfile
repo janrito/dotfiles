@@ -27,11 +27,13 @@ brew "awscli"
 brew "bandwhich"
 brew "bat"
 brew "blueutil"
-brew "colima"
+# TODO: unable to replace docker desktop until compose v2 supports the AWS ECS integration
+# brew "colima"
 brew "coreutils"
 brew "ctop"
 brew "dive"
-brew "docker"
+# TODO: Relaplaced by cask until colima can deal with compose
+# brew "docker"
 brew "dsq"
 brew "dust"
 brew "dvc"
@@ -99,6 +101,7 @@ cask "twobird"
 cask "zoom"
 
 # cask dev
+cask "docker"
 cask "insomnia"
 cask "mambaforge"
 cask "sublime-merge"
