@@ -112,6 +112,10 @@ cask "visual-studio-code"
 
 # cask fonts
 cask "font-fira-code"
+cask "font-fontawesome"
+cask "font-ibm-plex-mono"
+cask "font-ibm-plex-sans"
+cask "font-ibm-plex-serif"
 cask "font-input"
 cask "font-iosevka-nerd-font"
 cask "font-iosevka"
