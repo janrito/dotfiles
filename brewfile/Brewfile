@@ -34,6 +34,7 @@ brew "blueutil"
 brew "cairo"
 brew "coreutils"
 brew "ctop"
+brew "direnv"
 brew "dive"
 # TODO: Relaplaced by cask until colima can deal with compose
 # brew "docker"

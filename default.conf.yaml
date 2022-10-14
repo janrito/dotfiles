@@ -17,6 +17,7 @@
     ~/.hgrc: hgrc
     ~/.zshrc: profile
     ~/.zimrc: zimrc
+    ~/.direnvrc: direnvrc.sh
     ~/.ssh/config: ssh/config.plain
     ~/.config/starship.toml: starship.toml
 - defaults:

@@ -12,9 +12,17 @@ fi
 # Default Pager
 export PAGER="/usr/bin/less -isM"
 
-if command -v mcfly >/dev/null 2>&1; then
+# mcfly
+if command -v mcfly >/dev/null 2>&1 && is_zsh; then
   _debug "mcfly init"
   eval "$(mcfly init zsh)"
+fi
+
+# direnv
+if command -v direnv >/dev/null 2>&1 && is_zsh; then
+  _debug "direnv init"
+  eval "$(direnv hook zsh)"
+
 fi
 
 #rbenv
