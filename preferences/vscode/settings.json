@@ -24,7 +24,7 @@
   "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
-  "python.sortImports.args": ["--settings-path", "${workspaceFolder}"],
+  "isort.args": ["--settings-path", "${workspaceFolder}"],
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -51,6 +51,7 @@
     "editor.wordWrapColumn": 80
   },
   "[python]": {
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     }
@@ -67,7 +68,23 @@
   "telemetry.enableTelemetry": false,
   "python.linting.pylintEnabled": false,
   "editor.inlineSuggest.enabled": true,
-  "cSpell.userWords": ["noqa"],
+  "cSpell.userWords": [
+    "color",
+    "direnv",
+    "dorzey",
+    "esbenp",
+    "Giacometti",
+    "Iosevka",
+    "ipynb",
+    "isort",
+    "noqa",
+    "pyenv",
+    "pylint",
+    "sqlfluff",
+    "venv",
+    "virtualenv",
+    "virtualenvs"
+  ],
   "cSpell.language": "en-GB",
   "github.copilot.enable": {
     "*": true,
