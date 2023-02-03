@@ -1,7 +1,10 @@
 - clean:
+    - ~/
     - ~/Library/Mobile Documents/
+    - ~/Library/Preferences/
     - ~/Library/Application Support/Sublime Text 3/Packages/
     - ~/Library/Application Support/
+    - ~/.ssh/config
 - defaults:
     link:
       create: true
@@ -10,6 +13,7 @@
     "~/iCloud": "~/Library/Mobile Documents/com~apple~CloudDocs"
     ~/.ssh/config: ssh/config
     ~/.config/brewfile/Brewfile: brewfile/Brewfile
+    ~/Library/Preferences/pypoetry: pypoetry
     "~/Library/Application Support/Sublime Text 3/Packages/User": preferences/sublimetext3/
     "~/Library/Application Support/Code/User": preferences/vscode/
 - clean:
