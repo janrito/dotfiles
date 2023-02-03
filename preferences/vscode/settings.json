@@ -40,6 +40,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -48,7 +51,12 @@
   },
   "[markdown]": {
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 80
+    "editor.wordWrapColumn": 80,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    }
   },
   "[python]": {
     "editor.formatOnSave": true,
@@ -69,7 +77,6 @@
   "python.linting.pylintEnabled": false,
   "editor.inlineSuggest.enabled": true,
   "cSpell.userWords": [
-    "color",
     "direnv",
     "dorzey",
     "esbenp",
@@ -97,7 +104,6 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   "explorer.confirmDelete": false,
   "jupyter.askForKernelRestart": false,
-  "editor.fontSize": 13,
   "telemetry.telemetryLevel": "off",
   "jupyter.jupyterServerType": "local",
   "jupyter.diagnostics.reservedPythonNames.enabled": false,
@@ -112,5 +118,6 @@
   },
   "sqlfluff.dialect": "postgres",
   "svelte.plugin.svelte.note-new-transformation": false,
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "editor.fontSize": 13
 }
