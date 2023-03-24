@@ -1,6 +1,5 @@
 {
-  "added_words":
-  [
+  "added_words": [
     "deserialisation",
     "deserialise",
     "deserialised",
@@ -31,8 +30,7 @@
   "draw_white_space": "all",
   "fade_fold_buttons": false,
   "find_selected_text": true,
-  "folder_exclude_patterns":
-  [
+  "folder_exclude_patterns": [
     ".AppleDouble",
     ".git",
     ".hg",
@@ -44,36 +42,16 @@
     ".venv",
     "node_modules"
   ],
-  "font_face": "Iosevka Light",
-  "font_options":
-  [
-    "subpixel_antialias",
-    "ss05"
-  ],
+  "font_face": "Iosevka",
+  "font_options": ["subpixel_antialias", "ss05"],
   "font_size": 13,
   "highlight_line": true,
   "highlight_modified_tabs": true,
-  "ignored_packages":
-  [
-    "JavaScript",
-    "Python",
-    "RestructuredText",
-    "Vintage"
-  ],
-  "indent_guide_options":
-  [
-    "draw_normal",
-    "draw_active"
-  ],
-  "rulers":
-  [
-    72,
-    80,
-    100,
-    150
-  ],
+  "ignored_packages": ["JavaScript", "Python", "RestructuredText", "Vintage"],
+  "indent_guide_options": ["draw_normal", "draw_active"],
+  "rulers": [72, 80, 100, 150],
   "show_encoding": true,
-  "theme": "ayu-dark.sublime-theme",
+  "theme": "ayu-mirage.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
   "use_tab_stops": true,
