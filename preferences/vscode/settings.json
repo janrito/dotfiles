@@ -56,7 +56,8 @@
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": true
-    }
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
     "editor.formatOnSave": true,
@@ -85,9 +86,11 @@
     "ipynb",
     "isort",
     "noqa",
+    "preemptively",
     "pyenv",
     "pylint",
     "sqlfluff",
+    "timezone",
     "venv",
     "virtualenv",
     "virtualenvs"
@@ -119,5 +122,15 @@
   "sqlfluff.dialect": "postgres",
   "svelte.plugin.svelte.note-new-transformation": false,
   "svelte.enable-ts-plugin": true,
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "sqltools.connections": [],
+  "languageTool.language": "en-GB",
+  "grammarly.config.documentDialect": "british",
+  "grammarly.files.exclude": ["**/*requirements.txt"],
+  "files.associations": {
+    ".env.yml": "yaml"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  }
 }

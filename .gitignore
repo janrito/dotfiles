@@ -2,9 +2,10 @@
 .AppleDouble
 
 # specific ignores
-/preferences/sublimetext3/Preferences.sublime-settings.0.bak
-/preferences/sublimetext3/oscrypto-ca-bundle.crt
-/preferences/vscode/workspaceStorage
+preferences/sublimetext3/Preferences.sublime-settings.0.bak
+preferences/sublimetext3/oscrypto-ca-bundle.crt
+preferences/vscode/workspaceStorage
+preferences/vscode/*.cache
 
 
 # vscode config
