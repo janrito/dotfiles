@@ -29,13 +29,13 @@
     ~/.tmux.conf: tmux.conf
     ~/.tmuxp: tmuxp
     ~/.condarc: condarc.yaml
-    ~/.SpaceVim.d: SpaceVim.d/
+    ~/.SpaceVim.d: SpaceVim.d
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv
     ~/.jupyter:
       create: true
-      path: jupyter/
+      path: jupyter
     ~/.tmux/plugins/tpm:
       create: true
       path: vendor/tpm
