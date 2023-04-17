@@ -39,6 +39,11 @@ if [ -f "$HOME/perl5/lib/perl5" ]; then
   eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
 fi
 
+if [ -f "$HOME/.cargo/env" ]; then
+  _debug "Cargo init"
+  . "$HOME/.cargo/env"
+fi
+
 # Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR

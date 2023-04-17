@@ -49,3 +49,4 @@ done
 # Remove duplicates from path
 REPATHED_PATH=$(repath "$PATH")
 export PATH="$REPATHED_PATH"
+
