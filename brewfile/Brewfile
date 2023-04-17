@@ -25,6 +25,7 @@ brew "scipy"
 
 
 # utils
+brew "atuin"
 brew "awscli"
 brew "bandwhich"
 brew "bat"
@@ -58,7 +59,6 @@ brew "jo"
 brew "jq"
 brew "lazydocker"
 brew "libgit2"
-brew "mcfly"
 brew "micro"
 brew "mpv"
 brew "mtr"

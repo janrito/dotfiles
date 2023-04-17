@@ -3,6 +3,8 @@
 # asciiship as fallback
 zmodule asciiship
 
+# Atuin history module
+zmodule ellie/atuin
 
 # Completion
 
