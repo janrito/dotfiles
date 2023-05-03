@@ -97,6 +97,7 @@
   ],
   "cSpell.language": "en-GB",
   "github.copilot.enable": {
+    "quarto": true,
     "*": true,
     "yaml": true,
     "plaintext": true,
@@ -132,5 +133,7 @@
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  }
+  },
+  "quarto.visualEditor.spellingDictionary": "en_GB",
+  "quarto.render.renderOnSave": true
 }
