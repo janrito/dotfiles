@@ -74,7 +74,6 @@
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
-  "telemetry.enableTelemetry": false,
   "python.linting.pylintEnabled": false,
   "editor.inlineSuggest.enabled": true,
   "cSpell.userWords": [
@@ -108,7 +107,6 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   "explorer.confirmDelete": false,
   "jupyter.askForKernelRestart": false,
-  "telemetry.telemetryLevel": "off",
   "jupyter.jupyterServerType": "local",
   "jupyter.diagnostics.reservedPythonNames.enabled": false,
   "[jsonc]": {
@@ -135,5 +133,31 @@
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "quarto.visualEditor.spellingDictionary": "en_GB",
-  "quarto.render.renderOnSave": true
+  "quarto.render.renderOnSave": true,
+  "clangd.checkUpdates": false,
+  "code-runner.enableAppInsights": false,
+  "docker-explorer.enableTelemetry": false,
+  "extensions.ignoreRecommendations": true,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "java.help.firstView": "none",
+  "java.help.showReleaseNotes": false,
+  "julia.enableTelemetry": false,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "Lua.telemetry.enable": false,
+  "material-icon-theme.showWelcomeMessage": false,
+  "pros.showWelcomeOnStartup": false,
+  "pros.useGoogleAnalytics": false,
+  "redhat.telemetry.enabled": false,
+  "rpcServer.showStartupMessage": false,
+  "shellcheck.disableVersionCheck": true,
+  "sonarlint.disableTelemetry": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "terraform.telemetry.enabled": false,
+  "update.showReleaseNotes": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false
 }
