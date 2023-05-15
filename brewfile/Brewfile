@@ -110,7 +110,6 @@ cask "zoom"
 # cask dev
 cask "docker"
 cask "insomnia"
-cask "mambaforge"
 cask "quarto"
 cask "sublime-merge"
 cask "sublime-text"

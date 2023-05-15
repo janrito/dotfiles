@@ -33,7 +33,6 @@ src "homebrew.osx"
 src "setup.debian"
 src "setup.osx"
 src "setup.common"
-src "conda.osx"
 src "term"
 src "zimfw"
 src "starship"
@@ -49,4 +48,3 @@ done
 # Remove duplicates from path
 REPATHED_PATH=$(repath "$PATH")
 export PATH="$REPATHED_PATH"
-

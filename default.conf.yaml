@@ -28,7 +28,6 @@
     ~/.psqlrc: psqlrc
     ~/.tmux.conf: tmux.conf
     ~/.tmuxp: tmuxp
-    ~/.condarc: condarc.yaml
     ~/.SpaceVim.d: SpaceVim.d
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
