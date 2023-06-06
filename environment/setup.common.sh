@@ -39,9 +39,12 @@ if [ -f "$HOME/perl5/lib/perl5" ]; then
   eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
 fi
 
-if [ -f "$HOME/.cargo/env" ]; then
+export CARGO_HOME="$HOME/.cargo"
+export RUSTUP_HOME="$HOME/.rustup"
+
+if [ -f "$CARGO_HOME/env" ]; then
   _debug "Cargo init"
-  . "$HOME/.cargo/env"
+  . "$CARGO_HOME/env"
 fi
 
 # Set colors in Command line to true
