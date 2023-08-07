@@ -159,5 +159,6 @@
   "terraform.telemetry.enabled": false,
   "update.showReleaseNotes": false,
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.welcomePage.walkthroughs.openOnInstall": false
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "isort.importStrategy": "fromEnvironment"
 }
