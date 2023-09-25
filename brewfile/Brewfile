@@ -105,6 +105,7 @@ cask "lastpass"
 cask "mactex"
 cask "spotify"
 cask "textbuddy"
+cask "wezterm"
 
 # cask comms
 cask "discord"

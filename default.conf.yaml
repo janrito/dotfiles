@@ -18,6 +18,7 @@
     ~/.zshrc: profile
     ~/.zimrc: zimrc
     ~/.direnvrc: direnvrc.sh
+    ~/.wezterm.lua: wezterm.lua
     ~/.ssh/config: ssh/config.plain
     ~/.config/starship.toml: starship.toml
 - defaults:
