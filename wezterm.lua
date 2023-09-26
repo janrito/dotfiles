@@ -1,5 +1,6 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 -- wezterm.gui is not available to the mux server, so take care to
 -- do something reasonable when this config is evaluated by the mux
@@ -37,22 +38,31 @@ config.font_size = 13
 
 -- Keyboard shortcuts
 config.keys = {
+    -- command palette
+    { key = 'p', mods = 'CMD',       action = act.ActivateCommandPalette },
+    -- New tab in home directory
+    { key = 't', mods = 'CMD',       action = act.SpawnCommandInNewTab { domain = 'CurrentPaneDomain', cwd = "~" } },
+    -- New tab in current working directory
+    { key = 't', mods = 'CMD|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' },
+    -- close panes rather than tabs
+    { key = 'w', mods = 'CMD',       action = act.CloseCurrentPane { confirm = true } },
+    { key = 'w', mods = 'CMD|SHIFT', action = act.CloseCurrentTab { confirm = true } },
     -- This will create a new split and run your default program inside it
     {
         key = 'd',
         mods = 'CMD',
-        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+        action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
     },
     -- This will create a new split and run your default program inside it
     {
         key = 'd',
         mods = 'CMD|SHIFT',
-        action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+        action = act.SplitVertical { domain = 'CurrentPaneDomain' },
     },
     -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
-    { key = "LeftArrow",  mods = "OPT", action = wezterm.action { SendString = "\x1bb" } },
+    { key = "LeftArrow",  mods = "OPT", action = act { SendString = "\x1bb" } },
     -- Make Option-Right equivalent to Alt-f; forward-word
-    { key = "RightArrow", mods = "OPT", action = wezterm.action { SendString = "\x1bf" } },
+    { key = "RightArrow", mods = "OPT", action = act { SendString = "\x1bf" } },
 }
 -- and finally, return the configuration to wezterm
 return config
