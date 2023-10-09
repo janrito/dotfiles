@@ -63,6 +63,12 @@ config.keys = {
     { key = "LeftArrow",  mods = "OPT", action = act { SendString = "\x1bb" } },
     -- Make Option-Right equivalent to Alt-f; forward-word
     { key = "RightArrow", mods = "OPT", action = act { SendString = "\x1bf" } },
+
+    -- Make CMD-Left move the cursor to the beggining of the line
+    { key = "LeftArrow",  mods = "CMD", action = act.SendKey { key = 'a', mods = 'CTRL' } },
+
+    -- Make CMD-Right move the cursor to the end of the line
+    { key = "RightArrow", mods = "CMD", action = act.SendKey { key = 'e', mods = 'CTRL' } },
 }
 -- and finally, return the configuration to wezterm
 return config
