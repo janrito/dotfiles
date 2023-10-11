@@ -17,8 +17,6 @@
   // When enabled, will trim trailing whitespace when saving a file.
   "files.trimTrailingWhitespace": true,
   "editor.rulers": [80, 88, 120, 150],
-  // Whether to lint Python files using flake8
-  "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
   // Folders to look into for virtual environments.
   "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
@@ -55,15 +53,16 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": true
+      "source.fixAll.markdownlint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.python"
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -102,9 +101,9 @@
     "plaintext": true,
     "markdown": true
   },
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Ayu Mirage",
   "editor.minimap.renderCharacters": false,
-  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "workbench.preferredDarkColorTheme": "Ayu Mirage",
   "explorer.confirmDelete": false,
   "jupyter.askForKernelRestart": false,
   "jupyter.jupyterServerType": "local",
@@ -160,5 +159,12 @@
   "update.showReleaseNotes": false,
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "isort.importStrategy": "fromEnvironment"
+  "isort.importStrategy": "fromEnvironment",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.preferredLightColorTheme": "Ayu Light",
+  "oneDarkPro.editorTheme": "Ayu",
+  "workbench.iconTheme": "ayu",
+  "workbench.preferredHighContrastColorTheme": "Ayu Dark"
 }

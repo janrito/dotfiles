@@ -13,9 +13,9 @@ end
 
 local function scheme_for_appearance(appearance)
     if appearance:find 'Dark' then
-        return 'One Half Black (Gogh)'
+        return 'ayu'
     else
-        return 'One Dark (Gogh)'
+        return 'Ayu Mirage'
     end
 end
 
