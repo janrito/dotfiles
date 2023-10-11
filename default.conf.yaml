@@ -1,10 +1,10 @@
 - clean:
     - "~"
-    - ~/.bin
-    - ~/.ssh
-    - ~/.config
-    - ~/.local/bin
-    - ~/.tmux/plugins
+    - ~/.bin/
+    - ~/.ssh/
+    - ~/.config/
+    - ~/.local/bin/
+    - ~/.tmux/plugins/
 - create:
     - ~/.bin
     - ~/.ssh
@@ -29,10 +29,10 @@
     ~/.psqlrc: psqlrc
     ~/.tmux.conf: tmux.conf
     ~/.tmuxp: tmuxp
-    ~/.SpaceVim.d: SpaceVim.d
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv
+    ~/.config/nvim: config/nvim
     ~/.jupyter:
       create: true
       path: jupyter

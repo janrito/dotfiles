@@ -4,7 +4,7 @@
     - ~/Library/Preferences/
     - ~/Library/Application Support/Sublime Text 3/Packages/
     - ~/Library/Application Support/
-    - ~/.ssh/config
+    - ~/.ssh/config/
 - defaults:
     link:
       create: true
