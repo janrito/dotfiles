@@ -62,7 +62,7 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -166,5 +166,6 @@
   "workbench.preferredLightColorTheme": "Ayu Light",
   "oneDarkPro.editorTheme": "Ayu",
   "workbench.iconTheme": "ayu",
-  "workbench.preferredHighContrastColorTheme": "Ayu Dark"
+  "workbench.preferredHighContrastColorTheme": "Ayu Dark",
+  "jupyter.notebookFileRoot": "${workspaceFolder}"
 }
