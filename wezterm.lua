@@ -69,6 +69,11 @@ config.keys = {
 
     -- Make CMD-Right move the cursor to the end of the line
     { key = "RightArrow", mods = "CMD", action = act.SendKey { key = 'e', mods = 'CTRL' } },
+
+    -- full screen
+    { key = 'Enter',      mods = 'CMD', action = act.ToggleFullScreen },
+
+
 }
 -- and finally, return the configuration to wezterm
 return config
