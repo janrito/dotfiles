@@ -13,11 +13,9 @@
     },
     "**/*.ipynb_checkpoints": true
   },
-  "python.formatting.provider": "black",
   // When enabled, will trim trailing whitespace when saving a file.
   "files.trimTrailingWhitespace": true,
   "editor.rulers": [80, 88, 120, 150],
-  "python.linting.flake8Path": "flake8",
   // Folders to look into for virtual environments.
   "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
@@ -60,9 +58,15 @@
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.organizeImports": false
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -167,5 +171,7 @@
   "oneDarkPro.editorTheme": "Ayu",
   "workbench.iconTheme": "ayu",
   "workbench.preferredHighContrastColorTheme": "Ayu Dark",
-  "jupyter.notebookFileRoot": "${workspaceFolder}"
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "zig.path": "",
+  "zig.initialSetupDone": true
 }
