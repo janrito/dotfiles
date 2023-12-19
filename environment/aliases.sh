@@ -7,7 +7,7 @@ wd() {
 }
 
 # other
-alias ll="exa --binary --group --header --links --long --inode --blocks --git --icons"
+alias ll="eza --long --binary --group --header --links --inode --blocksize --git --icons"
 
 # code insiders short
 alias ci="code-insiders"
