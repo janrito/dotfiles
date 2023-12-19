@@ -2,12 +2,14 @@
 	path = ~/.password-store
 [core]
 	parsing = true
-	autoclip = true
 	nopager = false
 	cliptimeout = 45
 	autoimport = true
 	notifications = false
 	exportkeys = false
-	showsafecontent = true
 [age]
 	usekeychain = false
+[show]
+	safecontent = true
+[generate]
+	autoclip = true
