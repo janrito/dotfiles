@@ -33,7 +33,13 @@ end
 -- For example, changing the color scheme:
 config.color_scheme = scheme_for_appearance(get_appearance())
 
-config.font = wezterm.font('Iosevka Nerd Font Mono', { weight = 'Medium', italic = false })
+
+config.font = wezterm.font_with_fallback {
+    { family = 'Iosevka NF', weight = 'Medium', italic = false },
+    { family = 'Iosevka',    weight = 'Medium', italic = false },
+    'Fira Code'
+}
+
 config.font_size = 13
 
 -- Keyboard shortcuts
