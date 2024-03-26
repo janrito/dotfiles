@@ -42,6 +42,8 @@ config.font = wezterm.font_with_fallback {
 
 config.font_size = 13
 
+config.native_macos_fullscreen_mode = true
+
 -- Keyboard shortcuts
 config.keys = {
     -- command palette
