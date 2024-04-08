@@ -21,6 +21,7 @@
     ~/.wezterm.lua: wezterm.lua
     ~/.ssh/config: ssh/config.plain
     ~/.config/starship.toml: starship.toml
+    ~/.pip: pip
 - defaults:
     link:
       force: false
