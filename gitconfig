@@ -1,21 +1,17 @@
 [user]
   email = alejandro.giacometti@gmail.com
   name = Alejandro Giacometti
+
 [credential]
   helper = "!gopass git-credential $@"
+
 [alias]
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-  switch = !legit switch
-  branches = !legit branches
-  sprout = !legit sprout
-  unpublish = !legit unpublish
-  harvest = !legit harvest
-  sync = !legit sync
-  publish = !legit publish
-  graft = !legit graft
+  lg = log --graph --abbrev-commit --decorate --date=short \
+		--format=format:'%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)' \
+		--branches --remotes --tags
+  branches = branch -vv
   wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
-  resync = !legit resync
-  undo = !legit undo
+
 [branch]
   autosetupmerge = true
   autosetuprebase = always
@@ -25,8 +21,11 @@
   pager = delta
 [diff]
   colorMoved = default
+
 [push]
   default = simple
+  autoSetupRemote = true
+
 [merge]
   # tool = opendiff
   conflictstyle = diff3
@@ -63,3 +62,5 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
   path = ~/.dotfiles/gitconfig.local
+[remote "origin"]
+	prune = true
