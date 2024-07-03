@@ -172,6 +172,11 @@
   "workbench.iconTheme": "ayu",
   "workbench.preferredHighContrastColorTheme": "Ayu Dark",
   "jupyter.notebookFileRoot": "${workspaceFolder}",
-  "zig.path": "",
-  "zig.initialSetupDone": true
+  "zig.path": "zig",
+  "zig.initialSetupDone": true,
+  "zig.zls.path": "zls",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveshare.launcherClient": "visualStudioCode",
+  "liveshare.accessibility.voice": "en-GB-Libby"
 }
