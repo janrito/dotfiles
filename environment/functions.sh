@@ -69,7 +69,7 @@ is_debian() {
   esac
 }
 is_bash() {
-  case "$(ps -p$$ -ocommand=)" in
+  case "$(ps -p$$ -ocomm=)" in
   *bash)
     _debug "is_bash"
     return 0
@@ -79,7 +79,7 @@ is_bash() {
 }
 
 is_zsh() {
-  case "$(ps -p$$ -ocommand=)" in
+  case "$(ps -p$$ -ocomm=)" in
   *zsh)
     _debug "is_zsh"
     return 0
