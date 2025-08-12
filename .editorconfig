@@ -16,13 +16,20 @@ indent_size = 4
 [{*.sh,profile}]
 indent_size = 2
 
-[*.{xml,htm,html,tmTheme}]
-indent_size = 4
+[{*.ini,gitconfig}]
+indent_size = 2
+
+[*.{xml,htm,html,tmTheme,plist}]
+indent_size = 2
 
 [*.{json,sublime-settings}]
 indent_size = 2
 
 [*.{yml,yaml}]
+indent_size = 2
+
+
+[*.{toml,tml}]
 indent_size = 2
 
 [*.md]
