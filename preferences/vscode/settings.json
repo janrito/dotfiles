@@ -20,12 +20,6 @@
   "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
   // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
-  "isort.args": ["--settings-path", "${workspaceFolder}"],
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  // A list of languages IDs to disable this extension on
-  "prettier.disableLanguages": ["vue", "markdown"],
   "editor.minimap.enabled": false,
   "prettier.singleQuote": true,
   "window.closeWhenEmpty": true,
@@ -77,18 +71,21 @@
     "jupyter-notebook": "left"
   },
   "notebook.lineNumbers": "on",
-  "python.linting.pylintEnabled": false,
   "editor.inlineSuggest.enabled": true,
   "cSpell.userWords": [
+    "beauhurst",
+    "deepinfra",
     "direnv",
     "dorzey",
     "esbenp",
     "Giacometti",
     "Iosevka",
+    "ipdb",
+    "ipykernel",
     "ipynb",
     "isort",
     "noqa",
-    "preemptively",
+    "pyarrow",
     "pyenv",
     "pylint",
     "sqlfluff",
@@ -110,8 +107,6 @@
   "workbench.preferredDarkColorTheme": "Ayu Mirage",
   "explorer.confirmDelete": false,
   "jupyter.askForKernelRestart": false,
-  "jupyter.jupyterServerType": "local",
-  "jupyter.diagnostics.reservedPythonNames.enabled": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -122,13 +117,10 @@
     "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
   },
   "sqlfluff.dialect": "postgres",
-  "svelte.plugin.svelte.note-new-transformation": false,
   "svelte.enable-ts-plugin": true,
   "editor.fontSize": 13,
   "sqltools.connections": [],
-  "languageTool.language": "en-GB",
-  "grammarly.config.documentDialect": "british",
-  "grammarly.files.exclude": ["**/*requirements.txt"],
+
   "files.associations": {
     ".env.yml": "yaml"
   },
@@ -137,33 +129,12 @@
   },
   "quarto.visualEditor.spellingDictionary": "en_GB",
   "quarto.render.renderOnSave": true,
-  "clangd.checkUpdates": false,
-  "code-runner.enableAppInsights": false,
-  "docker-explorer.enableTelemetry": false,
   "extensions.ignoreRecommendations": true,
-  "gitlens.showWelcomeOnInstall": false,
-  "gitlens.showWhatsNewAfterUpgrades": false,
-  "java.help.firstView": "none",
-  "java.help.showReleaseNotes": false,
-  "julia.enableTelemetry": false,
-  "kite.showWelcomeNotificationOnStartup": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "Lua.telemetry.enable": false,
-  "material-icon-theme.showWelcomeMessage": false,
-  "pros.showWelcomeOnStartup": false,
-  "pros.useGoogleAnalytics": false,
   "redhat.telemetry.enabled": false,
-  "rpcServer.showStartupMessage": false,
   "shellcheck.disableVersionCheck": true,
-  "sonarlint.disableTelemetry": true,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off",
-  "terraform.telemetry.enabled": false,
   "update.showReleaseNotes": false,
-  "vsicons.dontShowNewVersionMessage": true,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "isort.importStrategy": "fromEnvironment",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -178,5 +149,24 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "liveshare.launcherClient": "visualStudioCode",
-  "liveshare.accessibility.voice": "en-GB-Libby"
+  "liveshare.accessibility.voice": "en-GB-Libby",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "continue.telemetryEnabled": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }
