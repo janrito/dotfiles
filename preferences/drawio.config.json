@@ -1,0 +1,87 @@
+{
+  "customFonts": [
+    {
+      "fontFamily": "Public Sans",
+      "fontUrl": "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    },
+    {
+      "fontFamily": "Source Serif",
+      "fontUrl": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+    },
+    {
+      "fontFamily": "Trispace",
+      "fontUrl": "https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap"
+    }
+  ],
+  "presetColors": [
+    "202020",
+    "333230",
+    "5b5a56",
+    "96948a",
+    "bcbaaf",
+    "eae8e1",
+    "f9f7f2",
+    "fcfcfa",
+    null,
+    null,
+    null,
+    null,
+
+    "ffd40e",
+    "4b4897",
+    "e84e24",
+    "2ea83e",
+    "8c3479",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+
+    null,
+    "e0dee9",
+    "fdead2",
+    "e1eee2",
+    "edd9e4",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+
+    null,
+    "302a7e",
+    "872412",
+    "406636",
+    "6f2a58",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+
+    "3f7ab2",
+    "ca3129",
+    "2ea83e",
+    "bd2b8a"
+  ]
+}
