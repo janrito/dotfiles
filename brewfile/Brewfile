@@ -1,6 +1,5 @@
 # "brew tap"
 tap "timvw/tap" # qv
-tap "jesseduffield/lazygit"
 
 # package control
 brew "mas"
