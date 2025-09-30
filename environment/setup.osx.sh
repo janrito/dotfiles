@@ -17,7 +17,7 @@ PATH="${PATH:+$GOPATH/bin:${PATH}}"
 if [ -d "$(brew --prefix)/opt/fzf" ]; then
   _debug "fzf init"
   FZF_HOME="$(brew --prefix)/opt/fzf"
-  PATH="${PATH:+$FZF_HOME/bin${PATH}}"
+  PATH="${PATH:+$FZF_HOME/bin:${PATH}}"
 
   if is_zsh; then
     if is_interactive; then

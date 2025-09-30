@@ -14,7 +14,7 @@ fi
 
 if is_zsh; then
   # Homebrew zsh completion
-  FPATH=$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH
+  FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH"
 fi
 
 # default homebrew bundle file
