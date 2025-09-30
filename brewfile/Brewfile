@@ -1,7 +1,4 @@
 # "brew tap"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/services"
 tap "timvw/tap" # qv
 tap "jesseduffield/lazygit"
 
@@ -134,7 +131,6 @@ cask "textbuddy"
 cask "the-unarchiver"
 cask "visual-studio-code@insiders"
 cask "wezterm"
-cask "yubico-yubikey-manager"
 cask "zoom"
 
 # cask fonts
