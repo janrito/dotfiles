@@ -3,6 +3,7 @@
     - ~/.bin/
     - ~/.ssh/
     - ~/.config/
+    - ~/.config/nvim/
     - ~/.local/bin/
     - ~/.tmux/plugins/
 - create:
@@ -34,7 +35,7 @@
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv
-    ~/.config/nvim: config/nvim
+    ~/.config/nvim/lua: config/nvim
     ~/.jupyter:
       create: true
       path: jupyter
