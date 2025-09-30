@@ -30,3 +30,8 @@ mov_to_gif() {
   fi
 
 }
+
+# update all npm dev dependencies
+npm_update_dev() {
+  npm outdated -json | jq "to_entries[] | .key + \"@\" + .value.latest" | xargs npm install --save-dev
+}
