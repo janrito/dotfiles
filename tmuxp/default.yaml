@@ -13,15 +13,15 @@ start_directory: "~/"
 #   EDITOR: /usr/bin/vim
 #   HOME: /tmp/hm
 windows:
-- window_name: "default"
-  focus: true
-  # shell_command_before: echo hello
-  options:
-    automatic-rename: on
-  layout: even-horizontal # even-vertical, main-horizontal, main-vertical, or tiled.
-  panes:
-  # - shell_command: echo hello
-  - focus: true
-  - #
-- panes:
-  - shell_command: sudo htop
+  - window_name: "default"
+    focus: true
+    # shell_command_before: echo hello
+    options:
+      automatic-rename: on
+    layout: even-horizontal # even-vertical, main-horizontal, main-vertical, or tiled.
+    panes:
+      # - shell_command: echo hello
+      - focus: true
+      -  #
+  - panes:
+      - shell_command: sudo htop

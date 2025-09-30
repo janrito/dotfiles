@@ -68,18 +68,18 @@ config.keys = {
         action = act.SplitVertical { domain = 'CurrentPaneDomain' },
     },
     -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
-    { key = "LeftArrow",  mods = "OPT", action = act { SendString = "\x1bb" } },
+    { key = "LeftArrow",  mods = "OPT",       action = act { SendString = "\x1bb" } },
     -- Make Option-Right equivalent to Alt-f; forward-word
-    { key = "RightArrow", mods = "OPT", action = act { SendString = "\x1bf" } },
+    { key = "RightArrow", mods = "OPT",       action = act { SendString = "\x1bf" } },
 
-    -- Make CMD-Left move the cursor to the beggining of the line
-    { key = "LeftArrow",  mods = "CMD", action = act.SendKey { key = 'a', mods = 'CTRL' } },
+    -- Make CMD-Left move the cursor to the beginning of the line
+    { key = "LeftArrow",  mods = "CMD",       action = act.SendKey { key = 'a', mods = 'CTRL' } },
 
     -- Make CMD-Right move the cursor to the end of the line
-    { key = "RightArrow", mods = "CMD", action = act.SendKey { key = 'e', mods = 'CTRL' } },
+    { key = "RightArrow", mods = "CMD",       action = act.SendKey { key = 'e', mods = 'CTRL' } },
 
     -- full screen
-    { key = 'Enter',      mods = 'CMD', action = act.ToggleFullScreen },
+    { key = 'Enter',      mods = 'CMD',       action = act.ToggleFullScreen },
 
 
 }

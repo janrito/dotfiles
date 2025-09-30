@@ -9,7 +9,6 @@ DOTBOT_DIR="vendor/dotbot"
 DEFAULT_CONFIG_PREFIX="default"
 CONFIG_SUFFIX=".conf.yaml"
 
-
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"

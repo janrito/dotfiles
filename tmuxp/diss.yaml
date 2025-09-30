@@ -8,14 +8,14 @@
 session_name: "diss"
 start_directory: "~/Dropbox/projects/dissertation/"
 windows:
-- window_name: main
-  layout: even-horizontal
-  focus: true
-  options:
-    automatic-rename: on
-  start_directory: "./"
-  panes:
-  - shell_command: subl -b dissertation.sublime-project
+  - window_name: main
+    layout: even-horizontal
     focus: true
-  - shell_command: "ls -al"
-    start_directory: "./out"
+    options:
+      automatic-rename: on
+    start_directory: "./"
+    panes:
+      - shell_command: subl -b dissertation.sublime-project
+        focus: true
+      - shell_command: "ls -al"
+        start_directory: "./out"
