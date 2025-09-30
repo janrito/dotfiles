@@ -67,6 +67,10 @@ config.keys = {
         mods = 'CMD|SHIFT',
         action = act.SplitVertical { domain = 'CurrentPaneDomain' },
     },
+    -- This will rotate panels but keep the sizes
+    { key = 'b',          mods = 'CMD',       action = act.RotatePanes 'Clockwise' },
+    { key = 'b',          mods = 'CMD|SHIFT', action = act.RotatePanes 'CounterClockwise' },
+
     -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
     { key = "LeftArrow",  mods = "OPT",       action = act { SendString = "\x1bb" } },
     -- Make Option-Right equivalent to Alt-f; forward-word
