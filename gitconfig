@@ -7,9 +7,11 @@
 
 [alias]
   lg = log --graph --abbrev-commit --decorate --date=short \
-		--format=format:'%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)' \
-		--branches --remotes --tags
+    --format=format:'%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)' \
+    --branches --remotes --tags
   branches = branch -vv --all
+	branches-gone = !git for-each-ref --format=\"%(refname:short) %(upstream:track)\" refs/heads/ | grep \"\\[gone\\]\"
+	branches-delete-gone = !git for-each-ref --format=\"%(refname:short) %(upstream:track)\" refs/heads/ | grep \"\\[gone\\]\" | awk \"{print \\$1}\" | xargs git branch -D
   wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
 
 [branch]
@@ -54,6 +56,10 @@
   rebase = false
 [init]
   defaultBranch = main
+
+[rebase]
+  updateRefs = true
+
 [interactive]
   diffFilter = delta --color-only
 [color]
@@ -63,4 +69,4 @@
 [include]
   path = ~/.dotfiles/gitconfig.local
 [remote "origin"]
-	prune = true
+  prune = true
