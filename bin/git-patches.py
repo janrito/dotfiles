@@ -4,7 +4,8 @@
 # dependencies = [
 #     "pygit2",
 #     "typer",
-#     "tqdm", "types-tqdm"
+#     "tqdm",
+#     "types-tqdm"
 # ]
 # ///
 
@@ -37,6 +38,7 @@ def main(
             writable=True,
         ),
     ] = Path("patches"),
+    ext: Annotated[str, typer.Option("-e", help="Patch file extension")] = ".patch",
 ):
     # Create output directory if it doesn't exist
     output.mkdir(parents=True, exist_ok=True)
@@ -62,7 +64,7 @@ def main(
             continue
 
         filename = patch.delta.new_file.path or patch.delta.old_file.path
-        safe_name = filename.replace("/", "_") + ".patch"
+        safe_name = filename.replace("/", "_") + ext
         output_path = output / safe_name
 
         patch_text = patch.text
