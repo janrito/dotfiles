@@ -18,8 +18,7 @@
     "~/Library/Application Support/Sublime Text 3/Packages/User": preferences/sublimetext3/
     "~/Library/Application Support/Code/User": preferences/vscode/
     "~/Library/Application Support/Heynote/buffer.txt": ~/Dropbox/heynote-buffer.txt
-- clean:
-    - ~/.bin/
+
 - defaults:
     link:
       create: true
