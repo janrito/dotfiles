@@ -5,7 +5,6 @@
     - ~/.config/
     - ~/.config/nvim/
     - ~/.local/bin/
-    - ~/.tmux/plugins/
 - create:
     - ~/.bin
     - ~/.ssh
@@ -39,6 +38,3 @@
     ~/.jupyter:
       create: true
       path: jupyter
-    ~/.tmux/plugins/tpm:
-      create: true
-      path: vendor/tpm
