@@ -4,15 +4,14 @@
 # dependencies = [
 #     "pygit2",
 #     "typer",
-#     "tqdm",
-#     "types-tqdm"
+#     "rich"
 # ]
 # ///
 
 # type check with:
 # uvx --with-requirements bin/git-patches.py mypy bin/git-patches.py
 
-"""Generate one patch file per changed file between a tag and HEAD."""
+"""Generate one patch file per changed file between a reference and HEAD."""
 
 import sys
 from pathlib import Path
@@ -20,7 +19,8 @@ from typing import Annotated
 
 import pygit2
 import typer
-from tqdm import tqdm
+from rich.console import Console
+from rich.progress import Progress
 
 
 def main(
@@ -40,6 +40,9 @@ def main(
     ] = Path("patches"),
     ext: Annotated[str, typer.Option("-e", help="Patch file extension")] = ".patch",
 ):
+    # rich console
+    console = Console()
+
     # Create output directory if it doesn't exist
     output.mkdir(parents=True, exist_ok=True)
 
@@ -57,21 +60,27 @@ def main(
 
     diff = repo.diff(base_commit, target_commit)
 
-    print(f"Generating patches for {len(diff)} files...")
+    console.print(f"Generating patches for {len(diff)} files...")
 
-    for patch in tqdm(diff, desc="Writing patches"):
-        if patch is None:
-            continue
+    with Progress(console=console) as progress:
+        task = progress.add_task("Writing patches", total=len(diff))
 
-        filename = patch.delta.new_file.path or patch.delta.old_file.path
-        safe_name = filename.replace("/", "_") + ext
-        output_path = output / safe_name
+        for patch in diff:
+            if patch is None:
+                progress.advance(task)
+                continue
 
-        patch_text = patch.text
-        if patch_text is not None:
-            output_path.write_text(patch_text)
+            filename = patch.delta.new_file.path or patch.delta.old_file.path
+            safe_name = filename.replace("/", "__") + ext
+            output_path = output / safe_name
 
-    print(f"\nDone. Patches written to {output}/")
+            patch_text = patch.text
+            if patch_text is not None:
+                output_path.write_text(patch_text)
+
+            progress.advance(task)
+
+    console.print(f"\n[green]Done.[/green] Patches written to {output}/")
 
 
 if __name__ == "__main__":
