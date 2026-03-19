@@ -114,6 +114,7 @@ cask "atuin-desktop"
 cask "beeper"
 cask "calibre"
 cask "claude"
+cask "claude-code"
 cask "cursor"
 cask "discord"
 # cask "docker" # Replaced wby colima

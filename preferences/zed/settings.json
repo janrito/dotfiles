@@ -7,13 +7,6 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "assistant": {
-    "provider": {
-      "name": "openai",
-      "default_model": "gpt-4o",
-      "available_models": []
-    }
-  },
   "load_direnv": "shell_hook",
   "telemetry": {
     "diagnostics": false,
@@ -35,6 +28,15 @@
         "external": {
           "command": "ruff",
           "arguments": ["format", "-"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        "basedpyright.analysis": {
+          "typeCheckingMode": "standard"
         }
       }
     }

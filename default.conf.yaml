@@ -8,6 +8,9 @@
 - create:
     - ~/.ssh
     - ~/.config
+    - ~/.config/nvim
+    - ~/.config/zed
+    - ~/.config/atuin
 - defaults:
     link:
       force: true
@@ -21,6 +24,7 @@
     ~/.ssh/config: ssh/config.plain
     ~/.config/starship.toml: starship.toml
     ~/.config/zed/settings.json: preferences/zed/settings.json
+    ~/.config/atuin/config.toml: config/atuin/config.toml
     ~/.pip: pip
     ~/.bin/:
       glob: true

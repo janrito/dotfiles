@@ -7,3 +7,5 @@ Run this to install
 ```sh
 uvx dotbot -c default.conf.yaml mac.conf.yaml
 ```
+
+[dotbot]: https://github.com/anishathalye/dotbot

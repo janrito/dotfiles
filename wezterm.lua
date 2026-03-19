@@ -83,7 +83,7 @@ config.keys = {
     { key = "RightArrow", mods = "CMD",       action = act.SendKey { key = 'e', mods = 'CTRL' } },
 
     -- full screen
-    { key = 'Enter',      mods = 'CMD',       action = act.ToggleFullScreen },
+    { key = 'Enter',      mods = 'CMD|SHIFT', action = act.ToggleFullScreen },
 
 
 }
