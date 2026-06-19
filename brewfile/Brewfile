@@ -31,6 +31,7 @@ brew "aws-sam-cli"
 brew "awscli"
 brew "bandwhich"
 brew "bat"
+brew "biome"
 brew "blueutil"
 brew "bottom"
 brew "btop"
@@ -82,6 +83,7 @@ brew "neovim"
 brew "nmap"
 brew "numbat"
 brew "nvm"
+brew "nvtop"
 brew "pandoc"
 brew "pinentry-mac"
 brew "postgresql@14" # cannot be removed due to python package shittyness
@@ -103,6 +105,7 @@ brew "tig"
 brew "timvw/tap/qv"
 brew "tree"
 brew "uv"
+brew "vhs"
 brew "watch"
 brew "wget"
 brew "yq"
@@ -185,3 +188,8 @@ mas "Agenda", id: 1287445660
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+
+
+# Machine-local additions (work packages etc.); gitignored, optional.
+local_brewfile = File.join(File.dirname(File.realpath(__FILE__)), "Brewfile.local")
+instance_eval(File.read(local_brewfile)) if File.exist?(local_brewfile)
