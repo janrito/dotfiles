@@ -47,6 +47,18 @@ if [ -f "$CARGO_HOME/env" ]; then
   . "$CARGO_HOME/env"
 fi
 
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+if [ -s "~/.bun/_bun" ]; then
+  _debug "bun completions init"
+  . "~/.bun/_bun"
+fi
+
+# bun
+
+
 # Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR
