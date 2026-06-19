@@ -1,10 +1,10 @@
 #!/bin/sh
 
 reload_config() {
-  if [ -f "${HOME}/.dotfiles/profile" ]; then
+  if [ -f "${DOTFILES_DIR}/profile" ]; then
     _debug "Reloading profile"
     # shellcheck source=./../profile
-    . "$HOME/.dotfiles/profile"
+    . "${DOTFILES_DIR}/profile"
   fi
 }
 
@@ -20,7 +20,7 @@ path() {
 }
 
 find_local_config() {
-  find "$HOME/.dotfiles/environment" -name '*.local.sh' -type f -print0 |
+  find "${DOTFILES_DIR}/environment" -name '*.local.sh' -type f -print0 |
     xargs -0 -I @ sh -c "basename @" | sort
 }
 

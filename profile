@@ -2,6 +2,13 @@
 
 ENV_DEBUG=${ENV_DEBUG:-false}
 
+# ---------------------------------------------------------------------------
+# Locate this dotfiles checkout.
+# Override it if it chagnes
+# ---------------------------------------------------------------------------
+DOTFILES_DIR="${DOTFILES_DIR:-$HOME/.dotfiles}"
+export DOTFILES_DIR
+
 _debug() {
   # Utility to print debug messages
   case "$ENV_DEBUG" in
@@ -17,7 +24,7 @@ _debug() {
 src() {
   # Utility to import configuration files
   if [ "$1" ]; then
-    source_file="$HOME/.dotfiles/environment/$1.sh"
+    source_file="$DOTFILES_DIR/environment/$1.sh"
     _debug "Importing $source_file"
     if [ -f "$source_file" ]; then
       # shellcheck source=./environment/functions.sh

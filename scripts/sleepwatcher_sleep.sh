@@ -2,7 +2,7 @@
 
 # needs path configuration
 # shellcheck source=./../profile
-. "$HOME/.dotfiles/profile"
+. "${DOTFILES_DIR}/profile"
 
 echo "SLEEPWATCHER $(date +%Y-%m-%dT%H:%M:%S%z): sleep"
 

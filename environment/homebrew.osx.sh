@@ -18,4 +18,4 @@ if is_zsh; then
 fi
 
 # default homebrew bundle file
-export HOMEBREW_BUNDLE_FILE="${HOME}/.config/brewfile/Brewfile"
+export HOMEBREW_BUNDLE_FILE="${DOTFILES_DIR}/brewfile/Brewfile"
