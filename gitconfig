@@ -9,20 +9,40 @@
   lg = log --graph --abbrev-commit --decorate --date=short \
     --format=format:'%C(bold cyan)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)%an%C(reset) %C(bold yellow)%d%C(reset)' \
     --branches --remotes --tags
-  branches = branch -vv --all
-	branches-gone = !git for-each-ref --format=\"%(refname:short) %(upstream:track)\" refs/heads/ | grep \"\\[gone\\]\"
-	branches-delete-gone = !git for-each-ref --format=\"%(refname:short) %(upstream:track)\" refs/heads/ | grep \"\\[gone\\]\" | awk \"{print \\$1}\" | xargs git branch -D
   wdiff = -c core.pager='less -r' diff --patience --word-diff=plain
+
+  branches = branch -vv --all
+
+  branches-gone = !git for-each-ref \
+      --format='%(refname:short) %(upstream:track)' refs/heads/ \
+    | grep '\\[gone\\]'
+
+  branches-delete-gone = !git for-each-ref \
+      --format='%(refname:short) %(upstream:track)' refs/heads/ \
+    | awk '/\\[gone\\]/ {print $1}' \
+    | xargs -r git branch -D
+
+  tags = tag -l
+
+  tags-orphan = !git tag $(git for-each-ref \
+      --format='--no-contains %(objectname)' refs/heads/)
+
+  tags-delete-orphan = !git tag $(git for-each-ref \
+      --format='--no-contains %(objectname)' refs/heads/) \
+    | xargs -r git tag -d
+
+[core]
+  editor = nvim
+  pager = delta
+
+[fetch]
+  prune = true
+  pruneTags = true
 
 [branch]
   autosetupmerge = true
   autosetuprebase = always
   rebase = true
-[core]
-  editor = nvim
-  pager = delta
-[diff]
-  colorMoved = default
 
 [push]
   default = simple
@@ -31,21 +51,30 @@
 [merge]
   # tool = opendiff
   conflictstyle = diff3
+
 [help]
   autocorrect = 1
+
+[diff]
+  colorMoved = default
+
 [difftool]
   prompt = false
+
 [delta]
   navigate = true  # use n and N to move between diff sections
   line-numbers = true
+
 [filter "media"]
   required = true
   clean = git media clean %f
   smudge = git media smudge %f
+
 [filter "hawser"]
   clean = git hawser clean %f
   smudge = git hawser smudge %f
   required = true
+
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
@@ -54,6 +83,7 @@
 
 [pull]
   rebase = false
+
 [init]
   defaultBranch = main
 
@@ -62,11 +92,10 @@
 
 [interactive]
   diffFilter = delta --color-only
+
 [color]
   ui = true
 
 # Allow local customizations in the .gitconfig_local file
 [include]
   path = ~/.dotfiles/gitconfig.local
-[remote "origin"]
-  prune = true
