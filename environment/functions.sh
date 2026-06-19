@@ -105,3 +105,23 @@ lock() {
 pyc() {
   find . -name "*.pyc" -delete
 }
+
+# Follow a log file (or stdin), pretty-printing JSON lines through jq and
+# passing non-JSON lines through unchanged.
+#
+# Usage:
+#   jsonlog app.log               # live follow; JSON pretty/coloured, plain lines verbatim
+#   some-command | jsonlog        # pipe/stdin mode
+#   jsonlog -                     # explicit stdin mode
+#   jsonlog app.log | less -R +F  # page it (Ctrl-C to scroll, Shift-F to resume)
+jsonlog() {
+  # jq program: $line and fromjson are jq syntax, not shell -> keep single-quoted
+  # shellcheck disable=SC2016
+  prog='. as $line | try (fromjson | .) catch $line'
+
+  if [ -z "$1" ] || [ "$1" = "-" ]; then
+    jq -Rr --unbuffered "$prog"
+  else
+    tail -F "$1" | jq -Rr --unbuffered "$prog"
+  fi
+}
