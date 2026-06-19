@@ -24,6 +24,7 @@
     ~/.ssh/config: ssh/config.plain
     ~/.config/starship.toml: starship.toml
     ~/.config/zed/settings.json: preferences/zed/settings.json
+    ~/.config/zed/keymap.json: preferences/zed/keymap.json
     ~/.config/atuin/config.toml: config/atuin/config.toml
     ~/.pip: pip
     ~/.bin/:
