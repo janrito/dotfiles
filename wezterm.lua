@@ -82,6 +82,8 @@ config.keys = {
     -- Make CMD-Right move the cursor to the end of the line
     { key = "RightArrow", mods = "CMD",       action = act.SendKey { key = 'e', mods = 'CTRL' } },
 
+    -- full screen - disable default
+    { key = 'Enter',      mods = 'OPT',       action = act.DisableDefaultAssignment },
     -- full screen
     { key = 'Enter',      mods = 'CMD|SHIFT', action = act.ToggleFullScreen },
 
