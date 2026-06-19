@@ -1,11 +1,10 @@
 - clean:
     - ~/
-    - ~/Library/Mobile Documents/
     - ~/Library/Preferences/
     - ~/Library/Application Support/Sublime Text 3/Packages/
     - ~/Library/Application Support/
     - ~/Library/Application Support/Heynote/
-    - ~/.ssh/config/
+    - ~/.ssh/
 - defaults:
     link:
       create: true
