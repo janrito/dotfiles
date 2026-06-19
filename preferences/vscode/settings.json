@@ -132,7 +132,7 @@
   "update.showReleaseNotes": false,
   "workbench.welcomePage.walkthroughs.openOnInstall": false,
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "workbench.preferredLightColorTheme": "Ayu Light",
   "oneDarkPro.editorTheme": "Ayu",

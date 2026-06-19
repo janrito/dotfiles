@@ -12,9 +12,10 @@
 - link:
     "~/iCloud": "~/Library/Mobile Documents/com~apple~CloudDocs"
     ~/.ssh/config: ssh/config
-    ~/Library/Application Support/pypoetry: pypoetry
     "~/Library/Application Support/Sublime Text 3/Packages/User": preferences/sublimetext3/
-    "~/Library/Application Support/Code/User": preferences/vscode/
+    "~/Library/Application Support/Code/User/settings.json": preferences/vscode/settings.json
+    "~/Library/Application Support/Code/User/models.json": preferences/vscode/models.json
+    "~/Library/Application Support/Code/User/chatLanguageModels.json": preferences/vscode/chatLanguageModels.json
     "~/Library/Application Support/Heynote/buffer.txt": ~/Dropbox/heynote-buffer.txt
 - defaults:
     link:
