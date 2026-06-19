@@ -7,38 +7,66 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_servers": {
+    "pi-acp": {
+      "type": "registry"
+    }
+  },
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left",
+  },
+  "feature_flags": {
+    "tabular-data-preview": "on",
+    "notebooks": "on",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "load_direnv": "shell_hook",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
+  },
+  "terminal": {
+    "env": {
+      "EDITOR": "zed --wait",
+    },
+    "dock": "right",
   },
   "tabs": {
     "close_position": "right",
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
   },
-
+  "file_scan_inclusions": [".todo", ".envrc"],
   "format_on_save": "on",
-  "theme": "Ayu Dark",
+  "theme": "Ayu Glass Mirage",
   "buffer_font_family": "Iosevka Nerd Font",
   "buffer_font_size": 13,
   "languages": {
     "Python": {
+      "language_servers": ["ruff", "ty", "!basedpyright"],
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
       "formatter": {
-        "external": {
-          "command": "ruff",
-          "arguments": ["format", "-"]
-        }
-      }
-    }
+        "language_server": {
+          "name": "ruff",
+        },
+      },
+    },
+    "Markdown": { "soft_wrap": "none" },
   },
-  "lsp": {
-    "basedpyright": {
-      "settings": {
-        "basedpyright.analysis": {
-          "typeCheckingMode": "standard"
-        }
-      }
-    }
-  }
 }
