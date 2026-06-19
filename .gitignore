@@ -14,3 +14,6 @@ preferences/vscode/*.cache
 # local mods
 gitconfig.local
 .aider*
+
+# planning
+.todo/*
