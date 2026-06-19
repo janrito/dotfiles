@@ -150,6 +150,7 @@
   },
   "continue.telemetryEnabled": false,
   "docker.extension.enableComposeLanguageServer": false,
+  "continue.showInlineTip": false,
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -178,9 +179,9 @@
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "on",
-      "other": "on"
+      "other": "on",
     },
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
   },
   "terminal.integrated.defaultLocation": "editor",
 }

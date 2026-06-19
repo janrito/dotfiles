@@ -9,8 +9,8 @@
 {
   "agent_servers": {
     "pi-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "cli_default_open_behavior": "new_window",
   "project_panel": {

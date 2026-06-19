@@ -1,0 +1,13 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
+  "formatter": { "useEditorconfig": true },
+  "overrides": [
+    {
+      "includes": ["**/vscode/settings.json", "**/zed/settings.json", "**/zed/keymap.json"],
+      "json": {
+        "parser": { "allowComments": true, "allowTrailingCommas": true },
+        "formatter": { "trailingCommas": "all" }
+      }
+    }
+  ]
+}
