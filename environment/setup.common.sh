@@ -44,6 +44,7 @@ export RUSTUP_HOME="$HOME/.rustup"
 
 if [ -f "$CARGO_HOME/env" ]; then
   _debug "Cargo init"
+  # shellcheck source=/dev/null
   . "$CARGO_HOME/env"
 fi
 
@@ -51,9 +52,10 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
-if [ -s "~/.bun/_bun" ]; then
+if [ -s "$BUN_INSTALL/_bun" ]; then
   _debug "bun completions init"
-  . "~/.bun/_bun"
+  # shellcheck source=/dev/null
+  . "$BUN_INSTALL/_bun"
 fi
 
 # bun
