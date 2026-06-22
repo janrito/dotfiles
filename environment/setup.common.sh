@@ -43,16 +43,6 @@ fi
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# bun completions
-if [ -s "$BUN_INSTALL/_bun" ]; then
-  _debug "bun completions init"
-  # shellcheck source=/dev/null
-  . "$BUN_INSTALL/_bun"
-fi
-
-# bun
-
-
 # Set colors in Command line to true
 CLICOLOR=True
 export CLICOLOR
