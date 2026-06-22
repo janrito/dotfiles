@@ -138,13 +138,41 @@ jsonlog() {
 # Debian (util-linux su) needs `--` so su stops parsing its own options and
 # forwards the rest to the shell. The two forms are mutually exclusive, hence
 # the branch on is_osx.
+#
+# A leading `--` switches to command-line mode: everything after it is run as a
+# shell command line in the admin shell, so &&, pipes, redirection, and admin
+# aliases work (quote the whole line as one argument, as with sh -c). Without
+# `--`, arguments are passed through verbatim (quoting-safe). Thus
+# `asadmin foo bar` and `asadmin -- "foo bar"` are equivalent for a simple
+# command.
 asadmin() {
-  if is_osx; then
-    su "$ASADMIN_USER" -i -c '"$@"' sh "$@"
+  if [ "${1-}" = "--" ]; then
+    shift
+    if is_osx; then
+      su "$ASADMIN_USER" -i -c "$*"
+    else
+      su "$ASADMIN_USER" -- -i -c "$*"
+    fi
   else
-    su "$ASADMIN_USER" -- -i -c '"$@"' sh "$@"
+    if is_osx; then
+      su "$ASADMIN_USER" -i -c '"$@"' sh "$@"
+    else
+      su "$ASADMIN_USER" -- -i -c '"$@"' sh "$@"
+    fi
   fi
 }
 
-# Run a command as root, via the admin user's sudo.
-asroot() { asadmin sudo "$@"; }
+# Run a command as root, via the admin user's sudo. A leading `--` runs the rest
+# as a shell command line as root (no nested quoting); otherwise argv mode.
+asroot() {
+  if [ "${1-}" = "--" ]; then
+    shift
+    asadmin sudo sh -c "$*"
+  else
+    asadmin sudo "$@"
+  fi
+}
+
+# Fix ownership of the given path(s) to the brew/admin user, recursively.
+#   adminchown /Applications/Claude.app /Applications/Spotify.app
+adminchown() { asroot chown -R "${ASADMIN_USER}:staff" "$@"; }
