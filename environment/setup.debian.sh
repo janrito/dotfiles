@@ -1,12 +1,7 @@
 #!/bin/sh
-
+# Debian/Ubuntu/Raspbian-specific setup: npm-global, system Go (GOROOT), snap.
+# Shared PATH/toolchain setup lives in setup.common.sh.
 is_debian || return 1
-
-# Paths in home directory
-PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
-
-# Ruby
-PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
 
 # Node
 if [ -e "$HOME/.npm-global" ]; then
@@ -15,10 +10,9 @@ if [ -e "$HOME/.npm-global" ]; then
   unset NPM_PATH
 fi
 
-# GO
+# GO (GOROOT is Debian-specific; GOPATH/bin is set in setup.common.sh)
 export GOROOT="/usr/local/go"
-export GOPATH="$HOME/.gocode"
-PATH="${PATH:+$GOPATH/bin:$GOROOT/bin:${PATH}}"
+PATH="${PATH:+$GOROOT/bin:${PATH}}"
 unset GOROOT
 
 # Snap

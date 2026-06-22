@@ -1,4 +1,6 @@
 #!/bin/sh
+# Homebrew (macOS): shell environment, completion fpath, and default Bundle file.
+# Must precede setup.osx.sh, which calls `brew --prefix` for fzf.
 is_osx || return 1
 
 # homebrew on arm

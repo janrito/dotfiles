@@ -1,17 +1,7 @@
 #!/bin/sh
-
+# macOS-specific setup: fzf (PATH, completion, key-bindings).
+# Shared PATH/toolchain setup lives in setup.common.sh.
 is_osx || return 1
-
-# Paths in home directory
-PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
-
-# Ruby
-PATH="${PATH:+$HOME/.rbenv/bin:${PATH}}"
-
-# GO
-_debug "GO init"
-export GOPATH="$HOME/.gocode"
-PATH="${PATH:+$GOPATH/bin:${PATH}}"
 
 # Setup fzf
 if [ -d "$(brew --prefix)/opt/fzf" ]; then

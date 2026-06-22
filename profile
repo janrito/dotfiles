@@ -35,7 +35,7 @@ src() {
   fi
 }
 
-src "functions"
+src "lib"
 src "homebrew.osx"
 src "setup.debian"
 src "setup.osx"
@@ -45,7 +45,9 @@ src "zimfw"
 src "compinit-registrations"
 src "starship"
 src "zsh_keys"
+src "functions"
 src "aliases"
+src "admin"
 
 # Find and import local configuration files
 # Anything in environment/*.local.sh will be imported here
