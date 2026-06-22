@@ -25,14 +25,6 @@ if command -v rbenv >/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-# pyenv
-if [ -f "$HOME/.pyenv/bin/pyenv" ]; then
-  _debug "pyenv init"
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-fi
-
 # Perl local modules
 if [ -f "$HOME/perl5/lib/perl5" ]; then
   _debug "perl5 init"
