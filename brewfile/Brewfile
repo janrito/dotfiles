@@ -86,7 +86,6 @@ brew "nvm"
 brew "nvtop"
 brew "pandoc"
 brew "pinentry-mac"
-brew "postgresql@14" # cannot be removed due to python package shittyness
 brew "postgresql@17"
 brew "procs"
 brew "qrencode"
@@ -154,7 +153,6 @@ cask "textbuddy"
 cask "the-unarchiver"
 cask "visual-studio-code@insiders"
 cask "wezterm"
-cask "witsy"
 cask "zed"
 cask "zoom"
 
@@ -176,19 +174,6 @@ cask "font-source-sans-3"
 cask "font-source-sans-pro"
 cask "font-source-serif-4"
 cask "font-source-serif-pro"
-
-# mas utils
-mas "iA Writer", id: 775737590
-mas "Magnet", id: 441258766
-mas "LanguageTool", id: 1534275760
-mas "Amphetamine", id: 937984704
-mas "Agenda", id: 1287445660
-
-# mas apple
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-
 
 # Machine-local additions (work packages etc.); gitignored, optional.
 local_brewfile = File.join(File.dirname(File.realpath(__FILE__)), "Brewfile.local")
