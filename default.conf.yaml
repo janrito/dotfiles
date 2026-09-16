@@ -15,7 +15,6 @@
     link:
       force: true
 - link:
-    ~/.gitconfig: gitconfig
     ~/.hgrc: hgrc
     ~/.zshrc: profile
     ~/.zimrc: zimrc
@@ -38,6 +37,7 @@
     ~/.psqlrc: psqlrc
     ~/.tmux.conf: tmux.conf
     ~/.tmuxp: tmuxp
+    ~/.config/git: config/git
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv

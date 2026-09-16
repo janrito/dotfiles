@@ -16,7 +16,10 @@ indent_size = 4
 [{*.sh,profile}]
 indent_size = 2
 
-[{*.ini,gitconfig}]
+[*.ini]
+indent_size = 2
+
+[config/git/config]
 indent_size = 2
 
 [*.{xml,htm,html,tmTheme,plist}]

@@ -1,16 +1,10 @@
 .DS_Store
 .AppleDouble
 
-# specific ignores
-preferences/sublimetext3/Preferences.sublime-settings.0.bak
-preferences/sublimetext3/oscrypto-ca-bundle.crt
-
-
 # vscode config
 .vscode
 
 # local mods
-gitconfig.local
 .aider*
 
 # planning

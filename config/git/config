@@ -96,6 +96,6 @@
 [color]
   ui = true
 
-# Allow local customizations in the .gitconfig_local file
+# Allow local customizations in the config.local file
 [include]
-  path = ~/.dotfiles/gitconfig.local
+  path = config.local
