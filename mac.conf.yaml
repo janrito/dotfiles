@@ -5,6 +5,7 @@
     - ~/Library/Application Support/
     - ~/Library/Application Support/Heynote/
     - ~/.ssh/
+    - ~/.bin/
 - defaults:
     link:
       create: true
@@ -20,13 +21,14 @@
     "~/Library/Application Support/Code - Insiders/User/models.json": preferences/vscode/models.json
     "~/Library/Application Support/Code - Insiders/User/chatLanguageModels.json": preferences/vscode/chatLanguageModels.json
     "~/Library/Application Support/Heynote/buffer.txt": ~/Dropbox/heynote-buffer.txt
+    "~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty": config.ghostty
 - defaults:
     link:
       create: true
       force: false
 - link:
-    ~/.bin/subl: "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
-    ~/.bin/smerge: "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge"
+    ~/.bin/subl: "~/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+    ~/.bin/smerge: "~/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge"
 
 - clean:
     - /opt/homebrew/opt/sleepwatcher/

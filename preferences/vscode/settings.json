@@ -17,8 +17,8 @@
   "files.trimTrailingWhitespace": true,
   "editor.rulers": [80, 88, 120, 150],
   // Folders to look into for virtual environments.
-  "python.venvFolders": [".env", "envs", ".pyenv", ".direnv", ".venv"],
-  // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
+  "python.venvFolders": [".env", "envs", ".direnv", ".venv"],
+  // Path to folder with a list of Virtual Environments (e.g. ~/.virtualenvs).
   "python.venvPath": "~/.virtualenvs",
   "editor.minimap.enabled": false,
   "prettier.singleQuote": true,
@@ -82,7 +82,6 @@
     "isort",
     "noqa",
     "pyarrow",
-    "pyenv",
     "pylint",
     "sqlfluff",
     "timezone",
@@ -167,6 +166,16 @@
   },
   "zig.zls.enabled": "on",
   "terminal.integrated.stickyScroll.enabled": false,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true,
+  },
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "[skill]": {
     "editor.insertSpaces": true,

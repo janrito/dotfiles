@@ -4,5 +4,7 @@
 *.ca-bundle
 *.*-ca-bundle
 *.ca-certs
+oscrypto-ca-bundle.crt
+Preferences.sublime-settings.0.bak
 linters/*
 Color Highlighter/*

@@ -34,7 +34,7 @@
   "git_panel": {
     "dock": "left",
   },
-  "load_direnv": "shell_hook",
+  "load_direnv": "direct",
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
