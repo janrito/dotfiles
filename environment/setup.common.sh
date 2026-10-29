@@ -85,3 +85,9 @@ if command -v direnv >/dev/null 2>&1 && is_zsh; then
   eval "$(direnv hook zsh)"
 
 fi
+
+# fnox
+if command -v fnox >/dev/null 2>&1 && is_zsh; then
+  _debug "fnox activate"
+  eval "$(fnox activate zsh)"
+fi
