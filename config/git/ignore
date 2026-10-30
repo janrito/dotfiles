@@ -1,4 +1,5 @@
 **/.claude/settings.local.json
 .todo/
+.DS_Store
 fnox.local.toml
 .fnox.local.toml
