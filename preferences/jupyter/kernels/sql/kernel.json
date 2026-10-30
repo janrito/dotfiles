@@ -1,0 +1,14 @@
+{
+  "display_name": "SQL (jupysql in the project's uv environment)",
+  "language": "sql",
+  "argv": [
+    "/opt/homebrew/bin/uv",
+    "run",
+    "--no-sync",
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ]
+}
