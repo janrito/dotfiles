@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "diff_view_style": "unified",
   "agent_servers": {
     "pi-acp": {
       "type": "registry",
@@ -18,6 +19,7 @@
   },
   "feature_flags": {
     "tabular-data-preview": "on",
+
     "notebooks": "on",
   },
   "outline_panel": {
