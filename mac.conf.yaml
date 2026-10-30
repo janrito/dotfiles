@@ -19,6 +19,7 @@
     "~/Library/Application Support/Heynote/buffer.txt": ~/Dropbox/heynote-buffer.txt
     "~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty": config.ghostty
     ~/Library/LaunchAgents/local.launchctl-env.plist: services/local.launchctl-env.plist
+    ~/Library/LaunchAgents/homebrew.mxcl.sleepwatcher.plist: services/homebrew.mxcl.sleepwatcher.plist
     ~/Library/Jupyter/kernels/sql: preferences/jupyter/kernels/sql
 - defaults:
     link:

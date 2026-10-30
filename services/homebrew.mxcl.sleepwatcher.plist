@@ -15,19 +15,19 @@
       <string>/opt/homebrew/opt/sleepwatcher/sbin/sleepwatcher</string>
       <string>--verbose</string>
       <string>--sleep</string>
-      <string>/Users/alejandrogiacometti/.sleep</string>
+      <string>$HOME/.sleep</string>
       <string>--wakeup</string>
-      <string>/Users/alejandrogiacometti/.wakeup</string>
+      <string>$HOME/.wakeup</string>
       <string>--timeout</string>
       <string>200</string>
       <string>--idle</string>
-      <string>/Users/alejandrogiacometti/.idle</string>
+      <string>$HOME/.idle</string>
       <string>--idleresume</string>
-      <string>/Users/alejandrogiacometti/.idleresume</string>
+      <string>$HOME/.idleresume</string>
       <string>--break</string>
       <string>200</string>
       <string>--resume</string>
-      <string>/Users/alejandrogiacometti/.resume</string>
+      <string>$HOME/.resume</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
