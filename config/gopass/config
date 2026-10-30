@@ -13,3 +13,7 @@
 	safecontent = true
 [generate]
 	autoclip = true
+[recipients "pi"]
+	hash = 8fec501af6f97595dec9d372fef810b0e7a509dc678f80b77650f7bf43d0f1f2
+[mounts "pi"]
+	path = ~/.password-store-pi
