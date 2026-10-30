@@ -20,19 +20,19 @@ check-shell:
 
 # Lint + format-check JSON with biome
 check-json:
-    biome check $(git ls-files '*.json')
+    biome check $(git ls-files '*.json' '*.jsonc')
 
 # Lint + auto-format JSON with biome
 fmt-json:
-    biome check --write $(git ls-files '*.json')
+    biome check --write $(git ls-files '*.json' '*.jsonc')
 
-# Format-check YAML with prettier via bunx
+# Lint + format-check YAML with biome
 check-yaml:
-    bunx prettier@latest --check "**/*.{yaml,yml}"
+    biome check $(git ls-files '*.yaml' '*.yml')
 
-# Auto-format YAML with prettier via bunx
+# Lint + auto-format YAML with biome
 fmt-yaml:
-    bunx prettier@latest --write "**/*.{yaml,yml}"
+    biome check --write $(git ls-files '*.yaml' '*.yml')
 
 # Format-check TOML with taplo via bunx
 check-toml:

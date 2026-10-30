@@ -22,6 +22,6 @@ windows:
     panes:
       # - shell_command: echo hello
       - focus: true
-      -  #
+      - #
   - panes:
       - shell_command: sudo htop
