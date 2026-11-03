@@ -55,7 +55,7 @@ if command -v rbenv >/dev/null 2>&1; then
 fi
 
 # Perl local modules
-if [ -f "$HOME/perl5/lib/perl5" ]; then
+if [ -d "$HOME/perl5/lib/perl5" ]; then
   _debug "perl5 init"
   eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib)"
 fi
