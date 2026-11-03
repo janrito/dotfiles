@@ -5,7 +5,7 @@
 # shellcheck source=./environment/lib.sh
 . "${DOTFILES_DIR:-$HOME/.dotfiles}/environment/lib.sh"
 
-src "homebrew.osx"
+src "homebrew"
 src "path"
 src "defaults"
 

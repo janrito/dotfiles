@@ -2,7 +2,7 @@
 # PATH and the toolchains that add to it. Prepends accumulate, so the LAST
 # entry lands FIRST in PATH: platform directories, then toolchains, then
 # ~/.bin and ~/.local/bin, which win over everything, including Homebrew (set
-# earlier in homebrew.osx.sh).
+# earlier in homebrew.sh).
 
 # --- Debian, Ubuntu, Raspbian ---
 if is_debian; then
