@@ -10,7 +10,8 @@ fi
 # Use degit instead of git as the default tool to install and update modules.
 zstyle ':zim:zmodule' use 'degit'
 
-ZIM_HOME="${ZDOTDIR:-${HOME}}/.zim"
+# Exported so programs started from the shell, such as `just update zim`, find it.
+export ZIM_HOME="$HOME/.zim"
 
 # Download zimfw plugin manager if missing.
 if [ ! -e "${ZIM_HOME}/zimfw.zsh" ]; then
@@ -20,7 +21,7 @@ if [ ! -e "${ZIM_HOME}/zimfw.zsh" ]; then
 fi
 
 # Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
-if [ -z "$(find "${ZIM_HOME}/init.zsh" -newer "${ZDOTDIR:-${HOME}}/.zimrc")" ]; then
+if [ -z "$(find "${ZIM_HOME}/init.zsh" -newer "$HOME/.zimrc")" ]; then
   set -- "init" "-q"
   # zsh, outside this repo: shellcheck can neither find nor parse it
   # shellcheck source=/dev/null
