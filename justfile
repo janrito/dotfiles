@@ -16,7 +16,7 @@ fmt: fmt-json fmt-yaml fmt-toml
 
 # Lint shell scripts with shellcheck
 check-shell:
-    shellcheck $(git ls-files '*.sh') profile
+    shellcheck $(git ls-files '*.sh')
 
 # Lint + format-check JSON with biome
 check-json:

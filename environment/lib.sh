@@ -1,13 +1,38 @@
 #!/bin/sh
-# Core library: dotfiles-framework helpers (reload_config, repath,
-# find_local_config) and platform/shell detection predicates (is_*).
-# Sourced first — everything else depends on these.
+# Shared helpers. Every entry point sources this file before anything else.
 
-reload_config() {
-  if [ -f "${DOTFILES_DIR}/profile" ]; then
-    _debug "Reloading profile"
-    # shellcheck source=./../profile
-    . "${DOTFILES_DIR}/profile"
+ENV_DEBUG=${ENV_DEBUG:-false}
+
+# ---------------------------------------------------------------------------
+# Locate this dotfiles checkout.
+# Override it if it chagnes
+# ---------------------------------------------------------------------------
+DOTFILES_DIR="${DOTFILES_DIR:-$HOME/.dotfiles}"
+export DOTFILES_DIR
+
+_debug() {
+  # Utility to print debug messages
+  case "$ENV_DEBUG" in
+  1 | true | TRUE)
+    printf "%b" "$(date +%Y-%m-%dT%H:%M:%S%z) DEBUG "
+    printf "%b" "$@"
+    printf "%b" "\n"
+    ;;
+  *) ;;
+  esac
+}
+
+src() {
+  # Utility to import configuration files
+  if [ "$1" ]; then
+    source_file="$DOTFILES_DIR/environment/$1.sh"
+    _debug "Importing $source_file"
+    if [ -f "$source_file" ]; then
+      # shellcheck source=./functions.sh
+      . "$source_file"
+    else
+      echo "ERROR: $source_file does not exist"
+    fi
   fi
 }
 
@@ -82,4 +107,16 @@ is_zsh() {
     return 0
   fi
   return 1
+}
+
+# profile.sh sources this file again, so shellcheck sees a second definition of
+# _debug after the call below and reports it as "only defined later". False
+# positive: https://github.com/koalaman/shellcheck/issues/1595
+# shellcheck disable=SC2218
+reload_config() {
+  if [ -f "${DOTFILES_DIR}/profile.sh" ]; then
+    _debug "Reloading profile.sh"
+    # shellcheck source=./../profile.sh
+    . "${DOTFILES_DIR}/profile.sh"
+  fi
 }
