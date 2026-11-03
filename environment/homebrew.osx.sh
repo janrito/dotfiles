@@ -1,6 +1,6 @@
 #!/bin/sh
 # Homebrew (macOS).
-# Must precede setup.osx.sh, which calls `brew --prefix` for fzf.
+# Must precede setup.osx.sh, which uses $HOMEBREW_PREFIX for fzf.
 is_osx || return 1
 
 # homebrew on arm

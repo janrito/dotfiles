@@ -4,9 +4,9 @@
 is_osx || return 1
 
 # Setup fzf
-if [ -d "$(brew --prefix)/opt/fzf" ]; then
+if [ -d "$HOMEBREW_PREFIX/opt/fzf" ]; then
   _debug "fzf init"
-  FZF_HOME="$(brew --prefix)/opt/fzf"
+  FZF_HOME="$HOMEBREW_PREFIX/opt/fzf"
   PATH="${PATH:+$FZF_HOME/bin:${PATH}}"
 
   if is_zsh; then
