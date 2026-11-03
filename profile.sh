@@ -7,7 +7,7 @@
 
 src "homebrew.osx"
 src "path"
-src "setup.common"
+src "defaults"
 
 # Find and import local configuration files
 # Anything in environment/*.local.sh will be imported here

@@ -1,5 +1,5 @@
 #!/bin/sh
-# Environment shared by every OS.
+# Environment defaults shared by every platform.
 
 # --- Shell environment defaults ---
 
