@@ -17,6 +17,11 @@ fi
 if is_osx && [ -d "$HOMEBREW_PREFIX/opt/fzf" ]; then
   _debug "fzf shell integration"
   FZF_HOME="$HOMEBREW_PREFIX/opt/fzf"
+  # In zsh, ^R belongs to atuin (zim's atuin module); an empty value stops fzf
+  # binding it, even when reload_config re-runs this file without zim.
+  if is_zsh; then
+    : "${FZF_CTRL_R_COMMAND=}"
+  fi
   # shellcheck source=/dev/null
   . "$FZF_HOME/shell/completion.$rc_shell" 2>/dev/null
   # shellcheck source=/dev/null

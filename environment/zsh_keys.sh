@@ -12,14 +12,15 @@ bindkey "^[[F" end-of-line
 bindkey "^[[5~" history-search-backward
 bindkey "^[[6~" history-search-forward
 
-# history search
+# history search, unless something (atuin) has already bound ^R. Its default
+# is redisplay in vi insert mode, which zsh picks because EDITOR is nvim.
 case "$(bindkey '^R')" in
-*history*)
-  _debug "search is bound"
-  ;;
-*)
+*redisplay | *undefined-key)
   _debug "binding vanilla history search"
   bindkey '^R' history-incremental-search-backward
+  ;;
+*)
+  _debug "search is bound"
   ;;
 esac
 
