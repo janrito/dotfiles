@@ -1,5 +1,5 @@
 #!/bin/sh
-# Homebrew (macOS): shell environment, completion fpath, and default Bundle file.
+# Homebrew (macOS).
 # Must precede setup.osx.sh, which calls `brew --prefix` for fzf.
 is_osx || return 1
 
@@ -10,13 +10,9 @@ else
   HOMEBREW_PREFIX="/usr/local"
 fi
 
+# brew shellenv also adds Homebrew's zsh completions to fpath
 if [ -f "${HOMEBREW_PREFIX}/bin/brew" ]; then
   eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
-fi
-
-if is_zsh; then
-  # Homebrew zsh completion
-  FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH"
 fi
 
 # default homebrew bundle file
