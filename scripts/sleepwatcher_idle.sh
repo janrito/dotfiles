@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# needs path configuration
-# shellcheck source=./../profile
-. "${DOTFILES_DIR:-$HOME/.dotfiles}/profile"
-
 echo "SLEEPWATCHER $(date +%Y-%m-%dT%H:%M:%S%z): idle"
 
 # # turn bluetooth off
