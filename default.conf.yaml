@@ -18,6 +18,8 @@
     ~/.hgrc: hgrc
     ~/.zprofile: profile.sh
     ~/.zshrc: shellrc.sh
+    ~/.bash_profile: bash_profile.sh
+    ~/.bashrc: shellrc.sh
     ~/.zimrc: zimrc
     ~/.direnvrc: direnvrc.sh
     ~/.wezterm.lua: wezterm.lua

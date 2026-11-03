@@ -1,6 +1,6 @@
 #!/bin/sh
 # Environment for login shells, linked as ~/.zprofile, so GUI apps that run
-# $SHELL -l get it too. Keep it POSIX sh.
+# $SHELL -l get it too. Keep it POSIX sh: zsh and bash both source it.
 
 # shellcheck source=./environment/lib.sh
 . "${DOTFILES_DIR:-$HOME/.dotfiles}/environment/lib.sh"

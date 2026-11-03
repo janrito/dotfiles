@@ -1,5 +1,5 @@
 #!/bin/sh
-# Interactive setup, linked as ~/.zshrc.
+# Interactive setup for zsh and bash, linked as ~/.zshrc and ~/.bashrc.
 
 # shellcheck source=./environment/lib.sh
 . "${DOTFILES_DIR:-$HOME/.dotfiles}/environment/lib.sh"

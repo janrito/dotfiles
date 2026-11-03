@@ -5,27 +5,32 @@
 export GPG_TTY
 GPG_TTY=$(tty)
 
+if is_zsh; then
+  rc_shell=zsh
+elif is_bash; then
+  rc_shell=bash
+else
+  return 1
+fi
+
 # fzf completion and key bindings (fzf's bin is put on PATH in setup.osx.sh)
-if is_osx && is_zsh && [ -d "$HOMEBREW_PREFIX/opt/fzf" ]; then
+if is_osx && [ -d "$HOMEBREW_PREFIX/opt/fzf" ]; then
   _debug "fzf shell integration"
   FZF_HOME="$HOMEBREW_PREFIX/opt/fzf"
-  # we can ignore SC1094 because we know it's zsh
-  # shellcheck source=opt/fzf/shell/completion.zsh disable=SC1094
-  . "$FZF_HOME/shell/completion.zsh" 2>/dev/null
-  # we can ignore SC1094 because we know it's zsh
-  # shellcheck source=opt/fzf/shell/key-bindings.zsh disable=SC1094
-  . "$FZF_HOME/shell/key-bindings.zsh"
+  # shellcheck source=/dev/null
+  . "$FZF_HOME/shell/completion.$rc_shell" 2>/dev/null
+  # shellcheck source=/dev/null
+  . "$FZF_HOME/shell/key-bindings.$rc_shell"
 fi
 
 # direnv
-if command -v direnv >/dev/null 2>&1 && is_zsh; then
+if command -v direnv >/dev/null 2>&1; then
   _debug "direnv init"
-  eval "$(direnv hook zsh)"
-
+  eval "$(direnv hook "$rc_shell")"
 fi
 
 # fnox
-if command -v fnox >/dev/null 2>&1 && is_zsh; then
+if command -v fnox >/dev/null 2>&1; then
   _debug "fnox activate"
-  eval "$(fnox activate zsh)"
+  eval "$(fnox activate "$rc_shell")"
 fi

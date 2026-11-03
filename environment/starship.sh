@@ -1,6 +1,9 @@
 #!/bin/sh
-is_zsh || return 1
 
 if command -v starship >/dev/null 2>&1; then
-  eval "$(starship init zsh)"
+  if is_zsh; then
+    eval "$(starship init zsh)"
+  elif is_bash; then
+    eval "$(starship init bash)"
+  fi
 fi
