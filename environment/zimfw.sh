@@ -1,6 +1,12 @@
 #!/bin/sh
 is_zsh || return 1
 
+# zim initialises once per shell: its completion module runs compinit, which
+# must not run twice (zim wiki, Troubleshooting)
+if is_zim_loaded; then
+  return 0
+fi
+
 # Use degit instead of git as the default tool to install and update modules.
 zstyle ':zim:zmodule' use 'degit'
 

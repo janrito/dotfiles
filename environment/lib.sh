@@ -121,6 +121,11 @@ is_zsh() {
   return 1
 }
 
+is_zim_loaded() {
+  # true if zim has initialised this shell; its init.zsh defines zimfw
+  command -v zimfw >/dev/null 2>&1
+}
+
 # profile.sh sources this file again, so shellcheck sees a second definition of
 # _debug and is_zsh_login after the calls below and reports them as "only
 # defined later". False positive: https://github.com/koalaman/shellcheck/issues/1595
