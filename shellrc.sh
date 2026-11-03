@@ -13,7 +13,7 @@ fi
 src "integrations"
 src "term"
 src "zimfw"
-src "compinit-registrations"
+src "completions"
 src "starship"
 src "zsh_keys"
 src "functions"
