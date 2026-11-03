@@ -1,5 +1,8 @@
 dotfiles_dir := env("HOME") / ".dotfiles"
 
+# Update package managers and tool installers
+mod update 'just/update.just'
+
 # Install default config
 install:
     uvx dotbot -v -d "{{dotfiles_dir}}" -c default.conf.yaml
