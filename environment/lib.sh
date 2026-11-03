@@ -77,11 +77,9 @@ is_bash() {
 }
 
 is_zsh() {
-  case "$(ps -p$$ -ocomm=)" in
-  *zsh)
+  if [ -n "${ZSH_VERSION-}" ]; then
     _debug "is_zsh"
     return 0
-    ;;
-  *) return 1 ;;
-  esac
+  fi
+  return 1
 }
