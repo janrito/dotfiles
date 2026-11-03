@@ -59,6 +59,18 @@ is_interactive() {
   esac
 }
 
+is_zsh_login() {
+  # true if session is a zsh login shell, which has read ~/.zprofile.
+  # zsh puts l in $- for login shells; bash never does.
+  case $- in
+  *l*)
+    _debug "is_zsh_login"
+    return 0
+    ;;
+  *) return 1 ;;
+  esac
+}
+
 is_osx() {
   # return true if running in OSX
   case "$(uname)" in
@@ -110,13 +122,15 @@ is_zsh() {
 }
 
 # profile.sh sources this file again, so shellcheck sees a second definition of
-# _debug after the call below and reports it as "only defined later". False
-# positive: https://github.com/koalaman/shellcheck/issues/1595
+# _debug and is_zsh_login after the calls below and reports them as "only
+# defined later". False positive: https://github.com/koalaman/shellcheck/issues/1595
 # shellcheck disable=SC2218
 reload_config() {
-  if [ -f "${DOTFILES_DIR}/profile.sh" ]; then
-    _debug "Reloading profile.sh"
+  _debug "Reloading profile.sh and shellrc.sh"
+  if is_zsh_login; then
     # shellcheck source=./../profile.sh
     . "${DOTFILES_DIR}/profile.sh"
   fi
+  # shellcheck source=./../shellrc.sh
+  . "${DOTFILES_DIR}/shellrc.sh"
 }

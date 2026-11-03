@@ -1,4 +1,6 @@
 #!/bin/sh
+# Environment for login shells, linked as ~/.zprofile, so GUI apps that run
+# $SHELL -l get it too. Keep it POSIX sh.
 
 # shellcheck source=./environment/lib.sh
 . "${DOTFILES_DIR:-$HOME/.dotfiles}/environment/lib.sh"
@@ -7,14 +9,6 @@ src "homebrew.osx"
 src "setup.debian"
 src "setup.osx"
 src "setup.common"
-src "term"
-src "zimfw"
-src "compinit-registrations"
-src "starship"
-src "zsh_keys"
-src "functions"
-src "aliases"
-src "admin"
 
 # Find and import local configuration files
 # Anything in environment/*.local.sh will be imported here

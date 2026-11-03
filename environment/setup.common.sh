@@ -1,6 +1,5 @@
 #!/bin/sh
-# Cross-platform shell setup: editor/pager, shared home PATH, version manager
-# (rbenv) and toolchains (Go, Rust, bun, Perl), direnv, colours, and GPG.
+# Environment shared by every OS.
 
 # --- Shell environment defaults ---
 
@@ -29,10 +28,6 @@ export LS_COLORS="${LS_COLORS}:di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # --- GnuPG / secrets ---
-
-# gpg
-export GPG_TTY
-GPG_TTY=$(tty)
 
 # pass & gopass should output ascii armoured instead of binary files
 export PASSWORD_STORE_GPG_OPTS="--armor"
@@ -76,18 +71,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Home directories last → highest precedence (your own scripts win)
 PATH="${PATH:+$HOME/.bin:$HOME/.local/bin:${PATH}}"
-
-# --- Shell integrations ---
-
-# direnv
-if command -v direnv >/dev/null 2>&1 && is_zsh; then
-  _debug "direnv init"
-  eval "$(direnv hook zsh)"
-
-fi
-
-# fnox
-if command -v fnox >/dev/null 2>&1 && is_zsh; then
-  _debug "fnox activate"
-  eval "$(fnox activate zsh)"
-fi

@@ -16,7 +16,8 @@
       force: true
 - link:
     ~/.hgrc: hgrc
-    ~/.zshrc: profile.sh
+    ~/.zprofile: profile.sh
+    ~/.zshrc: shellrc.sh
     ~/.zimrc: zimrc
     ~/.direnvrc: direnvrc.sh
     ~/.wezterm.lua: wezterm.lua
