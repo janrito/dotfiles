@@ -11,7 +11,6 @@ if ! is_zsh_login; then
 fi
 
 src "integrations"
-src "term"
 src "zimfw"
 src "completions"
 src "starship"
