@@ -13,7 +13,7 @@ else
   return 1
 fi
 
-# fzf completion and key bindings (fzf's bin is put on PATH in setup.osx.sh)
+# fzf completion and key bindings (fzf's bin is put on PATH in path.sh)
 if is_osx && [ -d "$HOMEBREW_PREFIX/opt/fzf" ]; then
   _debug "fzf shell integration"
   FZF_HOME="$HOMEBREW_PREFIX/opt/fzf"

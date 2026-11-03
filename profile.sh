@@ -6,8 +6,7 @@
 . "${DOTFILES_DIR:-$HOME/.dotfiles}/environment/lib.sh"
 
 src "homebrew.osx"
-src "setup.debian"
-src "setup.osx"
+src "path"
 src "setup.common"
 
 # Find and import local configuration files
