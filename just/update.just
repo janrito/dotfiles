@@ -1,5 +1,5 @@
 # Update every package manager and tool installer
-all: brew zim uv pipx gh rust
+all: brew zim uv gh rust
 
 # Update Homebrew, then upgrade installed formulae and casks
 brew:
@@ -16,10 +16,6 @@ zim:
 # Upgrade tools installed with uv
 uv:
     uv tool upgrade --all
-
-# Upgrade apps installed with pipx
-pipx:
-    pipx upgrade-all
 
 # Upgrade gh extensions
 gh:
