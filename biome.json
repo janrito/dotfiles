@@ -1,6 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
-  "files": { "includes": ["**", "!**/lazy-lock.json"] },
+  "files": { "includes": ["**", "!**/lazy-lock.json", "!**/lazyvim.json"] },
   "formatter": { "useEditorconfig": true },
   "overrides": [
     {
