@@ -3,12 +3,10 @@
     - ~/.bin/
     - ~/.ssh/
     - ~/.config/
-    - ~/.config/nvim/
     - ~/.local/bin/
 - create:
     - ~/.ssh
     - ~/.config
-    - ~/.config/nvim
     - ~/.config/zed
     - ~/.config/atuin
 - defaults:
@@ -44,7 +42,7 @@
     ~/.config/matplotlib: config/matplotlib
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv
-    ~/.config/nvim/lua: config/nvim
+    ~/.config/nvim: config/nvim
     ~/.jupyter:
       create: true
       path: jupyter
