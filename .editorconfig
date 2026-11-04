@@ -19,6 +19,10 @@ indent_size = 2
 [*.ini]
 indent_size = 2
 
+# matches config/nvim/stylua.toml (LazyVim starter)
+[*.lua]
+indent_size = 2
+
 [config/git/config]
 indent_size = 2
 
