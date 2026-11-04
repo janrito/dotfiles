@@ -11,6 +11,11 @@
   "agent_servers": {
     "pi-acp": {
       "type": "registry",
+      // pi-acp starts this instead of `pi`, so Zed's pi runs inside nono
+      // (bin/nonopi, config/nono/profiles/pi.local.json).
+      "env": {
+        "PI_ACP_PI_COMMAND": "/Users/alejandrogiacometti/.bin/nonopi",
+      },
     },
   },
   "cli_default_open_behavior": "new_window",

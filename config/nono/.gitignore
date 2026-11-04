@@ -1,0 +1,2 @@
+# Machine-local nono profiles (paths, services, key names); see default.conf.yaml
+*.local.json

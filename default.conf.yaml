@@ -43,6 +43,9 @@
     ~/.config/gopass: config/gopass
     ~/.config/mpv: config/mpv
     ~/.config/nvim: config/nvim
+    ~/.config/nono/profiles/pi.json:
+      create: true
+      path: config/nono/profiles/pi.local.json
     ~/.jupyter:
       create: true
       path: jupyter

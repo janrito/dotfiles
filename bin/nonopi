@@ -1,0 +1,4 @@
+#!/bin/sh
+# Run pi inside nono with the `pi` profile (config/nono/profiles/pi.local.json, not committed).
+# Plain `pi` stays unsandboxed, for `pi update` and `pi update --extensions`.
+exec nono run --profile pi --allow-cwd --silent -- pi "$@"
