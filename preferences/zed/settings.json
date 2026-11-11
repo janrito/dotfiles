@@ -7,6 +7,43 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "auto_install_extensions": {
+    "ayu-themes-glass": true,
+    "biome": true,
+    "comment": true,
+    "django": true,
+    "dockerfile": true,
+    "editorconfig": true,
+    "env": true,
+    "git-firefly": true,
+    "github-actions": true,
+    "graphql": true,
+    "html": true,
+    "ini": true,
+    "jinja2": true,
+    "jq": true,
+    "json5": true,
+    "jsonl": true,
+    "just": true,
+    "latex": true,
+    "log": true,
+    "lua": true,
+    "make": true,
+    "mermaid": true,
+    "python-requirements": true,
+    "rainbow-csv": true,
+    "ruby": true,
+    "rumdl": true,
+    "sql": true,
+    "svelte": true,
+    "tokyo-night": true,
+    "toml": true,
+    "tree-sitter-query": true,
+    "typst": true,
+    "vue": true,
+    "xml": true,
+    "zig": true,
+  },
   "diff_view_style": "unified",
   "agent_servers": {
     "pi-acp": {
@@ -74,6 +111,13 @@
         },
       },
     },
-    "Markdown": { "soft_wrap": "none" },
+    "Markdown": {
+      "soft_wrap": "none",
+      "formatter": {
+        "language_server": {
+          "name": "rumdl",
+        },
+      },
+    },
   },
 }
