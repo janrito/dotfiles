@@ -99,6 +99,15 @@
   "theme": "Ayu Glass Mirage",
   "buffer_font_family": "Iosevka Nerd Font",
   "buffer_font_size": 13,
+  "lsp": {
+    "ty": {
+      "initialization_options": {
+        "experimental": {
+          "useUv": "scripts",
+        },
+      },
+    },
+  },
   "languages": {
     "Python": {
       "language_servers": ["ruff", "ty", "!basedpyright"],
