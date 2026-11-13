@@ -1,0 +1,10 @@
+# SSH inside nono (bin/nonopi), used via GIT_SSH_COMMAND in the pi profile.
+# Tunnels through nono's proxy with ncat (brew "nmap"); uses pi's own key, never ~/.ssh.
+Host github.com
+  User git
+  IdentityFile ~/.ssh-pi/id_ed25519
+  IdentitiesOnly yes
+  IdentityAgent none
+  UserKnownHostsFile ~/.ssh-pi/known_hosts
+  StrictHostKeyChecking yes
+  ProxyCommand ncat --proxy-type http --proxy ${HTTPS_PROXY##*@} --proxy-auth nono:${NONO_PROXY_TOKEN} %h %p

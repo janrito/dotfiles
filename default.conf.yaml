@@ -46,6 +46,9 @@
     ~/.config/nono/profiles/pi.json:
       create: true
       path: config/nono/profiles/pi.local.json
+    ~/.ssh-pi/config:
+      create: true
+      path: ssh/config.pi
     ~/.jupyter:
       create: true
       path: jupyter

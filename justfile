@@ -39,10 +39,10 @@ check-yaml:
 fmt-yaml:
     biome check --write $(git ls-files '*.yaml' '*.yml')
 
-# Format-check TOML with taplo via bunx
+# Format-check TOML with taplo via npx
 check-toml:
-    bunx @taplo/cli@latest format --check
+    npx @taplo/cli@latest format --check
 
-# Auto-format TOML with taplo via bunx
+# Auto-format TOML with taplo via npx
 fmt-toml:
-    bunx @taplo/cli@latest format
+    npx @taplo/cli@latest format
