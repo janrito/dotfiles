@@ -28,6 +28,10 @@ if [ -z "$(find "${ZIM_HOME}/init.zsh" -newer "$HOME/.zimrc")" ]; then
   . "${ZIM_HOME}/zimfw.zsh"
   set --
 fi
+# Emacs keymap, set before the modules bind keys (zimfw's .zshrc template).
+# Without it zsh picks vi, because ~/.zprofile sets EDITOR=nvim.
+bindkey -e
+
 # Initialize modules.
 # zsh, outside this repo: shellcheck can neither find nor parse it
 # shellcheck source=/dev/null
