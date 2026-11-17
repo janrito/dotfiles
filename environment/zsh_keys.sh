@@ -1,10 +1,7 @@
 #!/bin/sh
 is_zsh || return 1
 
-# home and end keys
-bindkey "^[[H" beginning-of-line
-bindkey "^[[F" end-of-line
-
-# Make Page Up and Down intelligently go through history
+# Page Up and Down search history for commands starting with the typed text.
+# Loaded after zim, so this overrides the input module's up/down-line-or-history.
 bindkey "^[[5~" history-search-backward
 bindkey "^[[6~" history-search-forward
