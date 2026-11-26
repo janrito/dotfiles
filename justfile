@@ -3,15 +3,15 @@ mod update 'just/update.just'
 
 # Install default config
 install:
-    uvx dotbot -v -d "$DOTFILES_DIR" -c default.conf.yaml
+    uvx dotbot -v -d "{{ justfile_directory() }}" -c default.conf.yaml
 
 # Install default + mac config
 install-mac:
-    uvx dotbot -v -d "$DOTFILES_DIR" -c default.conf.yaml mac.conf.yaml
+    uvx dotbot -v -d "{{ justfile_directory() }}" -c default.conf.yaml mac.conf.yaml
 
 # Link the admin user's zsh startup files to these dotfiles (asks for its password)
 install-admin:
-    su "${ASADMIN_USER:-administrator}" -c 'uvx dotbot -v -d "$DOTFILES_DIR" -c admin.conf.yaml'
+    su "${ASADMIN_USER:-administrator}" -c 'uvx dotbot -v -d "{{ justfile_directory() }}" -c admin.conf.yaml'
 
 # Run all checks (non-mutating)
 check: check-shell check-json check-yaml check-toml
