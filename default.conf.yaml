@@ -5,6 +5,7 @@
     - ~/.config/
     - ~/.local/bin/
 - create:
+    - ~/.bin
     - ~/.ssh
     - ~/.config
     - ~/.config/zed
