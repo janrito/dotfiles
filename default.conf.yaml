@@ -45,6 +45,7 @@
     ~/.config/nvim: config/nvim
     ~/.config/nono/profiles/pi.json:
       create: true
+      if: "[ -f config/nono/profiles/pi.local.json ]"
       path: config/nono/profiles/pi.local.json
     ~/.ssh-pi/config:
       create: true
