@@ -3,3 +3,6 @@
 .DS_Store
 fnox.local.toml
 .fnox.local.toml
+# remote-pi writes per-repo config here; remove if central config is merged:
+# https://github.com/jacobaraujo7/remote_pi/pull/149
+.pi/remote-pi/
